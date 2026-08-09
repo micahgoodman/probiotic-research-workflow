@@ -1,0 +1,81 @@
+{
+  "strain_id": "lacticaseibacillus-rhamnosus-gg",
+  "body_systems": ["Immune"],
+  "last_reviewed": "2026-08-07",
+  "pass_summary": "LGG's clearest Immune benefit is reduced upper respiratory tract infection incidence in children (tier B), alongside a related otitis media finding first raised here as a proposal and since reconciled into the vocabulary as imm-otitis-media-incidence (leads in gaps). Allergic rhinitis and ventilator-associated pneumonia both show early positive signal overturned or unreplicated by larger, more rigorous trials, and are recorded here as null/conflicting rather than benefits - the PROSPECT VAP trial in particular is a large definitive RCT, not a thin literature. A cow's-milk-allergy oral-tolerance finding turned up with no matching outcome id and was proposed rather than force-fit; it is now imm-cma-oral-tolerance (leads in gaps).",
+
+  "claims": [
+    {
+      "impact_id": "imm-urti-incidence",
+      "direction": "benefit",
+      "population": "humans",
+      "population_detail": "children (day-care and community settings)",
+      "study_type": ["human_meta"],
+      "evidence_tier": "B",
+      "n_studies": 4,
+      "n_participants": 1805,
+      "independently_replicated": "yes",
+      "consistency": "consistent",
+      "effect_size": "RR 0.62 [0.50-0.78] for upper respiratory infections (SR, 4 RCTs); RR 0.73 [0.57-0.92] in the >1yr subgroup for overall respiratory infections",
+      "bias_assessment": "not_assessed",
+      "industry_funded": "unclear",
+      "tier_rationale": "Liu et al. 2013 SR/meta-analysis (Indian Pediatr), 4 RCTs, n=1805. Also reduced antibiotic use (RR 0.80 [0.71-0.91]) and, in the closely related otitis media outcome, incidence (RR 0.76 [0.64-0.91], NNT 17) - since reconciled into the vocabulary as imm-otitis-media-incidence, see gaps. The abstract does not state that risk of bias was formally appraised with a named tool, so this stays at B rather than A per tier rule 4. The composite 'overall respiratory infections' endpoint (all ages) was not significant; only the URTI-specific and >1yr subgroup results were.",
+      "dose": "1.3x10^7-2.6x10^7 CFU/day in the largest pooled trial (fermented milk); doses in the other 3 pooled trials not confirmed",
+      "duration": "7 months in the largest pooled trial",
+      "delivery_format": "fermented milk",
+      "safety_flags": "",
+      "sources": ["PMID:23665598"],
+      "notes": ""
+    },
+    {
+      "impact_id": "imm-vap",
+      "direction": "no effect",
+      "population": "humans",
+      "population_detail": "critically ill adults on mechanical ventilation (ICU)",
+      "study_type": ["human_rct"],
+      "evidence_tier": "C",
+      "n_studies": 2,
+      "n_participants": 2799,
+      "independently_replicated": "yes",
+      "consistency": "conflicting",
+      "effect_size": "PROSPECT (n=2653): HR 1.03 [0.87-1.22], P=.73, no difference in VAP; earlier Morrow et al. 2010 pilot (n=146) found benefit (19.1% vs 40.0% VAP, P=.007), not replicated at scale",
+      "bias_assessment": "not_assessed",
+      "industry_funded": "none",
+      "tier_rationale": "PROSPECT (Johnstone et al. 2021, JAMA), a large multicentre RCT across 44 ICUs, found no VAP benefit and no difference in mortality, ICU length of stay, C. difficile, or antibiotic use, superseding an earlier small single-center pilot (Morrow et al. 2010) that had found a large benefit. No SR pools the two; direction taken from the larger, more recent, better-powered trial per source policy, with the conflict recorded as 'conflicting' rather than silently dropping the earlier finding. This is not a thin literature - PROSPECT alone is adequately powered - but the disagreement between trials and lack of formal bias appraisal caps it at C.",
+      "dose": "1x10^10 CFU twice daily (PROSPECT, enteral); Morrow 2010 dose not stated in abstract",
+      "duration": "throughout mechanical ventilation (PROSPECT)",
+      "delivery_format": "",
+      "safety_flags": "PROSPECT found L. rhamnosus recovered from a normally sterile site in 15/1318 (1.1%) probiotic-group patients vs 1/1332 (0.1%) controls. See safety-bacteremia in safety.json.",
+      "sources": ["PMID:34546300", "PMID:20522788"],
+      "notes": ""
+    },
+    {
+      "impact_id": "imm-allergic-rhinitis",
+      "direction": "no effect",
+      "population": "humans",
+      "population_detail": "children and young adults with allergic rhinitis (birch-pollen and house-dust-mite sensitized)",
+      "study_type": ["human_rct"],
+      "evidence_tier": "B",
+      "n_studies": 2,
+      "n_participants": 276,
+      "independently_replicated": "yes",
+      "consistency": "consistent",
+      "effect_size": "no significant reduction in nasal, lung, or eye symptoms in either trial versus placebo (numeric effect sizes not reported in the available abstracts)",
+      "bias_assessment": "not_assessed",
+      "industry_funded": "unclear",
+      "tier_rationale": "Two independent double-blind placebo-controlled RCTs, both null: Helin et al. 2002 (n=36, birch-pollen allergic teenagers/young adults, ATCC 53103, 5.5 months) and a 2013 Indian Pediatrics trial (n=240, house-dust-mite-sensitized children, 3 months). No SR pools them, so bias_assessment stays not_assessed, but 2 independent consistent-direction RCTs without an SR is exactly tier B's definition.",
+      "dose": "",
+      "duration": "3-5.5 months across the two trials",
+      "delivery_format": "",
+      "safety_flags": "",
+      "sources": ["PMID:11906339", "DOI:10.1007/s13312-013-0068-2"],
+      "notes": ""
+    }
+  ],
+
+  "proposed_impacts": [],
+
+  "searched_empty": ["imm-vaccine-response"],
+
+  "gaps": "imm-vaccine-response: no single-strain LGG RCT with a vaccine-antibody-titer outcome was found - the infant pneumococcal/pertussis trial used a Bifidobacterium+LGG combination product (not decomposable per tier rule 2), and an elderly-influenza and a healthy-adult B-cell trial exist but were not gradeable as a clinical antibody-response claim from the abstracts available. imm-influenza-like was not searched separately from the URTI/respiratory literature above. imm-otitis-media-incidence and imm-cma-oral-tolerance were reconciled into the vocabulary from this pass's proposals; the graded leads are Liu et al. 2013 SR (PMID:23665598, acute otitis media, RR 0.76 [0.64-0.91], NNT 17) and Tan et al. 2021 SR (PMID:34746056, cow's-milk-allergy oral tolerance, RR 2.22 [1.86-2.66]) - neither row is written yet, so both ids sit in this pass's derived debt."
+}
