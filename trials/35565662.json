@@ -1,0 +1,18 @@
+{"pmid": "35565662",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000039086",
+ "n_randomized": 80,
+ "population": "middle-aged women with mild menopausal symptoms",
+ "arms": [
+   {"entity_as_stated": "heat-inactivated Lactobacillus gasseri CP2305",
+    "strain_codes": ["CP2305"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "heat_killed",
+    "dose_as_stated": "1x10^10 cells per two tablets daily",
+    "weeks": 24,
+    "results": [
+      {"condition": "felt-stress", "result": "not_counted", "reason": "not_measured"}
+    ]}
+ ]}

@@ -1,0 +1,35 @@
+{
+ "pmid": "27013460",
+ "status": "eligible",
+ "design": "not_randomized",
+ "registration": null,
+ "n_randomized": 17,
+ "population": "men aged 41-69 with a slightly raised Athens Insomnia Scale score",
+ "arms": [
+  {
+   "entity_as_stated": "Heat-killed Lactobacillus brevis SBC8803 (SBL88)",
+   "strain_codes": [
+    "SBC8803"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": "25 mg per day",
+   "weeks": 1.4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "ais",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

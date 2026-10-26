@@ -1,0 +1,47 @@
+{
+ "pmid": "32589828",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT03932474",
+ "n_randomized": 90,
+ "population": "adults 18-60 with mild-to-moderate depression",
+ "arms": [
+  {
+   "entity_as_stated": "Lactiplantibacillus plantarum HEAL9 plus S-adenosylmethionine",
+   "strain_codes": [
+    "HEAL9"
+   ],
+   "brand": null,
+   "other_actives": [
+    "S-adenosyl methionine"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "1x10^9 CFU per day",
+   "weeks": 6,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "zung-sds",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "subscale_only"
+    }
+   ]
+  }
+ ]
+}

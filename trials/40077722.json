@@ -1,0 +1,52 @@
+{
+ "pmid": "40077722",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT06496438",
+ "n_randomized": 295,
+ "population": "patients on chemotherapy after surgery for gastrointestinal cancer",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium lactis BS01, B. breve BR03, B. longum BL04 and Lacticaseibacillus rhamnosus GG",
+   "strain_codes": [
+    "BS01",
+    "BR03",
+    "BL04",
+    "GG"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "two sachets per day; 2.5x10^10, 1.0x10^10, 8.0x10^9 and 4.5x10^10 CFU per dose",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "gad-7",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "benefit",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "subscale_only"
+    }
+   ]
+  }
+ ]
+}

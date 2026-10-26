@@ -1,0 +1,66 @@
+{
+ "pmid": "40205027",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 88,
+ "population": "healthy young adult volunteers",
+ "arms": [
+  {
+   "entity_as_stated": "Ecologic Barrier (nine strains)",
+   "strain_codes": [
+    "W23",
+    "W51",
+    "W52",
+    "W37",
+    "W63",
+    "W56",
+    "W24",
+    "W19",
+    "W58"
+   ],
+   "brand": "Ecologic Barrier",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "2 g per day, 2.5x10^9 CFU per gram",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "ces-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-trait",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "panas-negative",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "pmid": "41535300",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": null,
+ "n_randomized": 30,
+ "population": "children with autism spectrum disorder and anxiety",
+ "arms": [
+  {
+   "entity_as_stated": "SCM06 synbiotic (four strains)",
+   "strain_codes": [],
+   "brand": "SCM06",
+   "other_actives": [
+    "maltodextrin",
+    "galacto-oligosaccharide"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "5x10^9 CFU per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Anxiety Scale for Children-ASD (ASC-ASD)"
+    }
+   ]
+  }
+ ]
+}

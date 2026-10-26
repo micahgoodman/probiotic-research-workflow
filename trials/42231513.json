@@ -1,0 +1,18 @@
+{"pmid": "42231513",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000055233",
+ "n_randomized": 40,
+ "population": "healthy adults",
+ "arms": [
+   {"entity_as_stated": "heat-killed Lactobacillus helveticus MCC1848",
+    "strain_codes": ["MCC1848"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "heat_killed",
+    "dose_as_stated": "25 billion cells per day",
+    "weeks": 12,
+    "results": [
+      {"condition": "depression", "result": "not_counted", "reason": "not_measured"}
+    ]}
+ ]}

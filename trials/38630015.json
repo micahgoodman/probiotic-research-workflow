@@ -1,0 +1,30 @@
+{"pmid": "38630015",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT05339243",
+ "n_randomized": 200,
+ "population": "adults with diarrhoea-predominant irritable bowel syndrome",
+ "arms": [
+   {"entity_as_stated": "Bifidobacterium longum CECT 7347 (ES1)",
+    "strain_codes": ["CECT 7347"],
+    "brand": "ES1",
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "two capsules once daily",
+    "weeks": 12,
+    "results": [
+      {"condition": "anxiety", "result": "benefit", "instrument": "stai-state",
+       "comparison": "between_groups", "main_endpoint": "no"}
+    ]},
+   {"entity_as_stated": "Heat-treated Bifidobacterium longum CECT 7347 (HT-ES1)",
+    "strain_codes": ["CECT 7347"],
+    "brand": "HT-ES1",
+    "other_actives": [],
+    "preparation": "heat_killed",
+    "dose_as_stated": "two capsules once daily",
+    "weeks": 12,
+    "results": [
+      {"condition": "anxiety", "result": "benefit", "instrument": "stai-state",
+       "comparison": "between_groups", "main_endpoint": "no"}
+    ]}
+ ]}

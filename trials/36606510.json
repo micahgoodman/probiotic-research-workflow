@@ -1,0 +1,48 @@
+{
+ "pmid": "36606510",
+ "status": "eligible",
+ "design": "not_randomized",
+ "registration": "PACTR202210705998795",
+ "n_randomized": 45,
+ "population": "adults with obesity on a low-carbohydrate reduced-energy diet",
+ "arms": [
+  {
+   "entity_as_stated": "Lactibiane (four strains, Pileje)",
+   "strain_codes": [],
+   "brand": "Lactibiane",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "one tablet per day, 10x10^9 UFC per capsule",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "hads-d",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "hads-a",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "ess",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Cungi brief stress evaluation scale (11 items)"
+    }
+   ]
+  }
+ ]
+}

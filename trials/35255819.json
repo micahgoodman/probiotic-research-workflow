@@ -1,0 +1,28 @@
+{"pmid": "35255819",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT20200106046021N1",
+ "n_randomized": 156,
+ "population": "adults with Helicobacter pylori infection on quadruple eradication therapy",
+ "arms": [
+   {"entity_as_stated": "DAILYEAST (Saccharomyces boulardii)",
+    "strain_codes": [],
+    "brand": "DAILYEAST",
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "one sachet daily for 2 weeks",
+    "weeks": 2,
+    "results": [
+      {"condition": "anxiety", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "anxiety recorded as an adverse-effect symptom"}
+    ]},
+   {"entity_as_stated": "PYLOSHOT (non-viable Lactobacillus reuteri DSMZ 17648 blend)",
+    "strain_codes": ["DSMZ 17648"],
+    "brand": "PYLOSHOT",
+    "other_actives": [],
+    "preparation": "heat_killed",
+    "dose_as_stated": "2 capsules twice daily, >10^9 CFU",
+    "weeks": 2,
+    "results": [
+      {"condition": "anxiety", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "anxiety recorded as an adverse-effect symptom"}
+    ]}
+ ]}

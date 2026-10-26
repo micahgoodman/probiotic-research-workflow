@@ -1,0 +1,36 @@
+{
+ "pmid": "19083380",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": null,
+ "population": "volunteers with symptoms of chronic stress",
+ "arms": [
+  {
+   "entity_as_stated": "Probio-Stick (Lactobacillus acidophilus Rosell-52 and Bifidobacterium longum Rosell-175)",
+   "strain_codes": [
+    "Rosell-52",
+    "Rosell-175"
+   ],
+   "brand": "Probio-Stick",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "3 x 10^9 colony-forming units per sachet stick per day",
+   "weeks": 3,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "psychological symptoms induced by stressful life events"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "sleep problems induced by stressful life events"
+    }
+   ]
+  }
+ ]
+}

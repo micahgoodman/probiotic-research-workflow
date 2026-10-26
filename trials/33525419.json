@@ -1,0 +1,30 @@
+{
+ "pmid": "33525419",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 81,
+ "population": "Korean college students with subjective halitosis",
+ "arms": [
+  {
+   "entity_as_stated": "Weissella cibaria CMU",
+   "strain_codes": [
+    "CMU"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "one tablet daily, dose not stated",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "ces-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

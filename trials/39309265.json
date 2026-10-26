@@ -1,0 +1,39 @@
+{
+ "pmid": "39309265",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ChiCTR2000035122",
+ "n_randomized": 46,
+ "population": "patients with Parkinson's disease",
+ "arms": [
+  {
+   "entity_as_stated": "Bacteroides fragilis BF839 plus earthworm protein",
+   "strain_codes": [
+    "BF839"
+   ],
+   "brand": null,
+   "other_actives": [
+    "earthworm protein"
+   ],
+   "preparation": "live",
+   "dose_as_stated": null,
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "zung-sas",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

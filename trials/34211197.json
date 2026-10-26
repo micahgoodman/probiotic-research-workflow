@@ -1,0 +1,34 @@
+{
+ "pmid": "34211197",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": "CTRI/208/03/12276",
+ "n_randomized": 160,
+ "population": "adults admitted for elective surgery",
+ "arms": [
+  {
+   "entity_as_stated": "Providac (Lactobacillus acidophilus plus Bifidobacterium)",
+   "strain_codes": [],
+   "brand": "Providac",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "5 billion CFU L. acidophilus plus 12 billion CFU Bifidobacterium per capsule, twice daily",
+   "weeks": 0.6,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "benefit",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "psychomotor vigilance task (PVT)"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "pmid": "29723105",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 45,
+ "population": "healthy volunteers aged 20-40",
+ "arms": [
+  {
+   "entity_as_stated": "Ecologic 825 / OmniBiotic Stress Repair (nine strains)",
+   "strain_codes": [
+    "W56",
+    "W22",
+    "W20",
+    "W51",
+    "W24",
+    "W19",
+    "W52",
+    "W62",
+    "W23"
+   ],
+   "brand": "OmniBiotic Stress Repair",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "one 3 g sachet per day (7.5 x 10^6 CFU/g)",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "emotional recognition memory and emotional decision-making tasks during fMRI"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+  "pmid": "21393113",
+  "status": "eligible",
+  "design": "randomized_placebo",
+  "registration": null,
+  "n_randomized": 393,
+  "population": "healthy 12-month-old toddlers",
+  "arms": [
+    {
+      "entity_as_stated": "Milk with Bifidobacterium longum BL999 and Lactobacillus rhamnosus LPR, prebiotics and LCPUFA",
+      "strain_codes": [
+        "BL999",
+        "LPR"
+      ],
+      "brand": null,
+      "other_actives": [
+        "inulin and fructo-oligosaccharides",
+        "long-chain polyunsaturated fatty acids"
+      ],
+      "preparation": "live",
+      "dose_as_stated": "approximately 400 mL/day of the study milk",
+      "weeks": 52,
+      "results": [
+        {
+          "condition": "cognition",
+          "result": "not_counted",
+          "reason": "result_not_accessible"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+ "pmid": "42414927",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": "IRCT20230625058574N1",
+ "n_randomized": 120,
+ "population": "breastfed infants aged 1-5 months with colic",
+ "arms": [
+  {
+   "entity_as_stated": "Pedilact probiotic drops",
+   "strain_codes": [],
+   "brand": "Pedilact",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": null,
+   "weeks": 3,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "parent-reported sleep duration"
+    }
+   ]
+  }
+ ]
+}

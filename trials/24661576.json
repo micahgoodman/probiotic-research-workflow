@@ -1,0 +1,50 @@
+{
+ "pmid": "24661576",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": null,
+ "population": "healthy adults aged 25-65 years",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium animalis subsp. lactis Bi-07",
+   "strain_codes": [
+    "Bi-07"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "10^9 CFU per day",
+   "weeks": 3,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "self-reported mood (vitality and happiness ratings)"
+    }
+   ]
+  },
+  {
+   "entity_as_stated": "Bifidobacterium animalis subsp. lactis Bi-07 with xylo-oligosaccharide",
+   "strain_codes": [
+    "Bi-07"
+   ],
+   "brand": null,
+   "other_actives": [
+    "xylo-oligosaccharide"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "10^9 CFU plus 8 g xylo-oligosaccharide per day",
+   "weeks": 3,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "self-reported mood (vitality and happiness ratings)"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "pmid": "37049546",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04823533",
+ "n_randomized": 135,
+ "population": "healthy adults",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus helveticus R0052 and Bifidobacterium longum R0175",
+   "strain_codes": [
+    "R0052",
+    "R0175"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the accessible text",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

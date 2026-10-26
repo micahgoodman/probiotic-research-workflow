@@ -1,0 +1,59 @@
+{
+  "pmid": "33350361",
+  "status": "eligible",
+  "design": "randomized_other_control",
+  "registration": null,
+  "n_randomized": 150,
+  "population": "infants with colic by Rome III criteria",
+  "arms": [
+    {
+      "entity_as_stated": "Bifidobacterium breve CECT7263",
+      "strain_codes": [
+        "CECT7263"
+      ],
+      "brand": null,
+      "other_actives": [],
+      "preparation": "live",
+      "dose_as_stated": "2x10^8 cfu per day",
+      "weeks": 4,
+      "results": [
+        {
+          "condition": "depression",
+          "result": "not_counted",
+          "reason": "not_measured"
+        },
+        {
+          "condition": "sleep",
+          "result": "not_counted",
+          "reason": "instrument_not_listed",
+          "instrument_as_stated": "parent-reported night sleep"
+        }
+      ]
+    },
+    {
+      "entity_as_stated": "Limosilactobacillus fermentum CECT5716 + Bifidobacterium breve CECT7263",
+      "strain_codes": [
+        "CECT5716",
+        "CECT7263"
+      ],
+      "brand": null,
+      "other_actives": [],
+      "preparation": "live",
+      "dose_as_stated": "1x10^8 cfu per day per strain",
+      "weeks": 4,
+      "results": [
+        {
+          "condition": "depression",
+          "result": "not_counted",
+          "reason": "not_measured"
+        },
+        {
+          "condition": "sleep",
+          "result": "not_counted",
+          "reason": "instrument_not_listed",
+          "instrument_as_stated": "parent-reported night sleep"
+        }
+      ]
+    }
+  ]
+}

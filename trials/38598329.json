@@ -1,0 +1,30 @@
+{
+ "pmid": "38598329",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 70,
+ "population": "adults with schizophrenia on a long-stay ward",
+ "arms": [
+  {
+   "entity_as_stated": "BioZenD probiotic (six strains) plus vitamin D",
+   "strain_codes": [],
+   "brand": "BioZenD",
+   "other_actives": [
+    "vitamin D"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "2x10^9 CFU plus 400 IU vitamin D per capsule, one capsule a day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "benefit",
+     "instrument": "moca",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    }
+   ]
+  }
+ ]
+}

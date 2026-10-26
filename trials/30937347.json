@@ -1,0 +1,48 @@
+{
+ "pmid": "30937347",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 58,
+ "population": "healthy women",
+ "arms": [
+  {
+   "entity_as_stated": "Ecologic Barrier (multispecies)",
+   "strain_codes": [],
+   "brand": "Ecologic Barrier",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "2 g once daily",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "vas-stress",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "digit span working memory test and fMRI cognitive control tasks"
+    }
+   ]
+  }
+ ]
+}

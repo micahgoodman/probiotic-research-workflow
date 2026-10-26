@@ -1,0 +1,72 @@
+{
+ "pmid": "33842519",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": "NCT04452253-sub-project 2",
+ "n_randomized": 36,
+ "population": "information technology specialists with high perceived stress",
+ "arms": [
+  {
+   "entity_as_stated": "Lactiplantibacillus plantarum PS128",
+   "strain_codes": [
+    "PS128"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "20 billion CFU per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "benefit",
+     "instrument": "pss",
+     "comparison": "within_group",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "stai-state",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cortisol",
+     "result": "benefit",
+     "instrument": "cortisol-saliva",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "isi",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "phq-9",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "benefit",
+     "instrument": "vas-stress",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "stai-trait",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

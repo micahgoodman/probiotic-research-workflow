@@ -1,0 +1,84 @@
+{
+ "pmid": "35129111",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT03801655",
+ "n_randomized": 71,
+ "population": "adults with untreated mild to moderate depression",
+ "arms": [
+  {
+   "entity_as_stated": "Bio-Kult Advanced (14 strains)",
+   "strain_codes": [
+    "PXN 21",
+    "PXN 23",
+    "PXN 25",
+    "PXN 27",
+    "PXN 30",
+    "PXN 35",
+    "PXN 37",
+    "PXN 39",
+    "PXN 45",
+    "PXN 47",
+    "PXN 54",
+    "PXN 57",
+    "PXN 63",
+    "PXN 66"
+   ],
+   "brand": "Bio-Kult Advanced",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "2x10^9 CFU per capsule, daily",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "phq-9",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "actigraphy-efficiency",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "auditory verbal learning task and probabilistic instrumental learning task"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "panas-negative",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-trait",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "pmid": "29933559",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 49,
+ "population": "healthy Japanese men aged 30-49 who feel fatigued every summer",
+ "arms": [
+  {
+   "entity_as_stated": "Yogurt fermented with Lactobacillus delbrueckii subsp. bulgaricus OLL1073R-1",
+   "strain_codes": [
+    "OLL1073R-1"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "yogurt once a day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "visual analogue scale items for sleep quality and difficulty falling asleep"
+    }
+   ]
+  }
+ ]
+}

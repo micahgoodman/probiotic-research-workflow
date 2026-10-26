@@ -1,0 +1,44 @@
+{
+ "pmid": "41097163",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 79,
+ "population": "adults scoring HAMD-17 >= 8 or HAMA-14 >= 7",
+ "arms": [
+  {
+   "entity_as_stated": "Weizmannia coagulans BC99",
+   "strain_codes": [
+    "BC99"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "3 g per day, 5x10^9 CFU",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "ham-a",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

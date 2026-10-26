@@ -1,0 +1,44 @@
+{
+ "pmid": "42293218",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000056164",
+ "n_randomized": 28,
+ "population": "healthy adults aged 20 to 44",
+ "arms": [
+  {
+   "entity_as_stated": "heat-treated Lactobacillus gasseri CP2305",
+   "strain_codes": [
+    "CP2305"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": "single dose of 1x10^10 cells",
+   "weeks": null,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "poms-tension",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "poms-depression",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "benefit",
+     "instrument": "vas-stress",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

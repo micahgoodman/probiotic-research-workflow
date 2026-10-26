@@ -1,0 +1,71 @@
+{
+ "pmid": "31405122",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000027303",
+ "n_randomized": 60,
+ "population": "healthy Japanese medical students preparing for a national examination",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus gasseri CP2305, heat-inactivated",
+   "strain_codes": [
+    "CP2305"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": "one tablet once daily",
+   "weeks": 24,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "100 mm visual analogue scale of stress-associated symptoms (mental irritability)"
+    },
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "stai-trait",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "hads-a",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "hads-d",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    }
+   ]
+  }
+ ]
+}

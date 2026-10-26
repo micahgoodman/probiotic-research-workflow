@@ -1,0 +1,28 @@
+{
+ "pmid": "40583505",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": null,
+ "population": "patients with mild cognitive impairment",
+ "arms": [
+  {
+   "entity_as_stated": "MT104 (Cuscuta seeds with heat-killed probiotics)",
+   "strain_codes": [],
+   "brand": "MT104",
+   "other_actives": [
+    "Cuscuta seed extract"
+   ],
+   "preparation": "heat_killed",
+   "dose_as_stated": "not stated",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

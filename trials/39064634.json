@@ -1,0 +1,37 @@
+{
+ "pmid": "39064634",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 120,
+ "population": "healthy Japanese adults aged 20-59 with a tendency toward constipation",
+ "arms": [
+  {
+   "entity_as_stated": "Heat-treated Lactobacillus helveticus CP790-fermented milk",
+   "strain_codes": [
+    "CP790"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": "100 mL a day",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "poms-depression",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "poms-total",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

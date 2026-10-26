@@ -1,0 +1,43 @@
+{
+  "pmid": "16957676",
+  "status": "eligible",
+  "design": "randomized_placebo",
+  "registration": null,
+  "n_randomized": 89,
+  "population": "symptomatic menopausal women with sleep or mood alterations",
+  "arms": [
+    {
+      "entity_as_stated": "Estromineral serena (soy isoflavones, lactobacilli, Magnolia bark extract, magnesium)",
+      "strain_codes": [],
+      "brand": "Estromineral serena",
+      "other_actives": [
+        "soy isoflavones",
+        "Magnolia bark extract",
+        "magnesium"
+      ],
+      "preparation": "live",
+      "dose_as_stated": "1 tablet/day containing lactobacilli 500 million spores",
+      "weeks": 24,
+      "results": [
+        {
+          "condition": "anxiety",
+          "result": "not_counted",
+          "reason": "instrument_not_listed",
+          "instrument_as_stated": "severity and frequency rating of the symptom 'anxiety'"
+        },
+        {
+          "condition": "depression",
+          "result": "not_counted",
+          "reason": "instrument_not_listed",
+          "instrument_as_stated": "severity and frequency rating of the symptom 'mood depression'"
+        },
+        {
+          "condition": "sleep",
+          "result": "not_counted",
+          "reason": "instrument_not_listed",
+          "instrument_as_stated": "severity and frequency rating of the symptom 'insomnia'"
+        }
+      ]
+    }
+  ]
+}

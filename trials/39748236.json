@@ -1,0 +1,38 @@
+{
+ "pmid": "39748236",
+ "status": "eligible",
+ "design": "not_randomized",
+ "registration": null,
+ "n_randomized": 11,
+ "population": "elite soccer players in the controlled phase; 257 general-population adults took part in an earlier open-label phase",
+ "arms": [
+  {
+   "entity_as_stated": "Nella (three Lactobacillus strains)",
+   "strain_codes": [
+    "FB0012",
+    "FB0015",
+    "FB0047"
+   ],
+   "brand": "Nella",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "10 billion CFU per day",
+   "weeks": null,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "12-item self-report questionnaire of sleep quality"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

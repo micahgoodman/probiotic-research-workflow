@@ -1,0 +1,30 @@
+{
+ "pmid": "41156564",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "KCT0009298",
+ "n_randomized": 100,
+ "population": "adults aged 55-80 with mild cognitive impairment",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus delbrueckii subsp. lactis CKDB001",
+   "strain_codes": [
+    "CKDB001"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "5.0x10^9 CFU per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "benefit",
+     "instrument": "adas-cog",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    }
+   ]
+  }
+ ]
+}

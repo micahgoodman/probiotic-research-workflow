@@ -1,0 +1,42 @@
+{
+ "pmid": "41597376",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": null,
+ "n_randomized": 30,
+ "population": "adults with subjective cognitive decline or mild cognitive impairment",
+ "arms": [
+  {
+   "entity_as_stated": "ExoBDNF (Pediococcus acidilactici)",
+   "strain_codes": [],
+   "brand": "ExoBDNF",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": null,
+   "weeks": 9,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "benefit",
+     "instrument": "moca",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cognition",
+     "result": "no_difference",
+     "instrument": "mmse",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "psqi",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

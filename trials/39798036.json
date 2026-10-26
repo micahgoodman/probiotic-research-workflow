@@ -1,0 +1,33 @@
+{
+ "pmid": "39798036",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT05167110",
+ "n_randomized": 80,
+ "population": "children and adolescents aged 5-16 with ADHD or autism spectrum disorder",
+ "arms": [
+  {
+   "entity_as_stated": "L. plantarum CECT7485 + L. brevis CECT7480 with vitamin D",
+   "strain_codes": [
+    "CECT7485",
+    "CECT7480"
+   ],
+   "brand": null,
+   "other_actives": [
+    "vitamin D"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "1x10^9 CFU per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "sdsc",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

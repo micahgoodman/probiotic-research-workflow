@@ -1,0 +1,49 @@
+{
+ "pmid": "37497057",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 140,
+ "population": "Chinese adults with functional constipation or functional diarrhea",
+ "arms": [
+  {
+   "entity_as_stated": "WONDERLAB six-strain probiotic formula (NCFM, HN019, Bl-04, B420, Lp-115, Lpc-37) with prebiotics",
+   "strain_codes": [
+    "NCFM",
+    "HN019",
+    "Bl-04",
+    "B420",
+    "Lp-115",
+    "Lpc-37"
+   ],
+   "brand": "WONDERLAB",
+   "other_actives": [
+    "prebiotics"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "4x10^10 CFU per day",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "benefit",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Hospital Anxiety and Depression (HAD) questionnaire, combined 14-item total score"
+    },
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Hospital Anxiety and Depression (HAD) questionnaire, combined 14-item total score"
+    }
+   ]
+  }
+ ]
+}

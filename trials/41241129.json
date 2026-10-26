@@ -1,0 +1,30 @@
+{
+ "pmid": "41241129",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": null,
+ "population": "adults in a safety and efficacy trial",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus delbrueckii subsp. bulgaricus LB42",
+   "strain_codes": [
+    "LB42"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": null,
+   "weeks": null,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "psqi",
+     "comparison": "not_stated",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

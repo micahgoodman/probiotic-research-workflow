@@ -1,0 +1,26 @@
+{
+ "pmid": "42486470",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT07527286",
+ "n_randomized": 76,
+ "population": "generally healthy adults",
+ "arms": [
+  {
+   "entity_as_stated": "Keystone fermented pasteurised oat preparation",
+   "strain_codes": [],
+   "brand": "Keystone",
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": null,
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

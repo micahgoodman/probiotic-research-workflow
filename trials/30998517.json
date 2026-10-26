@@ -1,0 +1,19 @@
+{"pmid": "30998517",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 40,
+ "population": "healthy adult volunteers",
+ "arms": [
+   {"entity_as_stated": "Bifidobacterium longum 1714",
+    "strain_codes": ["1714"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "1 x 10^9 cfu per day",
+    "weeks": 4,
+    "results": [
+      {"condition": "cortisol", "result": "not_counted", "reason": "not_measured"},
+      {"condition": "felt-stress", "result": "not_counted", "reason": "not_measured"}
+    ]}
+ ]}

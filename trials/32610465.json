@@ -1,0 +1,35 @@
+{
+ "pmid": "32610465",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 20,
+ "population": "male competitive football players",
+ "arms": [
+  {
+   "entity_as_stated": "Lacticaseibacillus casei Shirota",
+   "strain_codes": [
+    "Shirota"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "3x10^10 CFU per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "EEG, heart rate and electrodermal response (anxiety-induced physiological parameters)"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Digit Vigilance Test reaction time"
+    }
+   ]
+  }
+ ]
+}

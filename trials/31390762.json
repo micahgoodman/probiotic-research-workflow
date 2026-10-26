@@ -1,0 +1,32 @@
+{"pmid": "31390762",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ACTRN12610001021066",
+ "n_randomized": 61,
+ "population": "adults with cirrhosis and overt hepatic encephalopathy",
+ "arms": [
+   {"entity_as_stated": "Synbiotic 2000 Forte (four strains with fibres)",
+    "strain_codes": [],
+    "brand": "Synbiotic 2000 Forte",
+    "other_actives": ["oat bran", "pectin", "resistant starch", "inulin"],
+    "preparation": "live",
+    "dose_as_stated": "one 10 g sachet daily (4 x 10 x 10^11 CFU)",
+    "weeks": 8,
+    "results": [
+      {"condition": "anxiety", "result": "no_difference", "instrument": "dass-anxiety", "comparison": "between_groups", "main_endpoint": "not_stated"},
+      {"condition": "depression", "result": "no_difference", "instrument": "dass-depression", "comparison": "between_groups", "main_endpoint": "not_stated"},
+      {"condition": "cognition", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "Trail Making Test and Inhibitory Control Test"}
+    ]},
+   {"entity_as_stated": "Synbiotic 2000 Forte plus branched chain amino acids",
+    "strain_codes": [],
+    "brand": "Synbiotic 2000 Forte",
+    "other_actives": ["oat bran", "pectin", "resistant starch", "inulin", "branched chain amino acids"],
+    "preparation": "live",
+    "dose_as_stated": "one 10 g sachet daily plus a BCAA supplement at night",
+    "weeks": 8,
+    "results": [
+      {"condition": "anxiety", "result": "no_difference", "instrument": "dass-anxiety", "comparison": "between_groups", "main_endpoint": "not_stated"},
+      {"condition": "depression", "result": "no_difference", "instrument": "dass-depression", "comparison": "between_groups", "main_endpoint": "not_stated"},
+      {"condition": "cognition", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "Trail Making Test and Inhibitory Control Test"}
+    ]}
+ ]}

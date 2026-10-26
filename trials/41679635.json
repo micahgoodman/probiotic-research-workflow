@@ -1,0 +1,45 @@
+{
+ "pmid": "41679635",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 78,
+ "population": "healthy Japanese medical students under exam stress",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus paragasseri OLL2716 yogurt",
+   "strain_codes": [
+    "OLL2716"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "85 g yogurt per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cortisol",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "not_measured"
+    }
+   ]
+  }
+ ]
+}

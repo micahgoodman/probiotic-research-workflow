@@ -1,0 +1,30 @@
+{
+ "pmid": "42652979",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": null,
+ "n_randomized": 78,
+ "population": "patients on maintenance hemodialysis",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus casei var. rhamnosus LCR35",
+   "strain_codes": [
+    "LCR35"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "three sachets daily",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "pmid": "41050503",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ChiCTR2200055780",
+ "n_randomized": 108,
+ "population": "adults with major depressive disorder and gastrointestinal symptoms, all taking Morinda officinalis oligosaccharides",
+ "arms": [
+  {
+   "entity_as_stated": "Lacticaseibacillus paracasei L9, Bifidobacterium animalis subsp. lactis A6, Bifidobacterium bifidum B09 and Lactiplantibacillus plantarum LP06",
+   "strain_codes": [
+    "L9",
+    "A6",
+    "B09",
+    "LP06"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "subscale_only"
+    }
+   ]
+  }
+ ]
+}

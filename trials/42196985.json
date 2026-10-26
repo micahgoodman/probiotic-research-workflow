@@ -1,0 +1,25 @@
+{"pmid": "42196985",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "KCT0011568",
+ "n_randomized": 80,
+ "population": "adults aged 19 to 65 with sleep disturbance",
+ "arms": [
+   {"entity_as_stated": "Bacillus coagulans IDCC 1201",
+    "strain_codes": ["IDCC 1201"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "5.0x10^9 CFU per day",
+    "weeks": 4,
+    "results": [
+      {"condition": "sleep", "result": "benefit", "instrument": "psqi",
+       "comparison": "between_groups", "main_endpoint": "no"},
+      {"condition": "sleep", "result": "benefit", "instrument": "psg-efficiency",
+       "comparison": "between_groups", "main_endpoint": "yes"},
+      {"condition": "sleep", "result": "no_difference", "instrument": "isi",
+       "comparison": "between_groups", "main_endpoint": "no"},
+      {"condition": "felt-stress", "result": "no_difference", "instrument": "pss",
+       "comparison": "between_groups", "main_endpoint": "no"}
+    ]}
+ ]}

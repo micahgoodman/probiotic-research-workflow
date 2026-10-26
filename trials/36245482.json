@@ -1,0 +1,40 @@
+{
+ "pmid": "36245482",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT20191127045525N1",
+ "n_randomized": 74,
+ "population": "adults with obesity and depressed mood",
+ "arms": [
+  {
+   "entity_as_stated": "Probio-Tec BG-VCap-6.5 (LGG and BB-12) plus magnesium chloride",
+   "strain_codes": [
+    "LGG",
+    "BB-12"
+   ],
+   "brand": "Probio-Tec BG-VCap-6.5",
+   "other_actives": [
+    "magnesium chloride"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the abstract",
+   "weeks": 9,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cognition",
+     "result": "no_difference",
+     "instrument": "moca",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

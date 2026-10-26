@@ -1,0 +1,28 @@
+{
+ "pmid": "38361371",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT03259971",
+ "n_randomized": null,
+ "population": "individuals with Rett syndrome",
+ "arms": [
+  {
+   "entity_as_stated": "Lactiplantibacillus plantarum PS128",
+   "strain_codes": [
+    "PS128"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated",
+   "weeks": null,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

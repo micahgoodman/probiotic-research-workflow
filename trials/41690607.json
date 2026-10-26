@@ -1,0 +1,28 @@
+{
+ "pmid": "41690607",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 60,
+ "population": "adults who drink alcohol chronically",
+ "arms": [
+  {
+   "entity_as_stated": "Weizmannia coagulans BC99",
+   "strain_codes": [
+    "BC99"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "daily for 60 days",
+   "weeks": 8.6,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "not_measured"
+    }
+   ]
+  }
+ ]
+}

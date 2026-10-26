@@ -1,0 +1,33 @@
+{
+ "pmid": "41637999",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 130,
+ "population": "adults with self-reported poor sleep (PSQI>5)",
+ "arms": [
+  {
+   "entity_as_stated": "OMNiBiOTiC STRESS Repair multispecies probiotic",
+   "strain_codes": [],
+   "brand": "OMNiBiOTiC STRESS Repair",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "daily for 28 days",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

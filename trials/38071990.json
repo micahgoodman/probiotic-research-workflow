@@ -1,0 +1,39 @@
+{
+ "pmid": "38071990",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04950803",
+ "n_randomized": 463,
+ "population": "adults in Hong Kong with post-acute COVID-19 syndrome",
+ "arms": [
+  {
+   "entity_as_stated": "SIM01 synbiotic",
+   "strain_codes": [],
+   "brand": "SIM01",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "10 billion CFU in sachets twice daily",
+   "weeks": 26,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "interviewer-administered 14-item PACS symptom questionnaire, insomnia item"
+    },
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "interviewer-administered 14-item PACS symptom questionnaire, mood disturbance item"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "interviewer-administered 14-item PACS symptom questionnaire, memory loss and difficulty in concentration items"
+    }
+   ]
+  }
+ ]
+}

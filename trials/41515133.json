@@ -1,0 +1,29 @@
+{"pmid": "41515133",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 84,
+ "population": "adults aged 20-60 with poor sleep",
+ "arms": [
+   {"entity_as_stated": "heat-treated Limosilactobacillus fermentum PS150",
+    "strain_codes": ["PS150"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "heat_killed",
+    "dose_as_stated": null,
+    "weeks": 8,
+    "results": [
+      {"condition": "sleep", "result": "no_difference", "instrument": "psqi",
+       "comparison": "between_groups", "main_endpoint": "yes"},
+      {"condition": "sleep", "result": "no_difference", "instrument": "isi",
+       "comparison": "between_groups", "main_endpoint": "yes"},
+      {"condition": "sleep", "result": "no_difference", "instrument": "actigraphy-efficiency",
+       "comparison": "between_groups", "main_endpoint": "no"},
+      {"condition": "anxiety", "result": "no_difference", "instrument": "gad-7",
+       "comparison": "between_groups", "main_endpoint": "no"},
+      {"condition": "depression", "result": "no_difference", "instrument": "phq-9",
+       "comparison": "between_groups", "main_endpoint": "no"},
+      {"condition": "cortisol", "result": "no_difference", "instrument": "cortisol-saliva",
+       "comparison": "between_groups", "main_endpoint": "no"}
+    ]}
+ ]}

@@ -1,0 +1,21 @@
+{"pmid": "35570493",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000031507",
+ "n_randomized": 130,
+ "population": "older adults aged 65 to 88 with suspected mild cognitive impairment",
+ "arms": [
+   {"entity_as_stated": "Bifidobacterium breve MCC1274",
+    "strain_codes": ["MCC1274"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "2x10^10 CFU once daily",
+    "weeks": 24,
+    "results": [
+      {"condition": "cognition", "result": "no_difference", "instrument": "adas-cog",
+       "comparison": "between_groups", "main_endpoint": "yes"},
+      {"condition": "cognition", "result": "no_difference", "instrument": "mmse",
+       "comparison": "between_groups", "main_endpoint": "no"}
+    ]}
+ ]}

@@ -1,0 +1,54 @@
+{
+ "pmid": "32601955",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "CTRI/2019/03/018178",
+ "n_randomized": 80,
+ "population": "university students aged 18-24 facing examination stress",
+ "arms": [
+  {
+   "entity_as_stated": "Multi-strain probiotic with glutamine (Bacillus coagulans Unique IS2 and five others)",
+   "strain_codes": [
+    "Unique IS2",
+    "UBLR58",
+    "UBBLa70",
+    "UBLP40",
+    "UBBr01",
+    "UBBI01"
+   ],
+   "brand": null,
+   "other_actives": [
+    "glutamine"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "10 billion CFU per capsule, twice a day",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "benefit",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cortisol",
+     "result": "benefit",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

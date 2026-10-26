@@ -1,0 +1,26 @@
+{
+ "pmid": "39106427",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": null,
+ "n_randomized": 6,
+ "population": "adults with long COVID",
+ "arms": [
+  {
+   "entity_as_stated": "Abiprol and Brexibiol paraprobiotics (inactivated bacteria)",
+   "strain_codes": [],
+   "brand": "Abiprol + Brexibiol",
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": "2 capsules Abiprol (800 mg) and 2 capsules Brexibiol (1.12 g) daily",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

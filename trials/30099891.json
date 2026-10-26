@@ -1,0 +1,18 @@
+{"pmid": "30099891",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 241,
+ "population": "healthy young adults",
+ "arms": [
+   {"entity_as_stated": "Lactobacillus paracasei MCC1849 (LAC-Shield), heat-killed",
+    "strain_codes": ["MCC1849"],
+    "brand": "LAC-Shield",
+    "other_actives": [],
+    "preparation": "heat_killed",
+    "dose_as_stated": "3 x 10^10 heat-killed cells per day",
+    "weeks": 12,
+    "results": [
+      {"condition": "depression", "result": "not_counted", "reason": "result_not_accessible"}
+    ]}
+ ]}

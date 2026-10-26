@@ -1,0 +1,37 @@
+{
+ "pmid": "27336009",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": "NCT01210391",
+ "n_randomized": 282,
+ "population": "healthy formula-fed term infants",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium animalis subsp. lactis CNCM I-3446",
+   "strain_codes": [
+    "CNCM I-3446"
+   ],
+   "brand": null,
+   "other_actives": [
+    "100% whey extensively hydrolyzed formula base",
+    "medium chain triglycerides"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "not stated",
+   "weeks": 14,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "not_measured"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "caregiver-recorded longest stretch of sleep"
+    }
+   ]
+  }
+ ]
+}

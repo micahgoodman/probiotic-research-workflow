@@ -1,0 +1,561 @@
+{
+ "_comment": "Accepted by the user, 20 September 2026. The six conditions (RULES.md rule 1), the PubMed search words (rule 2) and the ranked score lists (rule 5). Scores are ranked: clinician-rated first, then a questionnaire made for the one condition, then a part of a mixed questionnaire. This file round-trips through json.dump(indent=2). Updated 20 September 2026 after the pilot: validated short forms count as the parent score and are listed in its aliases; child scores added to sleep and cognition. Updated 21 September 2026 after wave 2: added the child scores CDI, SCARED and SCAS; the Zung SDS and SAS; the POMS total mood disturbance; and the PANAS. Each sits by rule 5's order, so a clinician-rated score still outranks a self-rated one and a mixed questionnaire still comes last. Corrected the same day: the PANAS entry is the negative affect scale only. PANAS has no total score, and on its positive affect scale a good result is a HIGHER score, which this condition would have read as harm. A paper reporting only positive affect is instrument_not_listed. Updated 18 October 2026 under rule 5's admission test: added PAS, PRAS-ASD, ASC-ASD, the Goldberg scale's two scores and the CBCL anxiety problems scale (anxiety); the GDS, PROMIS depression (depression); the Levenstein PSQ (felt-stress); ESS and PDSS (sleep); PHES and the Mullen composite (cognition). Refusals are listed in notes/score-admissions.md.",
+ "search": {
+  "probiotic_terms": "(probiotics[mh] OR probiotic*[tiab] OR psychobiotic*[tiab] OR paraprobiotic*[tiab] OR postbiotic*[tiab] OR synbiotic*[tiab] OR lactobacill*[tiab] OR lacticaseibacillus[tiab] OR lactiplantibacillus[tiab] OR limosilactobacillus[tiab] OR bifidobacteri*[tiab] OR \"fermented milk\"[tiab])",
+  "study_terms": "(randomized controlled trial[pt] OR clinical trial[pt] OR clinical study[pt] OR observational study[pt] OR randomized[tiab] OR randomised[tiab] OR pilot[tiab] OR open-label[tiab] OR single-arm[tiab])",
+  "human_terms": "NOT (animals[mh] NOT humans[mh])"
+ },
+ "conditions": [
+  {
+   "id": "felt-stress",
+   "label": "Felt stress",
+   "benefit_means": "a lower score",
+   "pubmed_terms": "(\"stress, psychological\"[mh] OR \"perceived stress\"[tiab] OR \"psychological stress\"[tiab] OR stress[ti])",
+   "instruments": [
+    {
+     "id": "pss",
+     "label": "Perceived Stress Scale, total score",
+     "aliases": [
+      "PSS",
+      "PSS-10",
+      "PSS-14",
+      "PSS-4"
+     ]
+    },
+    {
+     "id": "psq",
+     "label": "Perceived Stress Questionnaire total (Levenstein)",
+     "aliases": [
+      "PSQ",
+      "Levenstein"
+     ]
+    },
+    {
+     "id": "dass-stress",
+     "label": "DASS stress subscale",
+     "aliases": [
+      "DASS-21 stress",
+      "DASS-42 stress"
+     ]
+    },
+    {
+     "id": "vas-stress",
+     "label": "Visual analogue scale of stress",
+     "aliases": [
+      "VAS stress"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cortisol",
+   "label": "Cortisol level",
+   "benefit_means": "a lower level",
+   "pubmed_terms": "(hydrocortisone[mh] OR cortisol[tiab])",
+   "instruments": [
+    {
+     "id": "cortisol-saliva",
+     "label": "Cortisol in saliva, including the cortisol awakening response",
+     "aliases": [
+      "salivary cortisol",
+      "CAR"
+     ]
+    },
+    {
+     "id": "cortisol-blood",
+     "label": "Cortisol in serum or plasma",
+     "aliases": [
+      "serum cortisol",
+      "plasma cortisol"
+     ]
+    },
+    {
+     "id": "cortisol-urine",
+     "label": "Free cortisol in urine",
+     "aliases": [
+      "urinary free cortisol",
+      "UFC"
+     ]
+    },
+    {
+     "id": "cortisol-hair",
+     "label": "Cortisol in hair",
+     "aliases": [
+      "hair cortisol"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "anxiety",
+   "label": "Anxiety",
+   "benefit_means": "a lower score",
+   "pubmed_terms": "(anxiety[mh] OR \"anxiety disorders\"[mh] OR anxiety[tiab] OR anxious[tiab])",
+   "instruments": [
+    {
+     "id": "ham-a",
+     "label": "Hamilton Anxiety Rating Scale, total score",
+     "aliases": [
+      "HAM-A",
+      "HAMA",
+      "HARS"
+     ]
+    },
+    {
+     "id": "stai-state",
+     "label": "State-Trait Anxiety Inventory, state score",
+     "aliases": [
+      "STAI state",
+      "STAI state 6-item short form",
+      "STAI-6",
+      "STAI-S",
+      "STAI-Y1",
+      "STAI6"
+     ]
+    },
+    {
+     "id": "stai-trait",
+     "label": "State-Trait Anxiety Inventory, trait score",
+     "aliases": [
+      "STAI-T",
+      "STAI trait",
+      "STAI-Y2"
+     ]
+    },
+    {
+     "id": "bai",
+     "label": "Beck Anxiety Inventory, total score",
+     "aliases": [
+      "BAI"
+     ]
+    },
+    {
+     "id": "gad-7",
+     "label": "GAD-7, total score",
+     "aliases": [
+      "GAD-7",
+      "GAD7"
+     ]
+    },
+    {
+     "id": "scared",
+     "label": "Screen for Child Anxiety Related Emotional Disorders (child)",
+     "aliases": [
+      "SCARED",
+      "SCARED-R"
+     ]
+    },
+    {
+     "id": "scas",
+     "label": "Spence Children's Anxiety Scale (child)",
+     "aliases": [
+      "SCAS",
+      "SCAS-P",
+      "Spence Children's Anxiety Scale"
+     ]
+    },
+    {
+     "id": "zung-sas",
+     "label": "Zung Self-Rating Anxiety Scale",
+     "aliases": [
+      "SAS",
+      "Zung SAS",
+      "Self-Rating Anxiety Scale"
+     ]
+    },
+    {
+     "id": "pas",
+     "label": "Parkinson Anxiety Scale total",
+     "aliases": [
+      "PAS"
+     ]
+    },
+    {
+     "id": "pras-asd",
+     "label": "Parent-Rated Anxiety Scale for ASD total",
+     "aliases": [
+      "PRAS-ASD"
+     ]
+    },
+    {
+     "id": "asc-asd",
+     "label": "Anxiety Scale for Children - ASD total",
+     "aliases": [
+      "ASC-ASD"
+     ]
+    },
+    {
+     "id": "hads-a",
+     "label": "HADS anxiety subscale",
+     "aliases": [
+      "HADS-A"
+     ]
+    },
+    {
+     "id": "dass-anxiety",
+     "label": "DASS anxiety subscale",
+     "aliases": [
+      "DASS-21 anxiety",
+      "DASS-42 anxiety"
+     ]
+    },
+    {
+     "id": "gads-anxiety",
+     "label": "Goldberg Anxiety and Depression Scale, anxiety score",
+     "aliases": [
+      "Goldberg anxiety scale",
+      "GADS anxiety",
+      "Goldberg Anxiety and Depression Scale",
+      "Goldberg Scale"
+     ]
+    },
+    {
+     "id": "poms-tension",
+     "label": "POMS tension-anxiety subscale",
+     "aliases": [
+      "POMS-TA"
+     ]
+    },
+    {
+     "id": "cbcl-anxiety",
+     "label": "Child Behavior Checklist, DSM-oriented anxiety problems scale",
+     "aliases": [
+      "CBCL anxiety problems",
+      "Child Behavior Checklist anxiety problems"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sleep",
+   "label": "Sleep",
+   "benefit_means": "better sleep on the score named",
+   "pubmed_terms": "(sleep[mh] OR \"sleep wake disorders\"[mh] OR sleep[tiab] OR insomnia[tiab])",
+   "instruments": [
+    {
+     "id": "psqi",
+     "label": "Pittsburgh Sleep Quality Index, global score",
+     "aliases": [
+      "PSQI"
+     ]
+    },
+    {
+     "id": "isi",
+     "label": "Insomnia Severity Index, total score",
+     "aliases": [
+      "ISI"
+     ]
+    },
+    {
+     "id": "ais",
+     "label": "Athens Insomnia Scale, total score",
+     "aliases": [
+      "AIS"
+     ]
+    },
+    {
+     "id": "osa-ma",
+     "label": "OSA Sleep Inventory MA version",
+     "aliases": [
+      "OSA-MA",
+      "OSA sleep inventory"
+     ]
+    },
+    {
+     "id": "lseq",
+     "label": "Leeds Sleep Evaluation Questionnaire",
+     "aliases": [
+      "LSEQ"
+     ]
+    },
+    {
+     "id": "ess",
+     "label": "Epworth Sleepiness Scale total",
+     "aliases": [
+      "ESS",
+      "Epworth"
+     ]
+    },
+    {
+     "id": "pdss",
+     "label": "Parkinson's Disease Sleep Scale total",
+     "aliases": [
+      "PDSS",
+      "PDSS-2"
+     ]
+    },
+    {
+     "id": "actigraphy-efficiency",
+     "label": "Sleep efficiency measured by actigraphy",
+     "aliases": [
+      "actigraphy"
+     ]
+    },
+    {
+     "id": "psg-efficiency",
+     "label": "Sleep efficiency measured in a sleep laboratory",
+     "aliases": [
+      "polysomnography",
+      "PSG"
+     ]
+    },
+    {
+     "id": "sdsc",
+     "label": "Sleep Disturbance Scale for Children, total score",
+     "aliases": [
+      "SDSC",
+      "Bruni Sleep Disturbance Scale for Children"
+     ]
+    },
+    {
+     "id": "cshq",
+     "label": "Children's Sleep Habits Questionnaire total (parent-rated)",
+     "aliases": [
+      "CSHQ",
+      "Children's Sleep Habits Questionnaire",
+      "Child's Sleep Habits Questionnaire"
+     ]
+    },
+    {
+     "id": "ssr",
+     "label": "Sleep Self-Report total (child)",
+     "aliases": [
+      "SSR",
+      "Sleep Self-Report"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "depression",
+   "label": "Depression",
+   "benefit_means": "a lower score",
+   "pubmed_terms": "(depression[mh] OR \"depressive disorder\"[mh] OR depress*[tiab] OR mood[tiab])",
+   "instruments": [
+    {
+     "id": "ham-d",
+     "label": "Hamilton Depression Rating Scale, total score",
+     "aliases": [
+      "HAM-D",
+      "HAMD",
+      "HDRS"
+     ]
+    },
+    {
+     "id": "madrs",
+     "label": "Montgomery-Asberg Depression Rating Scale, total score",
+     "aliases": [
+      "MADRS"
+     ]
+    },
+    {
+     "id": "bdi",
+     "label": "Beck Depression Inventory, total score",
+     "aliases": [
+      "BDI",
+      "BDI-II"
+     ]
+    },
+    {
+     "id": "phq-9",
+     "label": "PHQ-9, total score",
+     "aliases": [
+      "PHQ-9",
+      "PHQ9"
+     ]
+    },
+    {
+     "id": "ces-d",
+     "label": "CES-D, total score",
+     "aliases": [
+      "CES-D",
+      "CESD",
+      "CESD-R",
+      "CES-D-R"
+     ]
+    },
+    {
+     "id": "epds",
+     "label": "Edinburgh Postnatal Depression Scale, total score",
+     "aliases": [
+      "EPDS"
+     ]
+    },
+    {
+     "id": "cdi",
+     "label": "Children's Depression Inventory (child)",
+     "aliases": [
+      "CDI",
+      "CDI-2",
+      "CDI-TW"
+     ]
+    },
+    {
+     "id": "zung-sds",
+     "label": "Zung Self-Rating Depression Scale",
+     "aliases": [
+      "SDS",
+      "Zung SDS",
+      "Z-SDS",
+      "Self-Rating Depression Scale"
+     ]
+    },
+    {
+     "id": "gds",
+     "label": "Geriatric Depression Scale total",
+     "aliases": [
+      "Geriatric Depression Scale",
+      "GDS-15",
+      "GDS-30",
+      "SGDS",
+      "GDS-K"
+     ]
+    },
+    {
+     "id": "promis-depression",
+     "label": "PROMIS depression short form",
+     "aliases": [
+      "PROMIS depression",
+      "PROMIS Depression 4a",
+      "PROMIS Depression 8a"
+     ]
+    },
+    {
+     "id": "hads-d",
+     "label": "HADS depression subscale",
+     "aliases": [
+      "HADS-D"
+     ]
+    },
+    {
+     "id": "dass-depression",
+     "label": "DASS depression subscale",
+     "aliases": [
+      "DASS-21 depression",
+      "DASS-42 depression"
+     ]
+    },
+    {
+     "id": "gads-depression",
+     "label": "Goldberg Anxiety and Depression Scale, depression score",
+     "aliases": [
+      "Goldberg depression scale",
+      "GADS depression",
+      "Goldberg Anxiety and Depression Scale",
+      "Goldberg Scale"
+     ]
+    },
+    {
+     "id": "poms-depression",
+     "label": "POMS depression-dejection subscale",
+     "aliases": [
+      "POMS-D"
+     ]
+    },
+    {
+     "id": "poms-total",
+     "label": "POMS total mood disturbance",
+     "aliases": [
+      "POMS TMD",
+      "total mood disturbance",
+      "POMS 2 total mood disturbance"
+     ]
+    },
+    {
+     "id": "panas-negative",
+     "label": "PANAS negative affect scale",
+     "aliases": [
+      "PANAS negative affect",
+      "PANAS-NA",
+      "negative affect (PANAS)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cognition",
+   "label": "Cognition",
+   "benefit_means": "a better score",
+   "pubmed_terms": "(cognition[mh] OR \"cognitive dysfunction\"[mh] OR cogniti*[tiab] OR memory[tiab] OR \"executive function\"[tiab])",
+   "instruments": [
+    {
+     "id": "rbans",
+     "label": "RBANS, total score",
+     "aliases": [
+      "RBANS"
+     ]
+    },
+    {
+     "id": "moca",
+     "label": "Montreal Cognitive Assessment, total score",
+     "aliases": [
+      "MoCA"
+     ]
+    },
+    {
+     "id": "mmse",
+     "label": "Mini-Mental State Examination, total score",
+     "aliases": [
+      "MMSE"
+     ]
+    },
+    {
+     "id": "adas-cog",
+     "label": "ADAS-Cog, total score",
+     "aliases": [
+      "ADAS-Cog",
+      "ADAS-Jcog"
+     ]
+    },
+    {
+     "id": "nih-toolbox",
+     "label": "NIH Toolbox cognition composite score",
+     "aliases": [
+      "NIH Toolbox"
+     ]
+    },
+    {
+     "id": "cns-vs-nci",
+     "label": "CNS Vital Signs or Cognitrax neurocognition index",
+     "aliases": [
+      "NCI",
+      "Cognitrax",
+      "CNS Vital Signs"
+     ]
+    },
+    {
+     "id": "phes",
+     "label": "Psychometric Hepatic Encephalopathy Score",
+     "aliases": [
+      "PHES"
+     ]
+    },
+    {
+     "id": "bayley-3",
+     "label": "Bayley Scales of Infant and Toddler Development, cognitive composite",
+     "aliases": [
+      "Bayley-III",
+      "Bayley III",
+      "BSID-III"
+     ]
+    },
+    {
+     "id": "wppsi",
+     "label": "Wechsler Preschool and Primary Scale of Intelligence, full scale IQ",
+     "aliases": [
+      "WPPSI",
+      "WPPSI-IV"
+     ]
+    },
+    {
+     "id": "msel",
+     "label": "Mullen Scales of Early Learning, Early Learning Composite",
+     "aliases": [
+      "Mullen",
+      "MSEL"
+     ]
+    }
+   ]
+  }
+ ]
+}

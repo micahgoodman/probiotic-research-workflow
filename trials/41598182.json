@@ -1,0 +1,40 @@
+{
+ "pmid": "41598182",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000055110",
+ "n_randomized": 56,
+ "population": "healthy adults",
+ "arms": [
+  {
+   "entity_as_stated": "heat-killed Lactiplantibacillus plantarum SNK12",
+   "strain_codes": [
+    "SNK12"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": ">=1x10^11 cells per day",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "subscale_only"
+    },
+    {
+     "condition": "cortisol",
+     "result": "benefit",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "not_measured"
+    }
+   ]
+  }
+ ]
+}

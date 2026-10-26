@@ -1,646 +1,369 @@
-"""Shared model for the probiotic evidence catalogue.
-
-This module knows where the data lives and how to join it. It is deliberately not
-a second source of truth for the data itself: identity lives in roster.json,
-outcome labels and body systems live in vocabulary/outcomes.json, and claims live
-in shards under strains/. Everything here either locates those files or performs
-one of the two joins the build step needs.
-
-The constants below mirror the enumerations in SCHEMA.md. They are duplicated
-here because code cannot read prose, and that duplication is the one place this
-project accepts drift risk - which is why validate.py checks the roster and the
-vocabulary against them rather than trusting either side.
-"""
-
-from __future__ import annotations
-
+"""Load, check and summarise the catalogue. RULES.md is the design; rule numbers below refer to it."""
+import collections
+import glob
 import json
 import os
 import re
-from contextlib import contextmanager
 from dataclasses import dataclass, field
-from datetime import date
-from typing import Any, Iterator
 
-ROOT_ENV = "CATALOGUE_ROOT"
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TIER_B_TRIALS = 2  # rule 7: placebo-controlled trials an entity needs for tier B
 
-# --- enumerations from SCHEMA.md -------------------------------------------------
-
-BODY_SYSTEMS = ["GI", "Immune", "Metabolic", "Mental health", "Mechanistic", "Safety"]
-
-# Shard filename per body system. "all" is reserved for a pass that covered all six.
-SLUG = {
-    "GI": "gi",
-    "Immune": "immune",
-    "Metabolic": "metabolic",
-    "Mental health": "mental-health",
-    "Mechanistic": "mechanistic",
-    "Safety": "safety",
+EXCLUDED_REASONS = {  # rule 3
+    "not_an_intervention_study", "not_a_probiotic", "retracted", "not_human", "not_oral", "entity_not_named", "secondary_report", "no_listed_condition", "not_accessible",
 }
-SYSTEM_BY_SLUG = {v: k for k, v in SLUG.items()}
-ALL_SHARD = "all"
+NOT_COUNTED_REASONS = {  # rule 5
+    "not_measured", "instrument_not_listed", "subscale_only", "subgroup_only",
+    "result_not_accessible",
+}
+OUTCOMES = ("benefit", "no_difference", "harm")  # rule 6
+# "found", because a trial that finds no difference has not shown that there is none
+OUTCOME_WORDS = {"benefit": "benefit", "no_difference": "no difference found", "harm": "harm"}
+DESIGNS = ("randomized_placebo", "randomized_other_control", "not_randomized", "single_group")  # rule 3
+COMPARISONS = ("between_groups", "within_group", "not_stated")  # rule 6
 
-# Canonical strongest-first order. study_type[0] is the unit a row was graded from,
-# which only holds because validation rule 5 forces this order.
-STUDY_TYPE_ORDER = [
-    "human_meta",
-    "human_rct",
-    "human_observational",
-    "human_case_report",
-    "animal",
-    "in_vitro",
-]
-STUDY_TYPE_RANK = {s: i for i, s in enumerate(STUDY_TYPE_ORDER)}
-
-POPULATIONS = ["humans", "animals", "in_vitro"]
-PRECLINICAL_POPULATIONS = {"animals", "in_vitro"}
-TIERS = ["A", "B", "C", "D", "P"]
-
-ENTITY_TYPES = ["single_strain", "product", "species_level"]
-PREPARATIONS = ["live", "non_viable", "mixed"]
-DEPTHS = ["deep", "standard", "light", "drop"]
-
-DIRECTIONS = ["benefit", "no effect", "harm"]
-CONSISTENCY_VALUES = ["consistent", "mixed", "conflicting"]
-REPLICATION_VALUES = ["yes", "no", "unclear"]
-BIAS_VALUES = ["sr_assessed", "not_assessed"]
-FUNDING_VALUES = ["all", "some", "none", "unclear"]
-
-# --- field sets ------------------------------------------------------------------
-
-ROSTER_FIELDS = [
-    "strain_id",
-    "entity_type",
-    "preparation",
-    "genus",
-    "species",
-    "strain_designation",
-    "also_known_as",
-    "component_strains",
-    "known_for",
-    "roster_source",
-]
-EXCLUSION_FIELDS = ["strain_id", "label", "reason"]
-
-SHARD_FIELDS = [
-    "strain_id",
-    "body_systems",
-    "last_reviewed",
-    "pass_summary",
-    "claims",
-    "proposed_impacts",
-    "searched_empty",
-    "gaps",
-]
-
-CLAIM_FIELDS = [
-    "impact_id",
-    "direction",
-    "population",
-    "population_detail",
-    "study_type",
-    "evidence_tier",
-    "n_studies",
-    "n_participants",
-    "independently_replicated",
-    "consistency",
-    "effect_size",
-    "bias_assessment",
-    "industry_funded",
-    "tier_rationale",
-    "dose",
-    "duration",
-    "delivery_format",
-    "safety_flags",
-    "sources",
-    "notes",
-]
-
-TRIAGE_FIELDS = [
-    "strain_id",
-    "n_systematic_reviews",
-    "n_human_trials",
-    "has_preclinical_only_areas",
-    "outcome_areas",
-    "depth",
-    "triage_notes",
-]
-
-# Identity belongs to roster.json alone; copying it into a shard creates the drift
-# that sharding would otherwise multiply by the number of passes. See SCHEMA.md
-# "Identity - in roster.json only".
-IDENTITY_ONLY_FIELDS = [
-    "entity_type",
-    "preparation",
-    "genus",
-    "species",
-    "strain_designation",
-    "also_known_as",
-    "component_strains",
-    "known_for",
-    "roster_source",
-]
-
-# The vocabulary is the only home for an outcome's label and body system. A row that
-# stores either can disagree with it. See SCHEMA.md "Controlled vocabulary".
-OUTCOME_ONLY_FIELDS = ["health_impact", "body_system"]
-
-ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
-
-
-def is_real_date(value: Any) -> bool:
-    """A well-formed YYYY-MM-DD naming a date that exists — validation rule 14.
-
-    Both halves are needed: date.fromisoformat alone accepts other layouts
-    (YYYYMMDD since Python 3.11), and the regex alone accepts 2026-13-99, which has
-    the placeholder's exact failure mode — it sorts after every real date, so the
-    oldest-pass rule would skip it and report the entity fresher than it is.
-    """
-    if not isinstance(value, str) or not ISO_DATE.match(value):
-        return False
-    try:
-        date.fromisoformat(value)
-    except ValueError:
-        return False
-    return True
-
-
-# --- IO --------------------------------------------------------------------------
-
-
-def resolve_root(root: str | None = None) -> str:
-    """Catalogue root: explicit argument, then $CATALOGUE_ROOT, then this checkout."""
-    return root or os.environ.get(ROOT_ENV) or PROJECT_ROOT
-
-
-def load_json(path: str) -> Any:
-    with open(path, encoding="utf-8") as fh:
-        return json.load(fh)
-
-
-def write_text(path: str, text: str) -> None:
-    """Write via a temp file in the same directory, then rename.
-
-    A partial write would be worse than no write at all: everything written this
-    way is read by a later stage or a person, and a truncated file fails in a way
-    that looks like missing data rather than like a crash.
-    """
-    os.makedirs(os.path.dirname(os.path.abspath(path)) or ".", exist_ok=True)
-    tmp = f"{path}.tmp.{os.getpid()}"
-    with open(tmp, "w", encoding="utf-8") as fh:
-        fh.write(text)
-    os.replace(tmp, path)
-
-
-def write_json(path: str, data: Any) -> None:
-    write_text(path, json.dumps(data, indent=2, ensure_ascii=False) + "\n")
-
-
-@contextmanager
-def file_lock(path: str) -> Iterator[None]:
-    """Exclusive lock guarding a read-modify-write of `path`.
-
-    triage.json is one file that every triage pass appends to, so unlike a shard it
-    cannot rely on exclusive ownership to stay safe. Without this, two triage passes
-    running at once each read the file, each add their own entries, and the second
-    write silently discards the first one's work.
-    """
-    import fcntl
-
-    directory = os.path.dirname(os.path.abspath(path))
-    os.makedirs(directory, exist_ok=True)
-    lock_path = os.path.join(directory, f".{os.path.basename(path)}.lock")
-    with open(lock_path, "w", encoding="utf-8") as fh:
-        fcntl.flock(fh, fcntl.LOCK_EX)
-        try:
-            yield
-        finally:
-            fcntl.flock(fh, fcntl.LOCK_UN)
-
-
-# --- shard helpers ---------------------------------------------------------------
-
-
-def shard_basename(body_systems: list[str]) -> str | None:
-    """The filename a pass covering `body_systems` must use, or None if it has none.
-
-    None means the declaration is not expressible as a filename - several systems
-    but not all six - which validation rule 3 reports rather than guessing at.
-    """
-    systems = list(body_systems or [])
-    if any(s not in SLUG for s in systems) or len(systems) != len(set(systems)):
-        return None
-    if set(systems) == set(BODY_SYSTEMS):
-        return ALL_SHARD
-    if len(systems) == 1:
-        return SLUG[systems[0]]
-    return None
-
-
-def systems_for_shard(basename: str) -> list[str]:
-    """The body systems a shard filename claims to cover."""
-    if basename == ALL_SHARD:
-        return list(BODY_SYSTEMS)
-    if basename in SYSTEM_BY_SLUG:
-        return [SYSTEM_BY_SLUG[basename]]
-    return []
-
-
-def expected_shards(triage_entry: dict | None) -> list[str] | None:
-    """Shard basenames a completed research stage must have produced.
-
-    None means unknowable - the entity has not been triaged, so nobody has decided
-    how many passes it gets. That is distinct from [] (a dropped entity owes none),
-    and coverage.md keeps the two apart.
-    """
-    if not triage_entry:
-        return None
-    depth = triage_entry.get("depth")
-    if depth == "drop":
-        return []
-    if depth in ("standard", "light"):
-        return [ALL_SHARD]
-    if depth != "deep":
-        return None
-    # isinstance first: membership in SLUG hashes, so an unhashable entry would crash
-    # here instead of surfacing as the triage warning it already is. dict.fromkeys:
-    # a duplicated outcome area must not budget the pass twice.
-    areas = (a for a in (triage_entry.get("outcome_areas") or []) if isinstance(a, str))
-    systems = [s for s in dict.fromkeys(areas) if s in SLUG]
-    # Mechanistic and Safety always get their own pass: they surface while researching
-    # every clinical area, and a single owning pass is what makes a cross-shard
-    # duplicate impossible rather than merely detectable.
-    for required in ("Mechanistic", "Safety"):
-        if required not in systems:
-            systems.append(required)
-    systems.sort(key=BODY_SYSTEMS.index)
-    return [SLUG[s] for s in systems]
-
-
-@dataclass
-class Shard:
-    """One research pass, read from strains/<strain_id>/<basename>.json."""
-
-    path: str
-    rel: str
-    dir_name: str
-    basename: str
-    data: dict = field(repr=False)
-
-    @property
-    def strain_id(self) -> Any:
-        return self.data.get("strain_id")
-
-    @property
-    def body_systems(self) -> list[str]:
-        systems = self.data.get("body_systems")
-        return systems if isinstance(systems, list) else []
-
-    @property
-    def last_reviewed(self) -> Any:
-        return self.data.get("last_reviewed")
-
-    @property
-    def pass_summary(self) -> str:
-        return self.data.get("pass_summary") or ""
-
-    @property
-    def claims(self) -> list[dict]:
-        claims = self.data.get("claims")
-        return [c for c in claims if isinstance(c, dict)] if isinstance(claims, list) else []
-
-    @property
-    def proposed_impacts(self) -> list[dict]:
-        proposed = self.data.get("proposed_impacts")
-        return [p for p in proposed if isinstance(p, dict)] if isinstance(proposed, list) else []
-
-    @property
-    def searched_empty(self) -> list[str]:
-        """Ids this pass individually searched and could not write a row for."""
-        ids = self.data.get("searched_empty")
-        return [i for i in ids if isinstance(i, str)] if isinstance(ids, list) else []
-
-    @property
-    def gaps(self) -> str:
-        return self.data.get("gaps") or ""
-
-
-# --- the catalogue ---------------------------------------------------------------
+EXCLUDED_KEYS = {"pmid", "status", "excluded_reason", "of_pmid"}
+ELIGIBLE_KEYS = {"pmid", "status", "design", "registration", "n_randomized", "population", "arms"}
+ARM_KEYS = {"entity_as_stated", "strain_codes", "brand", "other_actives", "preparation",
+            "dose_as_stated", "weeks", "results"}
+COUNTED_KEYS = {"condition", "result", "instrument", "comparison", "main_endpoint"}
+NOT_COUNTED_KEYS = {"condition", "result", "reason", "instrument_as_stated"}
+FOUND_KEYS = {"url", "product", "country", "checked", "names"}   # rule 8: a page was found
+NONE_FOUND_KEYS = {"url", "checked", "searched"}                   # rule 8: nothing is for sale
 
 
 @dataclass
 class Catalogue:
     root: str
-    roster: dict
-    vocabulary: dict
-    triage: dict | None
-    shards: list[Shard]
-    template: Shard | None
-    parse_errors: list[tuple[str, str]]
-
-    # -- joins ----------------------------------------------------------------
-
-    @property
-    def entities(self) -> list[dict]:
-        return [e for e in self.roster.get("entities", []) if isinstance(e, dict)]
-
-    @property
-    def excluded_entities(self) -> list[dict]:
-        return [e for e in self.roster.get("excluded_entities", []) if isinstance(e, dict)]
-
-    @property
-    def entity_by_id(self) -> dict[str, dict]:
-        return {e.get("strain_id"): e for e in self.entities if e.get("strain_id")}
-
-    @property
-    def excluded_by_id(self) -> dict[str, dict]:
-        return {e.get("strain_id"): e for e in self.excluded_entities if e.get("strain_id")}
-
-    @property
-    def outcomes(self) -> dict[str, dict]:
-        return {
-            o.get("id"): o
-            for o in self.vocabulary.get("outcomes", [])
-            if isinstance(o, dict) and o.get("id")
-        }
-
-    @property
-    def excluded_outcomes(self) -> dict[str, dict]:
-        return {
-            o.get("id"): o
-            for o in self.vocabulary.get("excluded_outcomes", [])
-            if isinstance(o, dict) and o.get("id")
-        }
-
-    @property
-    def triage_by_id(self) -> dict[str, dict]:
-        if not self.triage:
-            return {}
-        return {
-            t.get("strain_id"): t
-            for t in self.triage.get("triage", [])
-            if isinstance(t, dict) and t.get("strain_id")
-        }
-
-    def body_system(self, impact_id: str) -> str | None:
-        """The one place a claim's body system comes from. Never stored on the row."""
-        outcome = self.outcomes.get(impact_id)
-        return outcome.get("body_system") if outcome else None
-
-    def label(self, impact_id: str) -> str | None:
-        outcome = self.outcomes.get(impact_id)
-        return outcome.get("label") if outcome else None
-
-    def outcomes_in(self, systems: list[str]) -> list[dict]:
-        """Vocabulary rows a pass covering `systems` is allowed to use."""
-        wanted = set(systems)
-        return [o for o in self.outcomes.values() if o.get("body_system") in wanted]
-
-    def shards_for(self, strain_id: str) -> list[Shard]:
-        return [s for s in self.shards if s.dir_name == strain_id]
-
-    @property
-    def entity_dirs(self) -> list[str]:
-        return sorted({s.dir_name for s in self.shards})
-
-    # -- loading --------------------------------------------------------------
-
-    @classmethod
-    def load(cls, root: str | None = None) -> "Catalogue":
-        root = resolve_root(root)
-        parse_errors: list[tuple[str, str]] = []
-
-        def read(rel: str, required: bool) -> dict | None:
-            """A JSON object, or None with the reason in parse_errors.
-
-            Wrong-typed counts as unreadable: a truncated or mangled file that still
-            parses (as a list, a string) must not be coerced to an empty catalogue -
-            that once let the validator pass and the build publish over a destroyed
-            roster.
-            """
-            path = os.path.join(root, rel)
-            if not os.path.exists(path):
-                if required:
-                    parse_errors.append((rel, "file not found"))
-                return None
-            try:
-                data = load_json(path)
-            except (json.JSONDecodeError, OSError) as exc:
-                parse_errors.append((rel, str(exc)))
-                return None
-            if not isinstance(data, dict):
-                parse_errors.append((rel, f"not a JSON object (got {type(data).__name__})"))
-                return None
-            return data
-
-        roster = read("roster.json", True) or {}
-        vocabulary = read("vocabulary/outcomes.json", True) or {}
-        triage = read("triage.json", False)
-
-        shards: list[Shard] = []
-        strains_dir = os.path.join(root, "strains")
-        if os.path.isdir(strains_dir):
-            for dir_name in sorted(os.listdir(strains_dir)):
-                entity_dir = os.path.join(strains_dir, dir_name)
-                if dir_name.startswith("."):
-                    continue
-                if not os.path.isdir(entity_dir):
-                    # A shard outside an entity directory belongs to no entity. Skipped
-                    # silently, a misfiled pass ceases to exist while coverage keeps
-                    # reporting it as never run.
-                    parse_errors.append(
-                        (
-                            os.path.relpath(entity_dir, root),
-                            "not inside an entity directory - a shard lives at "
-                            "strains/<strain_id>/<shard>.json",
-                        )
-                    )
-                    continue
-                for filename in sorted(os.listdir(entity_dir)):
-                    path = os.path.join(entity_dir, filename)
-                    rel = os.path.relpath(path, root)
-                    if filename.startswith("."):
-                        continue  # lock files, .DS_Store - environment noise, not data
-                    if not filename.endswith(".json"):
-                        # An editor backup holding the only copy of a pass must not
-                        # silently read as the pass never having run.
-                        parse_errors.append((rel, "not a <shard>.json file"))
-                        continue
-                    try:
-                        data = load_json(path)
-                    except (json.JSONDecodeError, OSError) as exc:
-                        parse_errors.append((rel, str(exc)))
-                        continue
-                    if not isinstance(data, dict):
-                        parse_errors.append((rel, "shard is not a JSON object"))
-                        continue
-                    shards.append(
-                        Shard(
-                            path=path,
-                            rel=rel,
-                            dir_name=dir_name,
-                            basename=filename[: -len(".json")],
-                            data=data,
-                        )
-                    )
-
-        template = None
-        template_rel = "templates/shard.json"
-        template_data = read(template_rel, False)
-        if template_data is not None:
-            template = Shard(
-                path=os.path.join(root, template_rel),
-                rel=template_rel,
-                dir_name="",
-                basename="shard",
-                data=template_data,
-            )
-
-        return cls(
-            root=root,
-            roster=roster,
-            vocabulary=vocabulary,
-            triage=triage,
-            shards=shards,
-            template=template,
-            parse_errors=parse_errors,
-        )
+    conditions: dict           # condition id -> condition
+    aliases: dict
+    search: dict               # condition id -> [pmid]
+    available: dict            # entity key -> one product page, or the record that none was found
+    trials: dict               # file stem -> record
+    load_errors: list = field(default_factory=list)
 
 
-# --- progress --------------------------------------------------------------------
+def root_dir():
+    return os.environ.get("CATALOGUE_ROOT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def unsearched_ids(cat: "Catalogue", shard: Shard) -> list[str]:
-    """Allowed ids the pass neither claimed nor recorded as an empty search.
+def read_json(path):
+    with open(path) as f:
+        return json.load(f)
 
-    For a deep pass this is its remaining debt: "done" means a targeted search per
-    allowed id, each ending in a claim row or a `searched_empty` entry, and a
-    non-empty result re-opens the pass. Derived rather than declared on purpose -
-    forgetting to record a search enlarges the visible debt instead of silently
-    claiming coverage, and a vocabulary id added after the pass ran lands here by
-    arithmetic, so reconciliation re-opens exactly the passes it widens. For a
-    standard or light pass the same set is only the sweep's remainder: reported by
-    coverage.md, never debt, because that budget owes known-for areas plus a
-    general sweep rather than a search per id.
+
+def load(root=None):
+    root = root or root_dir()
+    read = lambda rel: read_json(os.path.join(root, rel))
+    cat = Catalogue(root, {c["id"]: c for c in read("conditions.json")["conditions"]},
+                    read("aliases.json")["aliases"], {}, read("available.json")["available"], {})
+    for path in sorted(glob.glob(os.path.join(root, "search", "*.json"))):
+        listing = read_json(path)
+        cat.search.setdefault(listing["condition"], []).extend(listing["pmids"])
+    for path in sorted(glob.glob(os.path.join(root, "trials", "*.json"))):
+        name = os.path.basename(path)
+        try:
+            cat.trials[name[:-5]] = read_json(path)
+        except ValueError as e:
+            cat.load_errors.append(f"trials/{name}: not valid JSON ({e})")
+    return cat
+
+
+# ---------- rule 4: the entity ----------
+
+def _norm(text):
+    return re.sub(r"[^a-z0-9]+", "", text.lower())
+
+
+def entity_key(arm, aliases):
+    canon = lambda s: aliases.get(s, s)
+    names = arm["strain_codes"] or [arm["brand"]]
+    parts = [canon(_norm(n)) for n in names + arm["other_actives"]]
+    if arm["preparation"] == "heat_killed":
+        parts.append("heatkilled")
+    return canon("+".join(sorted(parts)))
+
+
+# ---------- the checker ----------
+
+def _counted(result):
+    return result.get("result") in OUTCOMES
+
+
+def _is_trial_result(trial, result):
+    """Rule 7: only a comparison against a placebo group, in a randomized trial, feeds tiers B and C."""
+    return trial["design"] == "randomized_placebo" and result["comparison"] == "between_groups"
+
+
+def _check_result(where, r, conditions, design):
+    if not isinstance(r, dict) or r.get("condition") not in conditions:
+        return [f"{where}: condition must be one of {sorted(conditions)}"]
+    where = f"{where} {r['condition']}"
+    allowed = COUNTED_KEYS if _counted(r) else NOT_COUNTED_KEYS
+    errs = [f"{where}: unknown field '{k}'" for k in sorted(set(r) - allowed)]
+    if _counted(r):
+        listed = [i["id"] for i in conditions[r["condition"]]["instruments"]]
+        if r.get("instrument") not in listed:
+            errs.append(f"{where}: instrument '{r.get('instrument')}' is not on the list for "
+                        f"{r['condition']} {listed}")
+        if r.get("comparison") not in COMPARISONS:
+            errs.append(f"{where}: comparison must be one of {COMPARISONS}")
+        elif design == "single_group" and r["comparison"] == "between_groups":
+            errs.append(f"{where}: a single_group study has no second group, so comparison cannot be between_groups")
+        if r.get("main_endpoint") not in ("yes", "no", "not_stated"):
+            errs.append(f"{where}: main_endpoint must be yes, no or not_stated")
+    elif r.get("result") == "not_counted":
+        if r.get("reason") not in NOT_COUNTED_REASONS:
+            errs.append(f"{where}: reason must be one of {sorted(NOT_COUNTED_REASONS)}")
+        if (r.get("reason") == "instrument_not_listed") != bool(r.get("instrument_as_stated")):
+            errs.append(f"{where}: instrument_as_stated is required for instrument_not_listed, and only then")
+    else:
+        errs.append(f"{where}: result must be one of {OUTCOMES} or not_counted")
+    return errs
+
+
+def _check_arm(where, a, cat, design):
+    if not isinstance(a, dict):
+        return [f"{where}: an arm must be an object"]
+    errs = [f"{where}: unknown field '{k}'" for k in sorted(set(a) - ARM_KEYS)]
+    errs += [f"{where}: missing field '{k}'" for k in sorted(ARM_KEYS - set(a))]
+    if errs:
+        return errs
+    if not a["entity_as_stated"]:
+        errs.append(f"{where}: entity_as_stated is empty")
+    if not a["strain_codes"] and not a["brand"]:
+        errs.append(f"{where}: needs strain_codes or a brand (or exclude the paper as entity_not_named)")
+    # Two names for one strain would build a key like "mcc1274+mcc1274", which matches
+    # nothing. The record is wrong, so say so rather than quietly building that key.
+    canon = collections.Counter(cat.aliases.get(_norm(c), _norm(c)) for c in a["strain_codes"])
+    errs += [f"{where}: strain '{c}' is named twice in one arm; two names for one strain"
+             for c, times in sorted(canon.items()) if times > 1]
+    if a["preparation"] not in ("live", "heat_killed"):
+        errs.append(f"{where}: preparation must be live or heat_killed")
+    if not a["results"]:
+        errs.append(f"{where}: results is empty")
+    for r in a["results"]:
+        errs += _check_result(where, r, cat.conditions, design)
+    return errs
+
+
+def _check_eligible(where, t, cat):
+    errs = [f"{where}: unknown field '{k}'" for k in sorted(set(t) - ELIGIBLE_KEYS)]
+    errs += [f"{where}: missing field '{k}'" for k in sorted(ELIGIBLE_KEYS - set(t))]
+    if errs:
+        return errs
+    if t["design"] not in DESIGNS:
+        errs.append(f"{where}: design must be one of {DESIGNS}")
+    n = t["n_randomized"]
+    if n is not None and not (isinstance(n, int) and n > 0):
+        errs.append(f"{where}: n_randomized must be a positive whole number, or null when unknown")
+    if not t["population"]:
+        errs.append(f"{where}: population is empty")
+    if not t["arms"]:
+        errs.append(f"{where}: arms is empty")
+    for i, a in enumerate(t["arms"]):
+        errs += _check_arm(f"{where} arm {i}", a, cat, t["design"])
+    if errs:
+        return errs
+    # Two arms that mean the same entity are one arm. A not_counted result carries no
+    # instrument, so the score check below cannot see them; only the key can.
+    arms = collections.Counter(entity_key(a, cat.aliases) for a in t["arms"])
+    errs += [f"{where}: entity '{k}' is an arm twice; two arms that differ only in the "
+             f"vehicle or the coating are one arm, and one trial must not be counted twice"
+             for k, times in sorted(arms.items()) if times > 1]
+    if errs:
+        return errs
+    # Several listed scores for one condition are welcome: reported_scores() picks one.
+    # The same score twice is a second dose arm, or a record that contradicts itself.
+    seen = collections.Counter((entity_key(a, cat.aliases), r["instrument"])
+                               for a in t["arms"] for r in a["results"] if _counted(r))
+    errs += [f"{where}: entity '{k}' has a {i} result twice; one score has one result, "
+             f"and for several doses record the highest dose only"
+             for (k, i), times in seen.items() if times > 1]
+    answered = {r["condition"] for a in t["arms"] for r in a["results"]}
+    errs += [f"{where}: the {c} search found this paper, so it needs a {c} result (not_measured is an answer)"
+             for c in sorted(cat.search) if t["pmid"] in cat.search[c] and c not in answered]
+    return errs
+
+
+def _check_available(cat, sound):
+    """Rule 8. Every entity that gets a row says whether a reader can buy it.
+
+    `sound` is the eligible records that passed every other check, so each arm here is
+    well formed. An entity has a row when one of its arms holds a counted result.
     """
-    allowed = {o["id"] for o in cat.outcomes_in(systems_for_shard(shard.basename))}
-    accounted = {c.get("impact_id") for c in shard.claims} | set(shard.searched_empty)
-    return sorted(allowed - accounted)
+    rows = {}
+    for stem, t in sound:
+        for a in t["arms"]:
+            if any(map(_counted, a["results"])):
+                rows.setdefault(entity_key(a, cat.aliases), stem)
+    errs = []
+    for key, stem in sorted(rows.items()):
+        where = f"available.json: entity '{key}' (trials/{stem}.json)"
+        e = cat.available.get(key)
+        if not isinstance(e, dict):
+            errs.append(f"{where}: has a row but no entry; record the product page, or that none was found (rule 8)")
+            continue
+        found = e.get("url") is not None
+        allowed = FOUND_KEYS if found else NONE_FOUND_KEYS
+        if set(e) != allowed:
+            errs.append(f"{where}: fields must be exactly {sorted(allowed)}; an entry carries no opinion")
+            continue
+        blank = [k for k in allowed if k != "url" and not (isinstance(e[k], str) and e[k].strip())]
+        if blank:
+            errs.append(f"{where}: {', '.join(blank)} must be text; a found page must copy the words that name the entity")
+        if found and not str(e["url"]).startswith("http"):
+            errs.append(f"{where}: url must be a web address")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(e.get("checked", ""))):
+            errs.append(f"{where}: checked must be a date, YYYY-MM-DD")
+    return errs
+
+
+def validate(cat, only=None):
+    """Check every record. `only` narrows the report to the named pmids, so one
+    researcher can check their own files while the rest of the catalogue is unread."""
+    errs = [e for e in cat.load_errors
+            if only is None or e.split("/")[1].split(".")[0] in only]
+    found = {p for pmids in cat.search.values() for p in pmids}
+    if only is None:
+        recorded = {t.get("pmid") for t in cat.trials.values() if isinstance(t, dict)}
+        errs += [f"PMID {p}: no record in trials/, but a saved search found it"
+                 for p in sorted(found - recorded)]
+    sound = []  # eligible records with no error of their own, for the checks that read across records
+    for stem, t in sorted(cat.trials.items()):
+        if only is not None and stem not in only:
+            continue
+        where = f"trials/{stem}.json"
+        if not isinstance(t, dict) or t.get("pmid") != stem:
+            errs.append(f"{where}: the file name must be the record's pmid")
+            continue
+        if stem not in found:
+            errs.append(f"{where}: PMID {stem} is not on any saved search list (rule 2)")
+        if t.get("status") == "excluded":
+            errs += [f"{where}: unknown field '{k}'" for k in sorted(set(t) - EXCLUDED_KEYS)]
+            if t.get("excluded_reason") not in EXCLUDED_REASONS:
+                errs.append(f"{where}: excluded_reason must be one of {sorted(EXCLUDED_REASONS)}")
+            first = cat.trials.get(t.get("of_pmid"))
+            if t.get("excluded_reason") == "secondary_report":
+                # The first report is often a paper our six searches never found, so it has
+                # no record of its own. We only check the pointer when we do hold that paper.
+                if not t.get("of_pmid"):
+                    errs.append(f"{where}: secondary_report needs of_pmid, the first report's pmid")
+                # When the first report was itself excluded, this trial is counted no
+                # times at all. Nobody can fix that, so it is counted in the screening
+                # report rather than raised here as an error that would stop the build.
+                # One excluded first report is different: a pointer at another
+                # secondary_report hides the trial's own record, which is sitting right
+                # there, and makes the screening report cry loss over nothing. Whoever
+                # wrote this record can always fix it, so it is an error.
+                elif first is not None and first.get("excluded_reason") == "secondary_report":
+                    errs.append(
+                        f"{where}: of_pmid {t['of_pmid']} is itself a secondary_report; "
+                        f"point at the trial's own record, {first.get('of_pmid')}")
+            elif "of_pmid" in t:
+                errs.append(f"{where}: of_pmid is only for secondary_report")
+        elif t.get("status") == "eligible":
+            mine = _check_eligible(where, t, cat)
+            errs += mine
+            if not mine:
+                sound.append((stem, t))
+        else:
+            errs.append(f"{where}: status must be eligible or excluded")
+    errs += _check_available(cat, sound)
+    return errs
+
+
+# ---------- rule 7: tiers and verdicts ----------
+
+@dataclass
+class Tally:
+    benefit: int = 0
+    no_difference: int = 0
+    harm: int = 0
+
+    @property
+    def total(self):
+        return self.benefit + self.no_difference + self.harm
+
+    def words(self, one, many):
+        k = self.total
+        if k == 1:
+            outcome = "harm" if self.harm else "benefit" if self.benefit else "no_difference"
+            return f"{OUTCOME_WORDS[outcome]} in the one {one}"
+        if self.harm:
+            return f"harm in {self.harm} of {k} {many}"
+        if self.benefit == k:
+            return f"benefit in all {k} {many}"
+        if self.benefit == 0:
+            return f"{OUTCOME_WORDS['no_difference']} in all {k} {many}"
+        return f"mixed: benefit in {self.benefit} of {k} {many}"
 
 
 @dataclass
-class Progress:
-    """How far one entity has got, derived from triage depth and shards on disk.
-
-    None of this is an invariant. A half-researched catalogue is the normal state,
-    so this feeds coverage.md and the plan tool rather than the validator.
-    """
-
-    strain_id: str
-    state: str  # untriaged | dropped | not_started | in_progress | complete
-    depth: str | None
-    expected: list[str] | None  # None: nobody has decided how many passes this gets
-    present: list[str]
-    missing: list[str]
-    unfinished: list[str]  # written deep passes still owing targeted searches
-    unexpected: list[str]
-    empty_passes: list[str]
-    n_claims: int
+class Verdict:
+    condition: str
+    entity: str
+    label: str
+    strong: Tally              # randomized, placebo group, compared between the groups
+    weaker: Tally              # every other human result
+    trial_pmids: list
+    weaker_pmids: list
+    # the fields below describe the studies the verdict rests on: the trials when there
+    # is one, and the weaker studies only for tier D
+    basis: list                # (pmid, result, n_randomized), in pmid order
+    main_endpoint_trials: int
+    people: int
+    studies_without_size: int
 
     @property
-    def researched(self) -> bool:
-        return bool(self.present)
+    def trials(self):
+        return self.strong.total
+
+    @property
+    def tier(self):
+        return "B" if self.trials >= TIER_B_TRIALS else "C" if self.trials else "D"
+
+    @property
+    def verdict(self):
+        if self.trials:
+            return self.strong.words("trial", "trials")
+        return self.weaker.words("weaker study", "weaker studies")
 
 
-def entity_progress(cat: "Catalogue", strain_id: str) -> Progress:
-    shards = cat.shards_for(strain_id)
-    present = sorted(s.basename for s in shards)
-    triage_entry = cat.triage_by_id.get(strain_id)
-    depth = triage_entry.get("depth") if triage_entry else None
-    expected = expected_shards(triage_entry)
+def reported_scores(cat):
+    """Rule 5. Every listed score each trial reports, per entity and condition, best first.
 
-    missing = [s for s in (expected or []) if s not in present]
-    unexpected = [s for s in present if expected is not None and s not in expected]
-
-    # Only a deep pass owes a targeted search per allowed id, so only a deep pass
-    # can be written yet unfinished. A standard or light pass's unclaimed ids are
-    # the sweep's normal remainder - treating them as debt would re-open every
-    # light entity forever.
-    unfinished: list[str] = []
-    if depth == "deep":
-        by_name = {s.basename: s for s in shards}
-        unfinished = [
-            basename
-            for basename in (expected or [])
-            if basename in by_name and unsearched_ids(cat, by_name[basename])
-        ]
-
-    if triage_entry is None:
-        state = "untriaged"
-    elif depth == "drop":
-        state = "dropped"
-    elif expected is None:
-        # A triage entry whose depth does not parse budgets nothing. Falling through
-        # would compute missing=[] and read the entity as complete - an entity whose
-        # pass plan nobody can state, reported as finished. No usable budget is the
-        # untriaged condition, whatever is sitting in the file.
-        state = "untriaged"
-    elif not present:
-        state = "not_started"
-    elif missing or unfinished:
-        state = "in_progress"
-    else:
-        state = "complete"
-
-    return Progress(
-        strain_id=strain_id,
-        state=state,
-        depth=depth,
-        expected=expected,
-        present=present,
-        missing=missing,
-        unfinished=unfinished,
-        unexpected=unexpected,
-        empty_passes=sorted(s.basename for s in shards if not s.claims),
-        n_claims=sum(len(s.claims) for s in shards),
-    )
-
-
-def all_progress(cat: "Catalogue") -> list[Progress]:
-    """Roster order, because that is the order the sweeps produced and it makes a
-    re-run a diff."""
-    return [entity_progress(cat, e["strain_id"]) for e in cat.entities if e.get("strain_id")]
-
-
-# --- presentation ----------------------------------------------------------------
-
-
-def plural(n: int, singular: str, plural_form: str | None = None) -> str:
-    """"1 claim", "2 claims" - counts render next to their noun all over the
-    compiled views, and "1 claims" reads as a tool that does not look at its own
-    output."""
-    return f"{n} {singular if n == 1 else (plural_form or singular + 's')}"
-
-
-def display_name(entity: dict) -> str:
-    """Human-facing name. Products and species-level entities have no organism name."""
-    genus = entity.get("genus") or ""
-    species = entity.get("species") or ""
-    designation = entity.get("strain_designation") or ""
-    if genus and species and genus != "multiple" and species != "multiple":
-        return " ".join(part for part in (genus, species, designation) if part)
-    return designation or entity.get("strain_id") or "?"
-
-
-def oldest_review_date(shards: list[Shard]) -> str | None:
-    """An entity's review date is the oldest of its passes, so a partial refresh
-    reads stale rather than fresh.
-
-    A plain minimum is correct only because validation rule 14 guarantees every shard
-    carries a real ISO date. Without it a placeholder would sort after every real
-    date, be skipped by the minimum, and report the entity as fresher than its
-    stalest pass - the failure inverted. None only when there are no passes at all.
+    The record holds what the paper reports; this function is the only place that says
+    which score speaks for the trial. It is the first one: the score nearest the top of
+    the condition's list. Call only on a catalogue that passes validate().
     """
-    dates = [s.last_reviewed for s in shards if isinstance(s.last_reviewed, str)]
-    return min(dates) if dates else None
+    rank = {c: [i["id"] for i in cond["instruments"]] for c, cond in cat.conditions.items()}
+    found = collections.defaultdict(list)
+    for t in cat.trials.values():
+        for a in t.get("arms", []):
+            for r in filter(_counted, a["results"]):
+                found[(t["pmid"], entity_key(a, cat.aliases), r["condition"])].append((t, a, r))
+    return {k: sorted(hits, key=lambda h: rank[k[2]].index(h[2]["instrument"]))
+            for k, hits in found.items()}
+
+
+def verdicts(cat):
+    """One Verdict per entity and condition. Call only on a catalogue that passes validate()."""
+    groups = collections.defaultdict(list)
+    for (_, key, condition), hits in reported_scores(cat).items():
+        groups[(condition, key)].append(hits[0])
+    out = []
+    for (condition, key), hits in groups.items():
+        strong = [h for h in hits if _is_trial_result(h[0], h[2])]
+        weak = [h for h in hits if not _is_trial_result(h[0], h[2])]
+        basis = strong or weak
+        tally = lambda group: Tally(**collections.Counter(r["result"] for _, _, r in group))
+        names = collections.Counter(a["entity_as_stated"] for _, a, _ in hits)
+        sizes = [t["n_randomized"] for t, _, _ in basis]
+        out.append(Verdict(
+            condition, key, min(names, key=lambda n: (-names[n], n)), tally(strong), tally(weak),
+            sorted(t["pmid"] for t, _, _ in strong), sorted(t["pmid"] for t, _, _ in weak),
+            sorted((t["pmid"], r["result"], t["n_randomized"]) for t, _, r in basis),
+            sum(r["main_endpoint"] == "yes" for _, _, r in basis),
+            sum(s for s in sizes if s), sizes.count(None)))
+    order = list(cat.conditions)
+    return sorted(out, key=lambda v: (order.index(v.condition), v.tier, -(v.trials or v.weaker.total), v.label))

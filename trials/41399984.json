@@ -1,0 +1,44 @@
+{
+ "pmid": "41399984",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 100,
+ "population": "infertile women with leuprorelin-induced perimenopausal syndrome",
+ "arms": [
+  {
+   "entity_as_stated": "Limosilactobacillus reuteri NCU-37",
+   "strain_codes": [
+    "NCU-37"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": null,
+   "weeks": null,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "ham-a",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "ais",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

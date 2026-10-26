@@ -1,0 +1,30 @@
+{
+ "pmid": "40046755",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT05794815",
+ "n_randomized": 120,
+ "population": "toddlers with recurrent respiratory illness symptoms",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium longum subsp. infantis YLGB-1496",
+   "strain_codes": [
+    "YLGB-1496"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the abstract",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "benefit",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

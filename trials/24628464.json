@@ -1,0 +1,29 @@
+{
+ "pmid": "24628464",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT00992290",
+ "n_randomized": 30,
+ "population": "adults with cirrhosis and minimal hepatic encephalopathy",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus GG",
+   "strain_codes": [
+    "GG"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "one sachet twice daily (>50 billion CFU/g per batch)",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "number connection test-A and -B, digit symbol test, block design test"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "pmid": "38355674",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04167475",
+ "n_randomized": 89,
+ "population": "healthy adults aged 18-45 with impaired sleep quality",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium longum 1714",
+   "strain_codes": ["1714"],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated",
+   "weeks": 8,
+   "results": [
+    {"condition": "sleep", "result": "no_difference", "instrument": "psqi", "comparison": "between_groups", "main_endpoint": "yes"},
+    {"condition": "sleep", "result": "no_difference", "instrument": "actigraphy-efficiency", "comparison": "between_groups", "main_endpoint": "no"}
+   ]
+  }
+ ]
+}

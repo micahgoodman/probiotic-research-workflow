@@ -1,0 +1,35 @@
+{
+ "pmid": "41826906",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT06790823",
+ "n_randomized": 40,
+ "population": "patients with substance-induced depressive disorder",
+ "arms": [
+  {
+   "entity_as_stated": "Moodamin (Lactobacillus helveticus and Bifidobacterium longum)",
+   "strain_codes": [],
+   "brand": "Moodamin",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "two capsules per day",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "ham-a",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "pmid": "33192959",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT02723344",
+ "n_randomized": 31,
+ "population": "US military veterans with post-concussive and PTSD symptoms",
+ "arms": [
+  {
+   "entity_as_stated": "Limosilactobacillus reuteri DSM 17938",
+   "strain_codes": [
+    "DSM 17938"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the abstract",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "vas-stress",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

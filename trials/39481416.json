@@ -1,0 +1,36 @@
+{
+ "pmid": "39481416",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000048184",
+ "n_randomized": 27,
+ "population": "students under academic stress",
+ "arms": [
+  {
+   "entity_as_stated": "Enterococcus faecalis EC-12, heat-killed",
+   "strain_codes": [
+    "EC-12"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": null,
+   "weeks": 1,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "visual analogue scale of mental symptoms"
+    }
+   ]
+  }
+ ]
+}

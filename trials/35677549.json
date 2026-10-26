@@ -1,0 +1,18 @@
+{"pmid": "35677549",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ACTRN12620001078943",
+ "n_randomized": 82,
+ "population": "adults with seasonal allergic rhinitis",
+ "arms": [
+   {"entity_as_stated": "Seasonal Biotic (four strains)",
+    "strain_codes": ["GL 104", "LPL28", "MP108", "BI04"],
+    "brand": "Nutrition Care Seasonal Biotic",
+    "other_actives": ["fructooligosaccharide"],
+    "preparation": "live",
+    "dose_as_stated": "10 billion CFU per 1.5 g sachet daily",
+    "weeks": 12,
+    "results": [
+      {"condition": "sleep", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "single sleep item of the rhinoconjunctivitis quality-of-life questionnaire"}
+    ]}
+ ]}

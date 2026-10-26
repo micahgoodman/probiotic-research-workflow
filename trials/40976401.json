@@ -1,0 +1,48 @@
+{
+ "pmid": "40976401",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT05801042",
+ "n_randomized": 87,
+ "population": "community-dwelling elderly people aged 60-80",
+ "arms": [
+  {
+   "entity_as_stated": "Lacticaseibacillus rhamnosus HN001",
+   "strain_codes": [
+    "HN001"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated",
+   "weeks": null,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

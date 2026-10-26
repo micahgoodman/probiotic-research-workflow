@@ -1,0 +1,50 @@
+{
+ "pmid": "30882244",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 111,
+ "population": "adults with moderate self-reported stress",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus plantarum DR7",
+   "strain_codes": [
+    "DR7"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1 x 10^9 cfu per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "benefit",
+     "instrument": "dass-stress",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "dass-anxiety",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cortisol",
+     "result": "benefit",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "individual cognitive tasks (basic attention, emotional cognition, associate learning)"
+    }
+   ]
+  }
+ ]
+}

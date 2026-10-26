@@ -1,0 +1,52 @@
+{
+ "pmid": "38830472",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04187950",
+ "n_randomized": 66,
+ "population": "healthy adults",
+ "arms": [
+  {
+   "entity_as_stated": "Yogurt with Bifidobacterium animalis subsp. lactis DN-173 010/CNCM I-2494 plus honey",
+   "strain_codes": [
+    "DN-173 010"
+   ],
+   "brand": null,
+   "other_actives": [
+    "honey"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "one yogurt serving plus honey daily",
+   "weeks": 2,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "dass-anxiety",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "dass-depression",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "spatial reconstruction task"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "panas-negative",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

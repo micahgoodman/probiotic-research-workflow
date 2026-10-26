@@ -1,0 +1,30 @@
+{
+ "pmid": "34760234",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT03416595",
+ "n_randomized": 60,
+ "population": "children aged 6 months to 3 years born by caesarean section",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus paracasei N1115",
+   "strain_codes": [
+    "N1115"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "10^9 CFU per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{"pmid": "40008414",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT05302687",
+ "n_randomized": 112,
+ "population": "generally healthy women",
+ "arms": [
+   {"entity_as_stated": "Lactiplantibacillus plantarum Probio87",
+    "strain_codes": ["Probio87"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "one sachet per day, 9 log CFU per sachet",
+    "weeks": 12,
+    "results": [
+      {"condition": "depression", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "Women's Health Questionnaire, depressed mood domain"},
+      {"condition": "anxiety", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "Women's Health Questionnaire, anxiety domain"},
+      {"condition": "sleep", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "Women's Health Questionnaire, sleep problems domain"}
+    ]}
+ ]}

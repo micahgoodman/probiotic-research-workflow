@@ -1,0 +1,19 @@
+{"pmid": "34564089",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "CTRI/2021/05/033576",
+ "n_randomized": 200,
+ "population": "patients with post-COVID-19 fatigue",
+ "arms": [
+   {"entity_as_stated": "ProbioSEB CSC3 plus ImmunoSEB",
+    "strain_codes": ["LBSC", "PLSSC", "088AE"],
+    "brand": "ProbioSEB CSC3",
+    "other_actives": ["ImmunoSEB systemic enzyme complex"],
+    "preparation": "live",
+    "dose_as_stated": "one oral dose daily",
+    "weeks": 2,
+    "results": [
+      {"condition": "cognition", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "Chalder Fatigue Scale (CFQ-11) mental fatigue score"}
+    ]}
+ ]}

@@ -1,0 +1,19 @@
+{"pmid": "38326388",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": "NCT05607511",
+ "n_randomized": 20,
+ "population": "Chinese pre-school children aged 1-5 years with eczema",
+ "arms": [
+   {"entity_as_stated": "SIM03 (Bifidobacterium bifidum and Bifidobacterium breve)",
+    "strain_codes": [],
+    "brand": "SIM03",
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "10^9 CFU per sachet, twice daily",
+    "weeks": 12,
+    "results": [
+      {"condition": "sleep", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "SCORAD sleep loss visual analogue item"}
+    ]}
+ ]}

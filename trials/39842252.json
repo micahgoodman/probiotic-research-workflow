@@ -1,0 +1,52 @@
+{
+ "pmid": "39842252",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 33,
+ "population": "adult men living with obesity on a calorie-restricted diet",
+ "arms": [
+  {
+   "entity_as_stated": "Four-strain probiotic (NCFM, HN001, Lpc-37, HN019)",
+   "strain_codes": [
+    "NCFM",
+    "HN001",
+    "Lpc-37",
+    "HN019"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "8 billion CFU per day (1x10^9 CFU of each strain, two 1 g sachets)",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "dass-anxiety",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "dass-depression",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

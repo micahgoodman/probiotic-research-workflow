@@ -1,0 +1,63 @@
+{
+ "pmid": "39367119",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": "NCT04293159",
+ "n_randomized": 30,
+ "population": "patients with stable Parkinson's disease and functional constipation",
+ "arms": [
+  {
+   "entity_as_stated": "Enterolactis Duo (Lacticaseibacillus paracasei DG)",
+   "strain_codes": [
+    "DG"
+   ],
+   "brand": "Enterolactis Duo",
+   "other_actives": [
+    "inulin",
+    "vitamin B6",
+    "vitamin B2",
+    "vitamin B1"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "at least 8x10^9 CFU per day (one 5 g sachet)",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "no_difference",
+     "instrument": "moca",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "ham-d",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-trait",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

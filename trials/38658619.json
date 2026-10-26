@@ -1,0 +1,38 @@
+{
+ "pmid": "38658619",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT05266443",
+ "n_randomized": 110,
+ "population": "adults with irritable bowel syndrome, with normal mood or subthreshold depression",
+ "arms": [
+  {
+   "entity_as_stated": "Cultured milk drink with Lactobacillus acidophilus LA-5 and Lacticaseibacillus paracasei L. CASEI-01",
+   "strain_codes": [
+    "LA-5",
+    "L. CASEI-01"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "two bottles a day, 10^9 CFU",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "ces-d",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "pmid": "30026567",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT02642289",
+ "n_randomized": 40,
+ "population": "adults with fibromyalgia",
+ "arms": [
+  {
+   "entity_as_stated": "Ergyphilus Plus (four strains)",
+   "strain_codes": [],
+   "brand": "Ergyphilus Plus",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "6 million revivifiable germs per capsule, four capsules per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-trait",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-urine",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cognition",
+     "result": "no_difference",
+     "instrument": "mmse",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

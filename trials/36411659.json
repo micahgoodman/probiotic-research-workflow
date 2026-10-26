@@ -1,0 +1,40 @@
+{
+ "pmid": "36411659",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 80,
+ "population": "adults with subthreshold or mild-to-moderate depression",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus helveticus Rosell-52 and Bifidobacterium longum Rosell-175 with S-adenosyl methionine",
+   "strain_codes": [
+    "Rosell-52",
+    "Rosell-175"
+   ],
+   "brand": null,
+   "other_actives": [
+    "S-adenosyl methionine"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "3x10^9 CFU per day plus SAMe 200 mg per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "phq-9",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

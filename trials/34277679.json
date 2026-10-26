@@ -1,0 +1,30 @@
+{
+ "pmid": "34277679",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": "NCT04389762",
+ "n_randomized": 26,
+ "population": "patients with Parkinson's disease",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus plantarum PS128",
+   "strain_codes": [
+    "PS128"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "60 billion CFU per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "pmid": "34444980",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 40,
+ "population": "adults aged 20-40 with self-reported insomnia",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus plantarum PS128",
+   "strain_codes": [
+    "PS128"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "two capsules per day after dinner",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "bai",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "isi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

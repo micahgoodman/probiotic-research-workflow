@@ -1,0 +1,32 @@
+{
+ "pmid": "37836458",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000048386",
+ "n_randomized": 80,
+ "population": "Japanese adults with subjective memory loss",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium animalis subsp. lactis GCL2505 with inulin",
+   "strain_codes": [
+    "GCL2505"
+   ],
+   "brand": null,
+   "other_actives": [
+    "inulin"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "1x10^10 CFU and 2.0 g inulin per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "benefit",
+     "instrument": "cns-vs-nci",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    }
+   ]
+  }
+ ]
+}

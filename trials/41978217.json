@@ -1,0 +1,36 @@
+{
+ "pmid": "41978217",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": "ChiCTR2400084211",
+ "n_randomized": 120,
+ "population": "healthy children aged 3 to 6 in kindergarten",
+ "arms": [
+  {
+   "entity_as_stated": "multi-nutrient fortified formula milk with Bifidobacterium animalis subsp. lactis HN019 and BL-99",
+   "strain_codes": [
+    "HN019",
+    "BL-99"
+   ],
+   "brand": null,
+   "other_actives": [
+    "DHA",
+    "ARA",
+    "vitamins and minerals",
+    "galacto-oligosaccharide prebiotic complex"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "HN019 at least 4x10^6 CFU/g and BL-99 at least 2x10^6 CFU/g of formula, daily for 9 months",
+   "weeks": 39,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "no_difference",
+     "instrument": "wppsi",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    }
+   ]
+  }
+ ]
+}

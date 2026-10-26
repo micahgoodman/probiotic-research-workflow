@@ -1,0 +1,20 @@
+{"pmid": "38287443",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ISRCTN14866272",
+ "n_randomized": 70,
+ "population": "females with Rome IV-diagnosed irritable bowel syndrome",
+ "arms": [
+   {"entity_as_stated": "Lab4 multistrain probiotic",
+    "strain_codes": [],
+    "brand": "Lab4",
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "25 billion CFU per day",
+    "weeks": 8,
+    "results": [
+      {"condition": "anxiety", "result": "not_counted", "reason": "result_not_accessible"},
+      {"condition": "depression", "result": "not_counted", "reason": "result_not_accessible"},
+      {"condition": "cognition", "result": "not_counted", "reason": "result_not_accessible"}
+    ]}
+ ]}

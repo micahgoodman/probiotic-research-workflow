@@ -1,0 +1,44 @@
+{
+ "pmid": "39275252",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT05905679",
+ "n_randomized": 120,
+ "population": "adults with mild to high perceived stress and no diagnosed mental disorder",
+ "arms": [
+  {
+   "entity_as_stated": "Lacticaseibacillus rhamnosus HN001",
+   "strain_codes": [
+    "HN001"
+   ],
+   "brand": "Nutiani HN001",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "6x10^9 CFU per day",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "dass-depression",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "dass-anxiety",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

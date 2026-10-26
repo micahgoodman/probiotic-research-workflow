@@ -1,0 +1,39 @@
+{
+ "pmid": "41769651",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT07163819",
+ "n_randomized": 40,
+ "population": "healthy adults on a five-day trip from China to Japan",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium longum subsp. infantis M-63, B. breve M-16V and B. longum BB536",
+   "strain_codes": [
+    "M-63",
+    "M-16V",
+    "BB536"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1.5x10^9 CFU per day (6 drops)",
+   "weeks": 1,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "gad-7",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{"pmid": "41951219",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT20220713055465N2",
+ "n_randomized": 90,
+ "population": "adults with relapsing-remitting multiple sclerosis, EDSS below 4",
+ "arms": [
+   {"entity_as_stated": "Lactocare",
+    "strain_codes": [],
+    "brand": "Lactocare",
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "twice daily for four months",
+    "weeks": 16,
+    "results": [
+      {"condition": "felt-stress", "result": "not_counted", "reason": "not_measured"}
+    ]}
+ ]}

@@ -1,0 +1,30 @@
+{
+ "pmid": "38075921",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04267731",
+ "n_randomized": 30,
+ "population": "healthy females aged 40-55",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium breve BB091109 postbiotic extract (VMK223)",
+   "strain_codes": [
+    "BB091109"
+   ],
+   "brand": "VMK223",
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": "500 mg per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "benefit",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

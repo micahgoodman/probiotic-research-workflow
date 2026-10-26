@@ -1,0 +1,80 @@
+{
+ "pmid": "41464897",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 116,
+ "population": "healthy adults with high perceived stress, mostly firefighters",
+ "arms": [
+  {
+   "entity_as_stated": "Lactiplantibacillus plantarum PS128 and heat-treated Lacticaseibacillus paracasei PS23",
+   "strain_codes": [
+    "PS128",
+    "PS23"
+   ],
+   "brand": "Neuralli Mood",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1.5x10^10 CFU PS128 per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "isi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "dass-depression",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "dass-stress",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-trait",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "dass-anxiety",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

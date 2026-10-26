@@ -1,0 +1,30 @@
+{
+ "pmid": "36733919",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "KCT0004291",
+ "n_randomized": 100,
+ "population": "adults with halitosis",
+ "arms": [
+  {
+   "entity_as_stated": "Weissella cibaria CMU",
+   "strain_codes": [
+    "CMU"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1x10^8 CFU per tablet, one tablet per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "ces-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "pmid": "41629309",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 21,
+ "population": "healthy older adults",
+ "arms": [
+  {
+   "entity_as_stated": "Lactiplantibacillus plantarum OL3246",
+   "strain_codes": [
+    "OL3246"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1.4x10^10 CFU per day",
+   "weeks": null,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

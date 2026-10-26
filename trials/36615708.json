@@ -1,0 +1,22 @@
+{
+ "pmid": "36615708",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ChiCTR2200062331",
+ "n_randomized": 60,
+ "population": "healthy older adults without cognitive impairment",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium longum BB68S",
+   "strain_codes": ["BB68S"],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "5x10^10 CFU per sachet, once daily",
+   "weeks": 8,
+   "results": [
+    {"condition": "cognition", "result": "benefit", "instrument": "rbans", "comparison": "between_groups", "main_endpoint": "yes"}
+   ]
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "pmid": "38201846",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": null,
+ "n_randomized": 40,
+ "population": "patients with mild to moderate Alzheimer's dementia",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium longum subsp. infantis BLI-02, B. breve Bv-889, B. animalis subsp. lactis CP-9, B. bifidum VDD088 and Lactobacillus plantarum PL-02",
+   "strain_codes": [
+    "BLI-02",
+    "Bv-889",
+    "CP-9",
+    "VDD088",
+    "PL-02"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1x10^10 CFU per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "no_difference",
+     "instrument": "mmse",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "not_measured"
+    },
+    {
+     "condition": "cognition",
+     "result": "no_difference",
+     "instrument": "adas-cog",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

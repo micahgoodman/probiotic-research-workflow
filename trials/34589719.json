@@ -1,0 +1,57 @@
+{
+ "pmid": "34589719",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 20,
+ "population": "healthy male university students during exam stress",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium longum 1714",
+   "strain_codes": [
+    "1714"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1x10^9 CFU per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "CANTAB battery (working memory, visual memory, sustained attention, perception)"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "hads-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

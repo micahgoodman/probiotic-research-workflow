@@ -1,0 +1,70 @@
+{
+ "pmid": "31379269",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 75,
+ "population": "patients on haemodialysis",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus acidophilus T16, Bifidobacterium bifidum BIA-6, Bifidobacterium lactis BIA-7 and Bifidobacterium longum BIA-8 with prebiotics",
+   "strain_codes": [
+    "T16",
+    "BIA-6",
+    "BIA-7",
+    "BIA-8"
+   ],
+   "brand": null,
+   "other_actives": [
+    "prebiotics"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "5 g probiotic (2.7 x 10^7 CFU/g each) plus 15 g prebiotics per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "hads-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "hads-a",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  },
+  {
+   "entity_as_stated": "Lactobacillus acidophilus T16, Bifidobacterium bifidum BIA-6, Bifidobacterium lactis BIA-7 and Bifidobacterium longum BIA-8",
+   "strain_codes": [
+    "T16",
+    "BIA-6",
+    "BIA-7",
+    "BIA-8"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "5 g probiotic (2.7 x 10^7 CFU/g each) per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "hads-a",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

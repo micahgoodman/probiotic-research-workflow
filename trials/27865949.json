@@ -1,0 +1,56 @@
+{
+ "pmid": "27865949",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 29,
+ "population": "healthy male volunteers",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus rhamnosus JB-1",
+   "strain_codes": [
+    "JB-1"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": null,
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "visuospatial memory, attention switching, rapid visual information processing and emotion recognition tasks"
+    },
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

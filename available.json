@@ -1,0 +1,842 @@
+{
+ "_comment": "Rule 8. One consumer product page per entity with a verdict row, or the record that none was found. First filled on 18 October 2026 by a web probe, one reader per batch of entities, after a human review of every found URL; edited directly since then.",
+ "available": {
+  "1714": {
+   "url": "https://www.pharmhealth.com/product/zenflore-precisionbiotic-30-capsules/",
+   "product": "Zenflore PrecisionBiotic 30 Capsules",
+   "country": "Ireland",
+   "checked": "2026-10-18",
+   "names": "With its unique 1714-Serenitas® bifidobacterial culture and specially selected B vitamins, Zenflore reduces fatigue and aids mental performance*. | *1714-Serenitas®, a Bifidobacterium longum culture."
+  },
+  "2071": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "B. breve 207-1 (Byhealth, China) appears only in patents; no consumer product page names 207-1"
+  },
+  "20727": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "strain sold as LPB27 inside Life-Space Broad Spectrum Probiotic Advanced (multi-strain blend, page not confirmed to name 207-27); no single-strain consumer page naming 207-27"
+  },
+  "299v": {
+   "url": "https://uk.oriflame.com/products/product?code=45308",
+   "product": "Probiotic L. plantarum 299V™",
+   "country": "United Kingdom",
+   "checked": "2026-10-18",
+   "names": "L. plantarum 299V(TM)"
+  },
+  "a6+b09+l9+lp06": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "web search for the four codes together found no product or paper naming A6, B09, L9 and LP06 as a set; no consumer page"
+  },
+  "ara+bl99+dha+galactooligosaccharideprebioticcomplex+hn019+vitaminsandminerals": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "English and Chinese searches found no formula or product page naming both HN019 and BL-99; HN019 appears only as an ingredient (Fonterra NZMP) and in a Fonterra trial"
+  },
+  "b3+bb536+m16v+m63": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no consumer product found with all four of B-3, BB536, M-16V and M-63; only the three-strain BB536 + M-16V + M-63 pediatric drops and a nine-strain practitioner product (Orthoplex), which lack B-3"
+  },
+  "b420+bl04+hn019+lp115+lpc37+ncfm+prebiotics": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "WONDERLAB six-strain product found only on a smzdm.com deals page (Tmall Supermarket offer shown as expired, and it spells the strain BI-04 not Bl-04); WONDERLAB shops (Tmall, JD) not openable and a newer formula list in news omits B420 Main session, 18 Oct 2026: JD.com requires a login in Chrome too; Tmall not tried; stays none found."
+  },
+  "bb05": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product names BB05; searches found only the college-student diarrhoea trial and generic B. breve supplements"
+  },
+  "bb06+highprebioticdiet+hn001+hn019+la14+lc11+lp115+r0052+r0175": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "BioCeuticals UB NuroBiota (8 strains) is practitioner-only: the Niim dispensary page says 'This content is protected. Please log in', other Australian shops (AustralianVitamins, buywisely price page) returned 403 or no buy page; no open page showed price, buy control and the codes"
+  },
+  "bb06+hn001+hn019+la14+lc11+lp115+r0052+r0175": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "BioCeuticals Clinical UB NuroBiota is the match but is practitioner-only (NIIM Dispensary page behind login, no price or strains visible); no public shop page opened that shows price, buy control and the codes"
+  },
+  "bb077+pbs072": {
+   "url": "https://www.doz.pl/p/lactinova-stres-kapsulki-28-szt-190274",
+   "product": "Lactinova stres, kapsułki, 28 szt.",
+   "country": "Poland",
+   "checked": "2026-10-18",
+   "names": "Limosilactobacillus reuteri PBS072 2 x 109 CFU2 (LMG P-30157) | Bifidobacterium breve BB077 2 x 109 CFU2 (DSM 25175)"
+  },
+  "bb091109+heatkilled": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "BB091109 / VMK223 postbiotic found only in the Roehampton/veMico trial; other B. breve postbiotic powders are research-use-only (Creative Biolabs) or a different origin; no consumer page names BB091109 or VMK223"
+  },
+  "bb12+bc513+la5+lcasei431": {
+   "url": "https://www.tuttofarma.it/integratori-di-vitamine-e-fermenti-lattici/10887-lactoflorene-plus-fermenti-lattici-con-vitamine-18-flaconcini-10-ml-8058363612530.html",
+   "product": "Lactoflorene Plus Fermenti Lattici con Vitamine 18 Flaconcini 10 ml",
+   "country": "Italy",
+   "checked": "2026-10-18",
+   "names": "Lactobacillus acidophilus LA-5 (DSM 13241), Bifidobacterium animalis subsp. lactis BB-12 (DSM 15954), Lactobacillus paracasei L. CASEI 431 (ATCC 55544); Bacillus coagulans BC513 (LMG S-24828)"
+  },
+  "bb12+gg+magnesiumchloride": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Probio-Tec BG-VCap-6.5 is a Chr. Hansen ingredient product; no consumer page found for it, and no shop page found for BB-12 plus LGG plus magnesium chloride"
+  },
+  "bb12+la5+vitamind+vitamine": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product carrying Bb-12, La-5, vitamin D and vitamin E together; closest yogurts lack vitamin E or one strain"
+  },
+  "bb536+m16v+m63": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "only listing found is an infant-drops product at Choice Pharmacy (Australia) with all three strains, but the page blocked fetch (403) so price and buy control could not be confirmed; other products carry only M-16V or only M-63 Main session, 18 Oct 2026: Choice Pharmacy passed its bot check in Chrome but its search gives 404 and a site search finds no BB536 drops (only BB-12 and BR03/B632 drops); no product with all three strains found anywhere."
+  },
+  "bb68s": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "web search found only the 2022 Nutrients trial; consumer results were BB536 products, not BB68S; no page names BB68S"
+  },
+  "bbr60": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "ingredient supplier only (AFS Bio freeze-dried powder, 1 kg, sold out); consumer B. breve products do not name BBr60"
+  },
+  "bc99": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Only consumer product found is Grisso G-Serein (grissolife.com, BC99 per launch news) but the shop returned HTTP 403 so price, buy control and strain text could not be read; ingredient maker Wecare Probiotics otherwise; no other retail page found Main session, 18 Oct 2026: grissolife.com opens in Chrome but every product path (/products/g-serein, products.json, the product link itself) returns the home page, which shows no price or strain text; three tries, stopped."
+  },
+  "bcp92": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "ingredient supplier only (Pellucid Lifesciences, Pelluspore); the only consumer product found naming BCP92 is a multi-strain blend (CoreBiotic Sensitive), a different product"
+  },
+  "bf839+earthwormprotein": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no retail listing; BF839 appears only in research papers (Guangzhou trial product)"
+  },
+  "bia6+bia7+bia8+fructooligosaccharides+galactooligosaccharides+inulin+t16": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product, shop or paper page outside the trial itself names BIA-6, BIA-7, BIA-8 or T16 together"
+  },
+  "bia6+bia7+bia8+prebiotics+t16": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "web search for T16, BIA-6, BIA-7, BIA-8 found no product or page naming these codes"
+  },
+  "bia6+bia7+bia8+t16": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product or page names BIA-6, BIA-7, BIA-8 or T16 (web search of the four codes, with and without brands, returned only unrelated hits)"
+  },
+  "bifico": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "JD.com lists 培菲康 (Bifico, Shanghai Sine) capsules but its listing and product pages show no price, buy control or brand text when fetched (script-built pages); no other shop page could be opened; no page with the Latin name Bifico/BIFICO found Main session, 18 Oct 2026: JD.com search redirects to a login wall in Chrome too; not bypassed."
+  },
+  "biozend+vitamind": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product page found for BioZenD; searches found only the schizophrenia trial that tested it (Iran)"
+  },
+  "bl04+br03+bs01+gg": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product found with all four strains (BS01, BR03, BL04 and GG); partial matches only (KidsBiotic has BR03+GG; Renew Life has Bl-04+GG)"
+  },
+  "bl04+lf16+lp01+lr06": {
+   "url": "https://www.nowafarmacja.pl/mikrobiom-neuro4biotic-20-kapsulek",
+   "product": "MIKROBIOM NEURO4biotic, 20 kapsułek",
+   "country": "Poland",
+   "checked": "2026-10-18",
+   "names": "Bifidobacterium longum BL04 (DSM 23233), Limosilactobacillus fermentum LF16 (DSM 26956), Lactiplantibacillus plantarum LP01 (LMG P-21021), Lacticaseibacillus rhamnosus LR06 (DSM 21981)"
+  },
+  "bla80": {
+   "url": "https://www.amazon.com/dp/B0DSC4HBSP",
+   "product": "Natural Foundation Bifidobacterium Lactis Probiotic 240 Tablets (4 Month Supply) - 3 Billion CFU Researched Strain",
+   "country": "United States",
+   "checked": "2026-10-18",
+   "names": "RESEARCHED STRAIN BLa80 – Not all probiotics are created equal.; Our Bifidobacterium Lactis BLa80 is a scientifically researched strain"
+  },
+  "bli02+bv889+cp9+pl02+vdd088": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "BLI-02, CP-9 and VDD088 appear only on ingredient-supplier pages (Knowde, Ingredients Network); no consumer page names all five codes"
+  },
+  "branchedchainaminoacids+inulin+oatbran+pectin+resistantstarch+synbiotic2000forte": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "supersynbiotics.se consumer shop sells Synbiotic15, Synbiotic Cap and Synbiotic40 only, no page names Synbiotic 2000 Forte; sources say Synbiotic 2000 is research-only"
+  },
+  "cbp001010+cncmi4036+es1+fructooligosaccharides": {
+   "url": "https://www.farmaciasdirect.eu/products/heel-gasteel-plus-2-x-30-stick",
+   "product": "Heel Gasteel Plus, 2 x 30 stick",
+   "country": "Spain",
+   "checked": "2026-10-18",
+   "names": "Bifidobacterium longum ES1, Bifidobacterium lactis CBP-001010 and Lactobacillus rhamnosus CNCM I-4036, Fructooligosaccharides, Zinc, Selenium, Vitamin D."
+  },
+  "cbtlr5": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no consumer page found naming CBT-LR5 or MH-Pro; only trial papers and Cell Biotech (strain maker) information"
+  },
+  "ccfm1025": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no retail product names CCFM1025; only papers and generic B. breve ingredient listings"
+  },
+  "ccfm6432": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "web searches for the code (English and Chinese) found only trial, patent and Jiangnan University records; no shop or product page names CCFM6432"
+  },
+  "cect7347": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "ES1 / CECT 7347 is sold by ADM as an ingredient (B2B); the one consumer product found, Bioligent Tribiotic+ (bioligent.com, $48.00, Add to cart), holds a heat-activated B. longum CECT-7347 plus four other strains (R0011, R0052, R0175, PBS072), so it is a different product"
+  },
+  "cect7347+cect8361": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "ingredient supplier only (ADM/Biopolis) plus patents; the only consumer capsule found with CECT 7347 (Bioligent Tribiotic+) lacks CECT 8361; no page names both codes"
+  },
+  "cect7347+heatkilled": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "HT-ES1 (B. longum CECT 7347 heat-treated) is an ADM Biopolis ingredient for manufacturers; no consumer product page naming CECT 7347 or HT-ES1 found"
+  },
+  "cect7480+cect7485+vitamind": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product names both CECT7485 (KABP023) and CECT7480 (KABP052); KABP-023 appears only inside a many-strain label, and CECT 7480 only beside CECT 7481 in oral-health chewing-gum patents"
+  },
+  "ckdb001": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no consumer product found; CKDB001 appears only in CKD Bio / Chong Kun Dang research and patents, while Chong Kun Dang LACTO-FIT retail products do not name it"
+  },
+  "cmu": {
+   "url": "https://www.vitacost.com/products/oraticx-green-breath-oral-probiotics-mint-30-lozenges-154857",
+   "product": "Oraticx, Green Breath Oral Probiotics, Mint, 30 Lozenges",
+   "country": "United States",
+   "checked": "2026-10-18",
+   "names": "Weissella cibaria CMU (OraCMU™)"
+  },
+  "cncmi1079": {
+   "url": "https://triquetrahealth.com/products/organic-s-boulardii",
+   "product": "Organic Saccharomyces Boulardii - 10 Billion CFU",
+   "country": "United States",
+   "checked": "2026-10-18",
+   "names": "Clinically validated CNCM I-1079 strain"
+  },
+  "cncmi1519+cncmi1630+cncmi1631+cncmi1632": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "these four CNCM codes are Danone yogurt starter strains (S. thermophilus I-1630, L. lactis I-1631, L. bulgaricus I-1632 and I-1519) found in Activia, which also carries B. lactis I-2494; no consumer page names all four codes, and no psychobiotic oral suspension with these codes was found"
+  },
+  "cncmi1519+cncmi1630+cncmi1631+cncmi1632+hypocaloricdiet": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no page found naming CNCM I-1519, I-1630, I-1631 and I-1632 together; the trial paper's full text was behind a browser check (not bypassed) and no search result identified the product or its maker"
+  },
+  "cncmi3690": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "only research-use culture suppliers (Creative Biolabs, 'Do Not Use in Humans'), patents and papers; no consumer product page names CNCM I-3690"
+  },
+  "coenzymeq10+magnesiumorotate+nrgbiotic": {
+   "url": "https://www.amcal.com.au/shop/product/mmc-p100025339/medlab-nrgbiotic-60-capsules/",
+   "product": "Medlab NRGBiotic 60 Capsules",
+   "country": "Australia",
+   "checked": "2026-10-18",
+   "names": "Medlab NRGBiotic 60 Capsules"
+  },
+  "comflor": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product or shop page named Comflor found; searches return other multi-strain probiotics (Compliflora, Microflor, etc.)"
+  },
+  "comflor+zinc": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product named Comflor found anywhere; only differently named zinc-plus-probiotic sachets (Flora-ZN, Voxflora-SB, DiaZn)"
+  },
+  "cp2305+heatkilled": {
+   "url": "https://anamall.ana.co.jp/shop/g/g0075-10153891/",
+   "product": "アサヒ ディアナチュラゴールド 乳酸菌CP2305 30日分 (60粒) 睡眠の質の向上 サプリメント 機能性表示食品",
+   "country": "Japan",
+   "checked": "2026-10-18",
+   "names": "ガセリ菌CP2305株（L．gasseri CP2305）：100億個; 殺菌乳酸菌末／セルロ-ス"
+  },
+  "cp790+heatkilled": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "only the trial paper (heat-treated CP790-fermented milk, Japan) found; no product, brand or shop page names CP790"
+  },
+  "cul20+cul21+cul34+cul60+cul66+vitaminc+vitamind+zinc": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Lab4P consortium listed only by a supplier database (Pipeline Pharma); consumer Lab4 products (Pro-ven, Vitabiotics Probiotis, BioCeuticals UltraBiotic) do not name exactly CUL20, CUL21, CUL34, CUL60, CUL66 or carry extra strains (CUL63, CUL68); no page found naming all five codes with a price"
+  },
+  "dds1": {
+   "url": "https://www.shop-apotheke.com/arzneimittel/A4446388/anatis-lactobac.htm",
+   "product": "anatis Lactobac (60 capsules)",
+   "country": "Germany",
+   "checked": "2026-10-18",
+   "names": "100 mg Lactobacillus acidophilus DDS-1"
+  },
+  "de111": {
+   "url": "https://kiwla.com/revive-herbs-probiotic-w-de111-60-vegetable-capsules/",
+   "product": "Revive Herbs Probiotic w DE111 60 Vegetable Capsules",
+   "country": "India",
+   "checked": "2026-10-18",
+   "names": "DE111 (Bacillus subtilis) is a clinically studied strain"
+  },
+  "dg+inulin+vitaminb1+vitaminb2+vitaminb6": {
+   "url": "https://gemini.pl/enterolactis-duo-10-saszetek-9081397",
+   "product": "Enterolactis Duo, 10 saszetek",
+   "country": "Poland",
+   "checked": "2026-10-18",
+   "names": "Inulina, fruktoza, L. casei DG (Lacticaseibacillus paracasei DG - I-1572, DSM 34154)"
+  },
+  "dn114001": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Actimel/DanActive sold at UK, US supermarkets but I could not open any retail page (403 blocks) and no page I could read names the code DN-114001 next to a price and buy control Main session, 18 Oct 2026: retail pages (Morrisons, Tesco, Colruyt, Carrefour) name the strain only as \"L. casei Danone\"; no shop page prints DN-114 001."
+  },
+  "dn173010+honey": {
+   "url": "https://www.rohlik.cz/en-CZ/710717-danone-activia-probiotic-yogurt-drink-berries",
+   "product": "Danone Activia probiotic yogurt drink berries",
+   "country": "Czech Republic",
+   "checked": "2026-10-18",
+   "names": "Bifidobacterium animalis DN-173 010 pod obchodním názvem Bifidus ActiRegularis®"
+  },
+  "dr7": {
+   "url": "https://www.drogal.com.br/suplemento-alimentar-bifilac-mind-30-capsulas/p",
+   "product": "Suplemento Alimentar Bifilac Mind 30 Cápsulas",
+   "country": "Brazil",
+   "checked": "2026-10-18",
+   "names": "O Bifilac Mind é um suplemento alimentar em cápsulas, composto por probióticos Lactobacillus plantarum DR7."
+  },
+  "dsm17938": {
+   "url": "https://pasteurpharmacy.com/products/biogaia-protectis-digestive-health-probiotic-supplement-lemon-30-ct-1",
+   "product": "BioGaia Probiotic Supplement, Lemon, 30 Chewable Tablets",
+   "country": "United States",
+   "checked": "2026-10-18",
+   "names": "Lactobacillus reuteri Protectis (L. reuteri DSM 17938)"
+  },
+  "dsm17938+galactooligosaccharides+rhamnose": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "BioGaia Protectis (DSM 17938) is sold by many shops (Chemist Warehouse, Watsons, Well.ca) but is the bare strain; no product found with DSM 17938 plus galacto-oligosaccharide plus rhamnose"
+  },
+  "dsm24730+dsm24731+dsm24732+dsm24733+dsm24734+dsm24735+dsm24736+dsm24737": {
+   "url": "https://welzo.com/products/visbiome-1125-billion-60-capsules",
+   "product": "Visbiome (112.5 Billion) - 60 Capsules",
+   "country": "United Kingdom",
+   "checked": "2026-10-18",
+   "names": "Lactobacillus paracasei DSM 24733/SD5218; Lactobacillus plantarum DSM 24730/SD5209; Lactobacillus acidophilus DSM 24735/SD5212; Lactobacillus delbrueckii subspecies bulgaricus* DSM 24734/SD5210; Bifidobacterium longum± DSM 24736/SD5219; Bifidobacterium infantis± DSM 24737/SD5220; Bifidobacterium breve DSM 24732/SD5206; Streptococcus thermophilus DSM 24731/SD5207"
+  },
+  "ec12+heatkilled": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "EC-12 is sold by Combi Co. (Japan) as a food ingredient (B2B listings); no consumer shop page naming EC-12 found in English or Japanese searches"
+  },
+  "ergyphilusplus": {
+   "url": "https://www.soin-et-nature.com/en/9685-ergyphilus-nutergia-plus-60-capsules.html",
+   "product": "Ergyphilus Plus Probiotics by Nutergia, 30 capsules",
+   "country": "France",
+   "checked": "2026-10-18",
+   "names": "Nutergia Ergyphilus Plus Probiotics"
+  },
+  "erythromycin+pro450dlactatefreemultistrain": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Spectrumceuticals Pro4-50 (4 strains, Australia) is a practitioner dispensary product: Niim page says 'This content is protected. Please log in', another listing shows 'Select size' with no buy control; neither page says D-lactate free or names the trial product"
+  },
+  "exobdnf": {
+   "url": "https://www.vitalabo.com/anatis-naturprodukte/exobdnf-triphala-scutellaria-baicalensis",
+   "product": "ExoBDNF® + Triphala + Scutellaria baicalensis, 60 capsules",
+   "country": "Austria",
+   "checked": "2026-10-18",
+   "names": "Pediococcus acidilactici (ExoBDNF®)"
+  },
+  "familact": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "searched English and Persian; found only research papers and Persian health blogs (no price or buy control); no online shop page for Familact (Zist Takhmir, Iran) could be found or opened"
+  },
+  "familact+selenium": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Familact is an Iranian Zist Takhmir probiotic; English and Persian searches found no shop page with a price or buy control (maker site did not resolve)"
+  },
+  "fb0012+fb0015+fb0047": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Nella (FitBiomics, fitbiomics.com/products/nella) is sold at $65 for 30 days but the page text does not show the codes FB0012, FB0015 or FB0047 (strain lines are in an image) and has no Add to cart button, only Shop Now"
+  },
+  "fbms5810": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no consumer product found; only research papers on the University of the Aegean oat-flake product and a generic bulk Lactococcus cremoris powder (raw material, not sold to consumers)"
+  },
+  "fructooligosaccharides+hn001+hn019+lpc37+ncfm": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Simbioflora (Farmoquimica, Brazil) is sold by pharmacy sites; Extrafarma page (R$ 122,99) lists NCFM, HN001, HN019 and FOS but writes 'LPC-31' not Lpc-37; Drogasil/Araujo blocked fetch, Drogaria Sao Paulo and Pacheco show sold out with no codes, Drogal and Preco Popular show no strain codes; no opened page names all four codes"
+  },
+  "fructooligosaccharides+inulin+vitaminb12+vitaminb2+vitaminb6+w19+w20+w22+w23+w24+w51+w52+w56+w62": {
+   "url": "https://www.onlineapo.at/en/OMNi-BiOTiC-SR-9-with-B-vitamins-sachets/RA5983823",
+   "product": "OMNi-BiOTiC® SR-9 with B vitamins sachets, 28 pcs",
+   "country": "Austria",
+   "checked": "2026-10-18",
+   "names": "Lactobacillus casei W56, Lactobacillus acidophilus W22, Lactobacillus paracasei W20, Bifidobacterium lactis W51, Lactobacillus salivarius W24, Lactococcus lactis W19, Bifidobacterium lactis W52, Lactobacillus plantarum W62, Bifidobacterium bifidum W23"
+  },
+  "g91": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no single-strain page naming G9-1 found; the only consumer product found with G9-1 (Kyolic Kyo-dophilus 9, eBay) is a three-strain blend, which is a different product"
+  },
+  "gcl2505+inulin": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Glico BifiX Yogurt alpha (B. lactis GCL2505 with inulin) is described in news and press releases, but no shop page with a price and buy control could be opened (Glico Direct shop and Amazon only named in articles; web.bifix.jp did not resolve)"
+  },
+  "gg": {
+   "url": "https://pasteurpharmacy.com/products/culturelle-probiotic-once-daily-vegetable-capsule-31",
+   "product": "Culturelle Probiotic, Health & Wellness, Vegetarian Capsules 30 ct",
+   "country": "United States",
+   "checked": "2026-10-18",
+   "names": "designed with the power of Lactobacillus rhamnosus GG, a clinically studied probiotic strain"
+  },
+  "gg+inulin": {
+   "url": "https://www.vitacost.com/culturelle-probiotics-digestive-daily-probiotic-50-vegetarian-capsules",
+   "product": "Culturelle, Probiotics, Digestive Daily Probiotic, 50 Once Daily Vegetarian Capsules",
+   "country": "United States",
+   "checked": "2026-10-18",
+   "names": "Lactobacillus rhamnosus GG; With Prebiotics 200 mg Inulin; Inulin (Chicory Root Extract)"
+  },
+  "glutamine+ubbi01+ubbla70+ubbr01+ublp40+ublr58+uniqueis2": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "only a patent and the Unique Biotech ingredient pages describe the six-strain set; the Unique IS2-only consumer products found (e.g. Biotapro) are single-strain, not this blend with glutamine"
+  },
+  "ha114": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "ingredient maker only (Lallemand Health Solutions); HA-114 appears only inside multi-strain blends (e.g. Natural Factors Ultimate Probiotic 12/12), which are different products; no single-strain HA-114 consumer page found"
+  },
+  "heal9": {
+   "url": "https://www.apotea.se/probi-mjolksyrabakterier-sense-30-kapslar",
+   "product": "Probi Mjölksyrabakterier Sense 30 kapslar",
+   "country": "Sweden",
+   "checked": "2026-10-18",
+   "names": "Lactiplantibacillus plantarum HEAL9®"
+  },
+  "heal9+sadenosylmethionine": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no commercial product combining HEAL9 and S-adenosylmethionine found; only the trial paper"
+  },
+  "heatkilled+jcm5805": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Kirin iMUSE products use the strain under the name 'Plasma lactic acid bacteria / L. lactis strain Plasma'; the weee.com page (iMUSE Plasma Immune, $15.99) shows no buy button and no JCM5805 or heat-killed wording, and no shop page found names JCM 5805"
+  },
+  "heatkilled+jk5g": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no page names JK5G except a 2023 ESMO trial abstract; only research-use-only postbiotic powders found; no consumer product"
+  },
+  "heatkilled+mcc1848": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "ingredient only (Morinaga LAC-Living+ postbiotic, GRAS self-affirmed); no consumer product page naming MCC1848 found"
+  },
+  "heatkilled+p8+v9+zhang": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "English and Chinese searches for Probio-Eco postbiotic with Zhang, P-8 and V9 found only research papers; no consumer product page names these strains or the Probio-Eco brand"
+  },
+  "heatkilled+ps150": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product names PS150 found; only the 2025 heat-treated PS150 sleep trial and mouse studies (strain funded by Bened Biomedical); Bened Life's shop lists Neuralli MP, Cognition+ and Mood, none naming PS150"
+  },
+  "heatkilled+ps23": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "PS23 is sold as an ingredient (Bened Biomedical VigorBiotics) and inside blend Neuralli Mood (PS128 plus heat-treated PS23, a different product); benedlife.com shop pages did not show price or strain text when fetched; no standalone heat-killed PS23 consumer page found"
+  },
+  "heatkilled+sbc8803": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Sapporo Wellness Lab Switch Nyusankin (SBL88) shop pages (sp-mall.jp, sapporo-wellnesslab.jp) did not resolve when fetched; no other open consumer page found naming SBC8803 or SBL88 with a buy control"
+  },
+  "heatkilled+snk12": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "ingredient supplier only (IHM Co., Tokyo; sterilized SNK powder, 1 kg unit, inquiry link); consumer product SNK1000 found only in a filing notice, no shop page with price"
+  },
+  "hn001": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "web searches for single-strain HN001 products found only multi-strain blends (Designs for Health ProbioMed 50, Garden of Life prenatal, Life-Space, FloraJen) and ingredient suppliers (Fonterra NZMP, IFF Howaru, MayPro Nutiani); no single-strain consumer page found"
+  },
+  "hn001+hn019+lpc37+ncfm": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "the only four-strain product found is Simbioflora (Brazil), which also contains fructooligosaccharides and is a different entity; no page for the four strains alone"
+  },
+  "hu58+sc208": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no consumer page for a product of exactly HU58 + SC208 (MegaDuo is only an ingredient blend); Microbiome Labs MegaSporeBiotic (4 strains) and DigestMate (adds S. boulardii and enzymes) are different products"
+  },
+  "idcc1201": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "web and Korean-language search found only the Ildong Bioscience trial and ingredient news; no consumer product page naming IDCC 1201 with a price"
+  },
+  "inulin+oatbran+pectin+resistantstarch+synbiotic2000forte": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Synbiotic 2000 Forte research formula is not sold to consumers (afonso.se pages); SuperSynbiotics site (supersynbiotics.se) shows no price, buy button or the name 'Forte'; no shop page found"
+  },
+  "jb1": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product names JB-1; only generic L. rhamnosus supplements and research"
+  },
+  "jylp326": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product or shop page names JYLP-326; only the trial paper, patents and generic L. plantarum bulk sellers"
+  },
+  "k11": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no page found naming a kefir-derived probiotic K11; only unrelated kefir products turned up"
+  },
+  "k11tmax+magnesium+selenium+vitamina+zinc": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "only trial papers (kefir-derived K11-TMAX in autism) found; no shop page or consumer product named K11-TMAX in English or Korean search"
+  },
+  "k56": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no shop page found; K56 is Yili's strain used in Chinese drinks (Changyi 100%, Meiyitian) but no Chinese shop page could be found or opened by this search"
+  },
+  "kabp031+kabp032": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product or page names KABP031 or KABP032; only the related KABP011/012/013 blend found"
+  },
+  "kw3110": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Kirin sells KW3110 in Japan as 'KW lactic acid bacteria' (Imuse Eye KW, Kirin Allerbalance, Noale) but no shop page I could open names the code KW3110, and the catalogue calls the entity live while those products use the heat-killed strain"
+  },
+  "la5+lcasei01": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no consumer product page found naming LA-5 together with CASEI-01 (searched Chr. Hansen strain names, trademarks and drinks); code L. CASEI-01 not found on any page"
+  },
+  "lactibiane": {
+   "url": "https://mazenonline.com/products/lactibiane-reference-10-cap",
+   "product": "Lactibiane Reference 10 Cap (PiLeJe), sold in 10-capsule or 30-capsule sizes",
+   "country": "Lebanon",
+   "checked": "2026-10-18",
+   "names": "Lactibiane Refernce  contains 4 microbiotic strains dosed at 10 billion per capsule."
+  },
+  "lactocare": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "LactoCare is an Iranian Zist Takhmir product; no open shop page found for it; other products named Lactocare (Danish Lactocare Plus/Daily, Malaysian Lacto Care, Brazilian lactase) are different products and were not used"
+  },
+  "lactocare+vitamind": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "LactoCare is an Iranian Zist Takhmir product; no open shop page found for it; other products named Lactocare (Danish Lactocare Plus/Daily, Malaysian Lacto Care, Brazilian lactase) are different products and were not used"
+  },
+  "lactofem": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no four-strain product named Lactofem found; other products called Lactofem are a single-strain Czech capsule (MUSA), an Italian five-strain German-listed product (LAGA Pharma) and a vaginal suppository, none matching the trial's formula"
+  },
+  "lb42": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product or shop page names LB42; other L. bulgaricus products carry different strain codes (e.g. LDB01 DSM 16606)"
+  },
+  "lcasei431": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "only product found naming CASEI 431 is Optibac Immune Support, which is discontinued or out of stock at every shop opened (Welzo sold out, PharmHealth out of stock, Medino 'discontinued and will not be back in stock'); Vinamilk Probi drink out of stock with no price"
+  },
+  "lcr35": {
+   "url": "https://www.drmax.ro/gynophilus-pro-14-capsule-biessen-pharma",
+   "product": "Gynophilus Pro, 14 capsule, Biessen Pharma",
+   "country": "Romania",
+   "checked": "2026-10-18",
+   "names": "Gynophilus Pro contine Lacticaseibacillus rhamnosus Lcr35"
+  },
+  "lp815": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "ingredient supplier only (Verb Biotics sells LP815 to brands, no price or buy button); the one finished product found (SoliVana SLEEPgevity) could not be opened to confirm price, buy control and strain list (store link redirected, then 404)"
+  },
+  "lpc37": {
+   "url": "https://www.doz.pl/p/neurolpc-adult-kapsulki-20-szt-175534",
+   "product": "NeuroLPC Adult, kapsułki, 20 szt.",
+   "country": "Poland",
+   "checked": "2026-10-18",
+   "names": "Lactobacillus paracasei Lpc-37"
+  },
+  "lpla33": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product or page names Lpla33 or DSM34428; only papers"
+  },
+  "ly66+olp01+pl02": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product or page names all three codes (LY-66, OLP-01, PL-02); LY-66 and PL-02 appear only in papers"
+  },
+  "m63": {
+   "url": "https://www.wholefoodsmarket.com/product/jarrow-formulas-babys-jarrodophilus-drops-b00vbyjw4y",
+   "product": "Jarrow Jarro-Dophilus Infant Liquid Probiotic, Intestinal Health Support",
+   "country": "United States",
+   "checked": "2026-10-18",
+   "names": "B. infantis M-63 was clinically proven to colonize intestines of infants."
+  },
+  "mcc1274": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Japanese products exist (Alinamin Pharmaceutical 'Bifidobacteria memory habit', Morinaga 'Memory Bifidus' supplement, Matsukiyo online store) but the one page I could open (Alinamin) shows open price and no buy control, and the shop pages (matsukiyococokara-online, iHerb, Morinaga) blocked fetch or could not be found"
+  },
+  "met2": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no consumer product: MET-2 is an investigational microbial ecosystem therapy from Canadian trials, not sold in any shop found"
+  },
+  "miyairi588": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "closest is Strong Miyarisan tablets (Tsuruha, 1,938 yen, 'カートに入れる', in stock) but the page names the strain only as 宮入菌 (Miyairi bacterium) and never 'MIYAIRI 588' or CBM588; sold as a quasi-drug (医薬部外品)"
+  },
+  "moodamin": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product or shop page named Moodamin found; searches return only unrelated mood probiotics (InnovixLabs Mood Probiotic, Garden of Life Mood+) that carry other brand names"
+  },
+  "mtcc5856": {
+   "url": "https://www.shop-apotheke.at/arzneimittel/upmLL49YH/vitasanum-bacillus-coagulans-lactospore.htm",
+   "product": "VitaSanum® Bacillus coagulans LactoSpore® - 150 mg Tagesportion 60 St",
+   "country": "Austria",
+   "checked": "2026-10-18",
+   "names": "VitaSanum® Bacillus coagulans (Stamm MTCC 5856) ist ein probiotischer Bakterienstamm"
+  },
+  "n1115": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "web searches (English and Chinese) found no consumer product page naming N1115; only trial papers and Junlebao's 10-strain K-10 yogurt (a different product)"
+  },
+  "ncc3001": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "web search found only Nestle Institute trial papers and patents for B. longum NCC3001 (ATCC BAA-999); no consumer product page names NCC3001"
+  },
+  "ncfm": {
+   "url": "https://www.drogal.com.br/suplemento-alimentar-florastor-probiotico-1-bilhao-12-capsulas/p",
+   "product": "Suplemento Alimentar Florastor Probiótico 1 Bilhão 12 Cápsulas",
+   "country": "Brazil",
+   "checked": "2026-10-18",
+   "names": "Florastor Probiótico 1 Bilhão é um suplemento alimentar em cápsula composto por Lactobacillus acidophilus NCFM."
+  },
+  "ncu37": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product names NCU-37; only the 2026 Nanchang University trial and other L. reuteri strains (DSM 17648) found"
+  },
+  "nk33+nk98": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no retail listing for NVP-1704 or the strain pair NK33 + NK98; only papers and patents"
+  },
+  "nourishkefir": {
+   "url": "https://www.abelandcole.co.uk/kefir-organic-nourish?cid=13687",
+   "product": "Kefir, Organic, Nourish (247ml)",
+   "country": "United Kingdom",
+   "checked": "2026-10-18",
+   "names": "Nourish's organic Kefir is a speciality"
+  },
+  "ol3246": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no page of any kind found naming OL3246 besides the trial; no product"
+  },
+  "oll2716": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Meiji Probio Yogurt LG21 (Lactobacillus gasseri OLL2716) product pages show no price or buy control (links out to Amazon/Rakuten; home-delivery sign-up only for some lines); Amazon.co.jp returned 503 and no Rakuten/Yahoo product page could be opened"
+  },
+  "olp01": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no consumer product found; strain held by Glac Biotech (Taiwan), whose trial capsules were supplied for research; no shop page names OLP-01"
+  },
+  "p30021+p30025": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product or page names P30021 or P30025; only a generic study of L. brevis and L. plantarum"
+  },
+  "p8": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "only research papers and starter-culture mentions for L. plantarum P-8; no consumer product page names P8 or P-8 as a strain"
+  },
+  "pa53": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "PA53 is supplied as an ingredient by Wecare Probiotics (China); no consumer product page naming PA53 found"
+  },
+  "probio87": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "ingredient supplier only (Vitafoods Europe 2026 exhibitor listing, B2B); no consumer product page"
+  },
+  "probiom8": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "searches in English and Chinese found only papers and a dairy-starter use (supplier JinHua YinHe); no consumer product page names Probio-M8"
+  },
+  "providac": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "Providac (Zydus, India) pages found: 1mg says 'Prescription required' (structured data also OutOfStock); PharmEasy offers only 'Order on Whatsapp' and mentions prescription verification; Apollo page has Add to Cart but does not state prescription status"
+  },
+  "ps128": {
+   "url": "https://benedlife.com/products/neuralli",
+   "product": "Neuralli MP",
+   "country": "United States",
+   "checked": "2026-10-18",
+   "names": "Neuralli MP– PS128 probiotic medical food – Bened Life | Neuralli MP is the 1st gut-brain probiotic medical food Formulated with PS128TM"
+  },
+  "ps128+ps23": {
+   "url": "https://benedlife.com/products/neuralli_mood_probiotic_postbiotic",
+   "product": "Neuralli Mood Quarterly Subscription",
+   "country": "United States",
+   "checked": "2026-10-18",
+   "names": "It contains the unique PS128 probiotic strain that influences your brain’s key mood neurotransmitters. | Neuralli Mood’s stress-relieving* postbiotic HT-PS23 strain excels when stress feels the most intense.*"
+  },
+  "ps23": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "PS23 sold as an ingredient (Bened Biomedical VigorBiotics) and only inside blends or as heat-treated PS23 (different entity); benedlife.com shop lists Neuralli products with no standalone live PS23 page"
+  },
+  "pxn21+pxn23+pxn25+pxn27+pxn30+pxn35+pxn37+pxn39+pxn45+pxn47+pxn54+pxn57+pxn63+pxn66": {
+   "url": "https://www.healthwords.ai/us/shop/products/bio-kult-advanced-multi-strain-formulation-30-capsules!bc32ee8a-c327-4070-9095-a023c6c5de05",
+   "product": "Bio-Kult Advanced Multi-Strain Formulation (30 Capsules)",
+   "country": "United Kingdom (retailer healthwords.ai, UK footer; price shown in USD)",
+   "checked": "2026-10-18",
+   "names": "Bacillus subtilis PXN 21, Bifidobacterium bifidum PXN 23, Bifidobacterium breve PXN 25, Bifidobacterium infantis PXN 27, Bifidobacterium longum PXN 30, Lactobacillus acidophilus PXN 35, Lactobacillus casei PXN 37, Lactobacillus delbrueckii ssp. bulgaricus PXN 39, Lactobacillus helveticus PXN 45, Lactobacillus plantarum PXN 47, Lactobacillus rhamnosus PXN 54, Lactobacillus salivarius PXN 57, Lactobacillus lactis ssp. lactis PXN 63, Streptococcus thermophilus PXN 66"
+  },
+  "r0052+r0175": {
+   "url": "https://brainmd.com/products/probrainbiotics",
+   "product": "ProBrainBiotics",
+   "country": "United States",
+   "checked": "2026-10-18",
+   "names": "Bifidobacterium longum R0175 and Lactobacillus helveticus R0052"
+  },
+  "r0052+r0175+r1012": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "products with R0052, R0175 and R1012 together (Probio SAP, NFH Probio SAP, Recovery SAP) carry extra strains, so they are different products; ProBrainBiotics and Ther-Biotic Well Mood carry R0052+R0175 only"
+  },
+  "r0052+r0175+sadenosylmethionine": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product found combining Rosell-52, Rosell-175 and S-adenosyl methionine; Rosell-52/175 appear only in products without SAMe"
+  },
+  "r0175": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "R0175 appears only in blends with R0052 and/or other strains (ProBrainBiotics, Vitamode Protecflor, Cerebiome-type products); no single-strain R0175 consumer page found"
+  },
+  "sbt2786": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no consumer product found; strain owned by Megmilk Snow Brand, searches in English and Japanese found only research and news, no product naming SBT2786"
+  },
+  "shirota": {
+   "url": "https://www.coles.com.au/product/yakult-light-probiotic-drink-5x65ml-325ml-5543105",
+   "product": "Yakult Light Probiotic Drink 5x65ml | 325mL",
+   "country": "Australia",
+   "checked": "2026-10-18",
+   "names": "the Lactobacillus casei Shirota strain, proven to survive strong stomach acids to reach your intestines alive."
+  },
+  "snk12": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "ingredient supplier only (IHM Co., Tokyo; 1 kg raw material, inquiry link); consumer product SNK1000 (heat-killed) found only in a filing notice, no shop page with price"
+  },
+  "sp1": {
+   "url": "https://farmaciaguacci.it/eubiota12-20-cps",
+   "product": "EUBIOTA*12 20 Cps",
+   "country": "Italy",
+   "checked": "2026-10-18",
+   "names": "Lactobacillus rhamnosus SP1 (DSM 21690)"
+  },
+  "uabla12": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "every consumer product found carries UABla-12 in a multi-strain blend (Dr. Mercola Complete Probiotics with DDS-1, Ora Trust Your Gut, Essential-Biotic Complete, NutriDyn UltraBiotic); no single-strain UABla-12 product page found"
+  },
+  "ultrabiotic60": {
+   "url": "https://shop.fairfieldnutrition.com.au/?p=88393",
+   "product": "Bioceuticals Ultrabiotic 60",
+   "country": "Australia",
+   "checked": "2026-10-18",
+   "names": "Bioceuticals Ultrabiotic 60"
+  },
+  "vsl3": {
+   "url": "https://www.onlineapo.at/en/VSL-3-sachets/RA4863353",
+   "product": "VSL#3® sachets, 30 ST",
+   "country": "Austria",
+   "checked": "2026-10-18",
+   "names": "VSL#3® is a food supplement with 450 billion live lactic acid bacteria"
+  },
+  "w19+w20+w22+w23+w24+w51+w52+w56+w62": {
+   "url": "https://www.shop-apotheke.at/arzneimittel/A3834591/omni-biotic-stress-repair.htm",
+   "product": "OMNI BiOTiC® Stress Repair (7 St)",
+   "country": "Austria",
+   "checked": "2026-10-18",
+   "names": "Bakterienstämme: Lactobacillus casei W56 Lactobacillus acidophilus W22 Lactobacillus paracasei W20 Bifidobacterium lactis W51 Lactobacillus salivarius W24 Lactococcus lactis W19 Bifidobacterium lactis W52 Lactobacillus plantarum W62 Bifidobacterium bifidum W23"
+  },
+  "w19+w23+w24+w37+w51+w52+w56+w58+w63": {
+   "url": "https://www.doz.pl/p/sanprobi-barrier-kapsulki-40-szt-129034",
+   "product": "Sanprobi Barrier, kapsułki, 40 szt.",
+   "country": "Poland",
+   "checked": "2026-10-18",
+   "names": "Bifidobacterium lactis W52; L. brevis W63; L. casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Bifidobacterium lactis W51; L. salivarius W24"
+  },
+  "ylgb1496": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no consumer product found outside China; strain is Yili's (added to China's infant-food strain list); no shop page reachable by this search names YLGB-1496"
+  },
+  "yrc3780": {
+   "url": null,
+   "checked": "2026-10-18",
+   "searched": "no product page; maker Yotsuba Milk Products lists publications only; web search found no seller"
+  }
+ }
+}

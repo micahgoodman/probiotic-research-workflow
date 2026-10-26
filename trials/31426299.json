@@ -1,0 +1,18 @@
+{"pmid": "31426299",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 78,
+ "population": "children with celiac disease autoimmunity on a gluten-containing diet",
+ "arms": [
+   {"entity_as_stated": "Lactobacillus plantarum HEAL9 and Lactobacillus paracasei 8700:2",
+    "strain_codes": ["HEAL9", "8700:2"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "10^10 CFU per day",
+    "weeks": 26,
+    "results": [
+      {"condition": "cognition", "result": "not_counted", "reason": "not_measured"}
+    ]}
+ ]}

@@ -1,0 +1,30 @@
+{
+ "pmid": "40898729",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": "NCT06348121",
+ "n_randomized": 42,
+ "population": "children with attention-deficit/hyperactivity disorder",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium animalis subsp. lactis BLa80 with Lacticaseibacillus rhamnosus LRa05",
+   "strain_codes": [
+    "BLa80",
+    "LRa05"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "5x10^9 CFU per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "BRIEF-II Cognitive Regulation Index"
+    }
+   ]
+  }
+ ]
+}

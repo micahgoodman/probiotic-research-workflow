@@ -1,0 +1,36 @@
+{
+ "pmid": "41709243",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": "ACTRN#:12621000039886",
+ "n_randomized": 4,
+ "population": "adults with osteoarthritic pain recruited from a naturopathic practice",
+ "arms": [
+  {
+   "entity_as_stated": "Metagenics Ultra Flora Intensive Care (BB-12, LGG, Saccharomyces boulardii) plus palmitoylethanolamide",
+   "strain_codes": [
+    "BB-12",
+    "LGG"
+   ],
+   "brand": "Metagenics Ultra Flora Intensive Care",
+   "other_actives": [
+    "palmitoylethanolamide"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "one capsule twice daily: BB-12 5x10^9 CFU, LGG 10x10^9 CFU, S. boulardii 7.5x10^9 CFU; plus PEA 600 mg per day",
+   "weeks": 11,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

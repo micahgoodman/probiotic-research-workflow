@@ -1,0 +1,19 @@
+{"pmid": "31871540",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": null,
+ "n_randomized": 13,
+ "population": "patients with chronic fatigue syndrome / myalgic encephalomyelitis",
+ "arms": [
+   {"entity_as_stated": "Enterelle, Bifiselle, Rotanelle, Citogenex and Ramnoselle probiotic schedule",
+    "strain_codes": ["UBEF-41", "LA 14", "AR81"],
+    "brand": "Enterelle",
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "not stated as a single dose; products given on a fixed eight-week schedule",
+    "weeks": 8,
+    "results": [
+      {"condition": "depression", "result": "not_counted", "reason": "result_not_accessible"},
+      {"condition": "felt-stress", "result": "not_counted", "reason": "not_measured"}
+    ]}
+ ]}

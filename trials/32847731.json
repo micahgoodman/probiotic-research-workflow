@@ -1,0 +1,27 @@
+{
+ "pmid": "32847731",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 19,
+ "population": "elite male rugby union athletes",
+ "arms": [
+  {
+   "entity_as_stated": "Ultrabiotic 60 with Saccharomyces boulardii",
+   "strain_codes": [],
+   "brand": "Ultrabiotic 60",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the abstract",
+   "weeks": 17,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "self-reported perceptual sleep quality and sleep quantity scores"
+    }
+   ]
+  }
+ ]
+}

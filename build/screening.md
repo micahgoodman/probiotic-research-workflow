@@ -1,0 +1,348 @@
+# Screening report
+
+1117 papers have a record: 334 eligible and 783 excluded.
+
+## Excluded papers, by reason
+
+- `not_an_intervention_study`: 429
+- `not_accessible`: 80
+- `not_a_probiotic`: 71
+- `no_listed_condition`: 57
+- `secondary_report`: 53
+- `entity_not_named`: 51
+- `not_human`: 29
+- `retracted`: 8
+- `not_oral`: 5
+
+## Results that do not count, by reason
+
+- `instrument_not_listed`: 145
+- `result_not_accessible`: 98
+- `not_measured`: 51
+- `subgroup_only`: 6
+- `subscale_only`: 5
+
+## Trials counted no times at all
+
+These papers report a trial whose first report is not in the catalogue, usually because that first paper is behind a paywall. The trial has no row of its own.
+
+- 22566113 reports the trial first published as 21245887 (15 in total)
+- 25856220 reports the trial first published as 24355439 (15 in total)
+- 29637171 reports the trial first published as 24249817 (15 in total)
+- 31992802 reports the trial first published as 30878323 (15 in total)
+- 32989186 reports the trial first published as 29731182 (15 in total)
+- 33789555 reports the trial first published as 30971965 (15 in total)
+- 33930612 reports the trial first published as 30967436 (15 in total)
+- 34030638 reports the trial first published as 31738351 (15 in total)
+- 35356726 reports the trial first published as 33602357 (15 in total)
+- 38402742 reports the trial first published as 33782086 (15 in total)
+- 38805370 reports the trial first published as 36364825 (15 in total)
+- 39410847 reports the trial first published as 37502424 (15 in total)
+- 40004979 reports the trial first published as 36819685 (15 in total)
+- 40842390 reports the trial first published as 35123664 (15 in total)
+- 41515257 reports the trial first published as 35185013 (15 in total)
+
+## Registration numbers on more than one eligible record
+
+Each number below is on two or more eligible records. They are one trial reported twice (then the later paper is a secondary_report, rule 3) or two trials from one registered programme. Only a reader of both papers can tell which.
+
+- ChiCTR2300069453: 38869657, 39385735
+- IRCT20160524028038N14: 38216917, 42059569
+- NCT03259971: 34835954, 38361371
+- NCT05567653: 38891799, 40572172
+
+## Evidence lost because the product was not named
+
+These 131 papers may hold real results. They are not in the catalogue because nobody can say which strain was tested, so no reader could act on them.
+
+- 12201355: nobody could read the full text
+- 12214543: nobody could read the full text
+- 17151594: nobody could read the full text
+- 17851460: nobody could read the full text
+- 19730107: nobody could read the full text
+- 22679715: nobody could read the full text
+- 24246768: nobody could read the full text
+- 24571169: nobody could read the full text
+- 24725325: nobody could read the full text
+- 25758426: nobody could read the full text
+- 26259892: nobody could read the full text
+- 26479711: nobody could read the full text
+- 26568577: nobody could read the full text
+- 26706022: nobody could read the full text
+- 27045204: nobody could read the full text
+- 27309258: nobody could read the full text
+- 27891089: the paper names only a species, with no code or brand
+- 28155119: nobody could read the full text
+- 28208808: the paper names only a species, with no code or brand
+- 28286605: the paper names only a species, with no code or brand
+- 28498275: nobody could read the full text
+- 28579313: nobody could read the full text
+- 28819993: nobody could read the full text
+- 29649996: the paper names only a species, with no code or brand
+- 29731182: nobody could read the full text
+- 29788823: nobody could read the full text
+- 30227422: nobody could read the full text
+- 30259127: the paper names only a species, with no code or brand
+- 30574857: nobody could read the full text
+- 30592848: nobody could read the full text
+- 30642737: nobody could read the full text
+- 30665436: the paper names only a species, with no code or brand
+- 30821897: nobody could read the full text
+- 30991255: nobody could read the full text
+- 31038755: the paper names only a species, with no code or brand
+- 31306390: nobody could read the full text
+- 31338923: nobody could read the full text
+- 31516094: nobody could read the full text
+- 31592939: nobody could read the full text
+- 31677067: nobody could read the full text
+- 31780038: nobody could read the full text
+- 32079472: nobody could read the full text
+- 32171508: nobody could read the full text
+- 32297646: the paper names only a species, with no code or brand
+- 32323706: the paper names only a species, with no code or brand
+- 32377210: the paper names only a species, with no code or brand
+- 32411323: the paper names only a species, with no code or brand
+- 32451125: nobody could read the full text
+- 32500827: nobody could read the full text
+- 33139757: the paper names only a species, with no code or brand
+- 33514774: the paper names only a species, with no code or brand
+- 34020263: the paper names only a species, with no code or brand
+- 34062976: the paper names only a species, with no code or brand
+- 34589825: the paper names only a species, with no code or brand
+- 34857215: nobody could read the full text
+- 34896904: nobody could read the full text
+- 35228584: the paper names only a species, with no code or brand
+- 35282787: nobody could read the full text
+- 35384391: the paper names only a species, with no code or brand
+- 35559241: the paper names only a species, with no code or brand
+- 35871917: nobody could read the full text
+- 36074106: nobody could read the full text
+- 36187337: the paper names only a species, with no code or brand
+- 36362265: the paper names only a species, with no code or brand
+- 36990042: nobody could read the full text
+- 37005888: nobody could read the full text
+- 37034123: the paper names only a species, with no code or brand
+- 37115569: nobody could read the full text
+- 37224267: nobody could read the full text
+- 37430435: nobody could read the full text
+- 37502424: the paper names only a species, with no code or brand
+- 38172876: the paper names only a species, with no code or brand
+- 38350481: the paper names only a species, with no code or brand
+- 38435887: the paper names only a species, with no code or brand
+- 38512593: nobody could read the full text
+- 38604291: nobody could read the full text
+- 38805039: nobody could read the full text
+- 38885746: nobody could read the full text
+- 38935259: the paper names only a species, with no code or brand
+- 39117856: nobody could read the full text
+- 39223205: the paper names only a species, with no code or brand
+- 39385777: the paper names only a species, with no code or brand
+- 39394141: the paper names only a species, with no code or brand
+- 39500949: the paper names only a species, with no code or brand
+- 39519594: the paper names only a species, with no code or brand
+- 39617896: the paper names only a species, with no code or brand
+- 39710171: nobody could read the full text
+- 39774869: nobody could read the full text
+- 39844647: nobody could read the full text
+- 40200973: the paper names only a species, with no code or brand
+- 40360751: nobody could read the full text
+- 40375569: nobody could read the full text
+- 40391827: nobody could read the full text
+- 40400804: the paper names only a species, with no code or brand
+- 40451504: nobody could read the full text
+- 40484149: nobody could read the full text
+- 40629893: nobody could read the full text
+- 40717466: the paper names only a species, with no code or brand
+- 40722352: the paper names only a species, with no code or brand
+- 40740643: the paper names only a species, with no code or brand
+- 40812303: nobody could read the full text
+- 40871692: the paper names only a species, with no code or brand
+- 41002774: the paper names only a species, with no code or brand
+- 41094655: the paper names only a species, with no code or brand
+- 41162755: nobody could read the full text
+- 41225617: the paper names only a species, with no code or brand
+- 41291801: the paper names only a species, with no code or brand
+- 41374052: the paper names only a species, with no code or brand
+- 41410576: nobody could read the full text
+- 41502201: nobody could read the full text
+- 41572422: nobody could read the full text
+- 41785480: the paper names only a species, with no code or brand
+- 41826399: the paper names only a species, with no code or brand
+- 41964366: the paper names only a species, with no code or brand
+- 42255712: the paper names only a species, with no code or brand
+- 42263954: nobody could read the full text
+- 42304935: the paper names only a species, with no code or brand
+- 42335047: nobody could read the full text
+- 42356238: nobody could read the full text
+- 42361860: nobody could read the full text
+- 42384751: nobody could read the full text
+- 42390710: nobody could read the full text
+- 42423005: nobody could read the full text
+- 42482568: the paper names only a species, with no code or brand
+- 42491148: nobody could read the full text
+- 42504863: nobody could read the full text
+- 42509056: nobody could read the full text
+- 42547132: nobody could read the full text
+- 42553209: the paper names only a species, with no code or brand
+- 42587033: nobody could read the full text
+- 42663491: nobody could read the full text
+
+## Trials where the choice of score changes the result
+
+Each of these 19 trials reports two or more listed scores that disagree. The score nearest the top of the list is used; the others are shown so the rule's cost stays visible.
+
+- 28828217 anxiety: stai-state no_difference (used); stai-trait harm
+- 29409505 depression: dass-depression benefit (used); poms-total no_difference [main endpoint]
+- 29409505 sleep: psqi benefit (used); actigraphy-efficiency no_difference [main endpoint]
+- 31405122 anxiety: stai-state no_difference (used) [main endpoint]; stai-trait benefit [main endpoint]; hads-a benefit [main endpoint]
+- 33385020 felt-stress: pss benefit (used); dass-stress no_difference; vas-stress no_difference
+- 34068832 depression: ham-d benefit (used); bdi no_difference
+- 34444820 sleep: psqi no_difference (used); isi benefit
+- 35129111 depression: phq-9 benefit (used); panas-negative no_difference
+- 35897310 depression: poms-depression no_difference (used); poms-total benefit [main endpoint]
+- 37314797 anxiety: ham-a benefit (used); gad-7 no_difference
+- 39367119 depression: ham-d benefit (used); bdi no_difference
+- 39741947 anxiety: zung-sas no_difference (used); hads-a benefit
+- 40144570 felt-stress: pss no_difference (used) [main endpoint]; dass-stress benefit
+- 40169760 sleep: psqi benefit (used); isi no_difference
+- 40603475 depression: bdi no_difference (used); poms-total benefit [main endpoint]
+- 41068940 anxiety: stai-state no_difference (used); stai-trait benefit
+- 41286799 sleep: actigraphy-efficiency no_difference (used); cshq no_difference; ssr harm
+- 41597376 cognition: moca benefit (used); mmse no_difference
+- 42196985 sleep: psqi benefit (used); isi no_difference; psg-efficiency benefit [main endpoint]
+
+## Scores that are not on a list
+
+A score that appears often here is a reason to extend a list in conditions.json. One marked [names a listed score] is a record to read again against that list.
+
+- felt-stress: daily self-reported stress intensity, 0 to 10 (3)
+- sleep: self-reported hours of sleep per day (3)
+- depression: mood questionnaire (sadness, irritability, energy, appetite, tension, stress, sleep) (3)
+- sleep: mood questionnaire (sadness, irritability, energy, appetite, tension, stress, sleep) (3)
+- depression: self-reported mood (vitality and happiness ratings) (2)
+- cognition: Trail Making Test and Inhibitory Control Test (2)
+- sleep: parent-reported night sleep (2)
+- anxiety: anxiety recorded as an adverse-effect symptom (2)
+- cognition: Trail Making Test A and B (2)
+- sleep: parent-reported sleep duration (2)
+- anxiety: severity and frequency rating of the symptom 'anxiety' (1)
+- depression: severity and frequency rating of the symptom 'mood depression' (1)
+- sleep: severity and frequency rating of the symptom 'insomnia' (1)
+- sleep: sleep loss (item of SCORAD) (1)
+- felt-stress: psychological symptoms induced by stressful life events (1)
+- sleep: sleep problems induced by stressful life events (1)
+- cognition: number connection test-A and -B, digit symbol test, block design test (1)
+- sleep: parent-recorded infant sleep duration (1)
+- anxiety: Visceral Sensitivity Index (1)
+- cognition: neuropsychometric test battery and critical flicker frequency (1)
+- depression: Leiden index of depression sensitivity, revised (1)
+- sleep: Birmingham IBS Symptom Questionnaire sleep item (1)
+- sleep: caregiver-recorded longest stretch of sleep (1)
+- cognition: CANTAB tasks (paired associate learning, rapid visual information processing, emotion recognition) (1)
+- cognition: visuospatial memory, attention switching, rapid visual information processing and emotion recognition tasks (1)
+- cognition: CANTAB and other single cognitive tests (attention, processing speed, cognitive flexibility, story memory, verbal fluency) (1)
+- cognition: emotional recognition memory and emotional decision-making tasks during fMRI (1)
+- cognition: number connection test and digit symbol test (1)
+- sleep: visual analogue scale items for sleep quality and difficulty falling asleep (1)
+- anxiety: Depression Anxiety and Stress Scale, total score (1)
+- felt-stress: Depression Anxiety and Stress Scale, total score (1)
+- cognition: social emotional cognition and verbal learning and memory tasks (1)
+- cognition: cognitive reactivity to sad mood (1)
+- cognition: APT, Stroop, RFFT, TMT and CVLT individual tests (1)
+- cognition: composite z score of computerised neurocognitive tests (verbal memory, attention, working memory) (1)
+- cognition: individual cognitive tasks (basic attention, emotional cognition, associate learning) (1)
+- cognition: digit span working memory test and fMRI cognitive control tasks (1)
+- anxiety: Child Behavior Checklist anxious/depressed scale (1)
+- sleep: self-reported nights with disturbed sleep, recorded daily in a logbook (1)
+- sleep: parent-recorded sleeping behaviour (modified Baby Day Diary) (1)
+- felt-stress: 100 mm visual analogue scale of stress-associated symptoms (mental irritability) (1)
+- anxiety: Parent-Rated Anxiety Scale for ASD (PRAS-ASD) (1) [names a listed score: pras-asd]
+- cognition: CERAD-K battery, reported as individual subtests (1)
+- depression: Korean version of the Geriatric Depression Scale (GDS-K) (1) [names a listed score: gds]
+- cognition: final academic examination grade in pharmacology (1)
+- anxiety: EEG, heart rate and electrodermal response (anxiety-induced physiological parameters) (1)
+- cognition: Digit Vigilance Test reaction time (1)
+- sleep: self-reported perceptual sleep quality and sleep quantity scores (1)
+- depression: mood and eating questionnaire adapted from the PHQ-9, GAD and Eating Disorders Questionnaire (1) [names a listed score: phq-9]
+- anxiety: Child Behavior Checklist, anxiety problems scale (1) [names a listed score: cbcl-anxiety]
+- sleep: online diary sleep disruptions and sleep-related recovery scores (1)
+- anxiety: cognitive and somatic state anxiety (Competitive State Anxiety Inventory) (1)
+- anxiety: anxiety item of the Digestive Symptom Frequency Questionnaire, 5-point Likert scale (1)
+- felt-stress: tenseness well-being indicator (1)
+- sleep: sleepiness well-being indicator (1)
+- depression: well-being indicators questionnaire (1)
+- anxiety: CSAI-2R (Competitive State Anxiety Inventory-2 Revised) (1)
+- depression: BRUMS (Brunel Mood Scale) (1)
+- sleep: psychomotor vigilance task (PVT) (1)
+- sleep: night sleep disorder, a symptom item of the allergic rhinitis assessment (1)
+- cognition: Wisconsin Card Sorting Test and four other cognitive tests (1)
+- sleep: daily sleep duration from a 24 h structured parental diary (1)
+- cognition: Chalder Fatigue Scale (CFQ-11) mental fatigue score (1)
+- cognition: CANTAB battery (working memory, visual memory, sustained attention, perception) (1)
+- sleep: EORTC QLQ-C30 sleep disturbance item (1)
+- cognition: auditory verbal learning task and probabilistic instrumental learning task (1)
+- sleep: parent-recorded sleep as a lifestyle behaviour (1)
+- cognition: Stroop test (1)
+- sleep: sleep domain of the Rhinoconjunctivitis Quality of Life Questionnaire (RQLQ) (1)
+- cognition: visual, map-based, object-location and verbal memory tasks and spatial navigation (1)
+- cognition: EncephalApp Stroop test (1)
+- sleep: Parkinson's Disease Sleep Scale (PDSS) (1) [names a listed score: pdss]
+- sleep: single sleep item of the rhinoconjunctivitis quality-of-life questionnaire (1)
+- cognition: number connection test (1)
+- sleep: parent-recorded daily sleep duration in minutes (1)
+- cognition: executive functioning task battery (1)
+- felt-stress: Cungi brief stress evaluation scale (11 items) (1)
+- felt-stress: Profile of Mood State (POMS) (1)
+- cognition: cognitive function test (reaction time, seconds) (1)
+- cognition: battery of 11 neuropsychological tests, incidence of postoperative cognitive dysfunction (1)
+- cognition: cognitive and behaviour tests, Vineland-3 adaptive behaviour composite (1)
+- felt-stress: visual analogue scale, 'relaxed' (1)
+- depression: self-reported better mood (1)
+- sleep: self-reported better sleep quality (1)
+- anxiety: Hospital Anxiety and Depression (HAD) questionnaire, combined 14-item total score (1)
+- depression: Hospital Anxiety and Depression (HAD) questionnaire, combined 14-item total score (1)
+- cognition: rapid information processing, numeric working memory, paired associate learning and word recall tests (1)
+- cognition: Conner's Continuous Performance Test and Wisconsin Card Sorting Test (1)
+- sleep: interviewer-administered 14-item PACS symptom questionnaire, insomnia item (1)
+- depression: interviewer-administered 14-item PACS symptom questionnaire, mood disturbance item (1)
+- cognition: interviewer-administered 14-item PACS symptom questionnaire, memory loss and difficulty in concentration items (1)
+- sleep: Karolinska Sleepiness Scale and a visual analogue scale of daytime sleepiness (1)
+- depression: visual analogue scale of daytime mood (motivation, attention, optimism) (1)
+- anxiety: Post-COVID-19 Questionnaire (PCQ-19), duration of anxiety (1)
+- sleep: SCORAD sleep loss visual analogue item (1)
+- cognition: Parent Global Impressions of Autism (PGIA) questionnaire (1)
+- cognition: spatial reconstruction task (1)
+- sleep: sleep quality index from the study questionnaire (1)
+- felt-stress: salivary amylase (1)
+- anxiety: anxiety item of the Digestive Symptom Frequency Questionnaire (1)
+- cognition: CogState Battery test (1)
+- anxiety: Parent-Rated Anxiety Scale - ASD (PRAS-ASD) (1) [names a listed score: pras-asd]
+- felt-stress: visual analogue scale of mental symptoms (1)
+- cognition: Brief Assessment of Cognition in Schizophrenia (BACS) (1)
+- sleep: 12-item self-report questionnaire of sleep quality (1)
+- depression: Women's Health Questionnaire, depressed mood domain (1)
+- anxiety: Women's Health Questionnaire, anxiety domain (1)
+- sleep: Women's Health Questionnaire, sleep problems domain (1)
+- cognition: computerised battery: RAVLT, Corsi block tapping task, task switching task, go/no-go (1)
+- cortisol: faecal cortisol by targeted metabolomics (1)
+- sleep: WatchPAT home sleep apnea test: apnea-hypopnea index and oxygen desaturation index (1)
+- cognition: global deficit score (GDS) from a neuropsychological test battery (1)
+- felt-stress: Mini-COPE stress-coping strategies questionnaire (1)
+- cognition: number connection test-A (NCT-A) and digit symbol test (DST) (1)
+- cognition: BRIEF-II Cognitive Regulation Index (1)
+- cognition: Paired Associates Learning task (CANTAB) (1)
+- cognition: Behavior Rating Inventory of Executive Function (BRIEF), parent form (1)
+- anxiety: Anxiety Scale for Children-ASD (ASC-ASD) (1) [names a listed score: asc-asd]
+- depression: NIH PROMIS depression short form 4a (1) [names a listed score: promis-depression]
+- cognition: Color Trails Test 1 and 2, Digit Span, Coding (1)
+- sleep: reported improvement in sleep, no named score (1)
+- anxiety: Goldberg Scale (1) [names a listed score: gads-anxiety]
+- depression: Goldberg Scale (1) [names a listed score: gads-depression]
+- cognition: cognitive functioning domain of a quality-of-life questionnaire (1)
+- depression: infant mood (1)
+- sleep: sleep onset latency from a web-based daily log (1)
+- cognition: EORTC QLQ-C30 cognitive functioning scale (1)
+- sleep: EORTC QLQ-C30 insomnia item (1)
+- anxiety: HAMD-24 anxiety/somatization domain (1)
+- sleep: HAMD-24 sleep domain (1)
+- sleep: caregiver-reported quality-of-life questionnaire, sleep quality item (1)

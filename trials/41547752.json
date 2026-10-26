@@ -1,0 +1,51 @@
+{
+ "pmid": "41547752",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT06382909",
+ "n_randomized": 182,
+ "population": "children aged 3-11 with autism spectrum disorder",
+ "arms": [
+  {
+   "entity_as_stated": "kefir-derived probiotic K11",
+   "strain_codes": [],
+   "brand": "K11",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "daily for 90 days",
+   "weeks": 12.9,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  },
+  {
+   "entity_as_stated": "kefir-derived probiotic K11-TMAX",
+   "strain_codes": [],
+   "brand": "K11-TMAX",
+   "other_actives": [
+    "zinc",
+    "selenium",
+    "magnesium",
+    "vitamin A"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "daily for 90 days",
+   "weeks": 12.9,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

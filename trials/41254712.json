@@ -1,0 +1,29 @@
+{
+ "pmid": "41254712",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT20121216011763N62",
+ "n_randomized": 90,
+ "population": "women with polycystic ovary syndrome",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus helveticus R0052 and Bifidobacterium longum R0175",
+   "strain_codes": [
+    "R0052",
+    "R0175"
+   ],
+   "brand": "Psychobiotic (PersiLife)",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "3x10^9 CFU per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "not_measured"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "pmid": "37601658",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ChiCTR2200064690",
+ "n_randomized": 60,
+ "population": "treatment-naive patients with stage IIIb-IV non-small-cell lung cancer on immune checkpoint inhibitors",
+ "arms": [
+  {
+   "entity_as_stated": "JK5G postbiotics",
+   "strain_codes": [],
+   "brand": "JK5G",
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": "2.5 g three times a day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "phq-9",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "hads-d",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

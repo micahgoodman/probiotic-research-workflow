@@ -1,0 +1,58 @@
+{
+ "pmid": "40222448",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04951687",
+ "n_randomized": 30,
+ "population": "healthy older adults",
+ "arms": [
+  {
+   "entity_as_stated": "Ecologic Barrier (nine strains)",
+   "strain_codes": [
+    "W23",
+    "W51",
+    "W52",
+    "W37",
+    "W63",
+    "W56",
+    "W24",
+    "W19",
+    "W58"
+   ],
+   "brand": "Ecologic Barrier",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "5x10^9 CFU per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "ces-d",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "computerised battery: RAVLT, Corsi block tapping task, task switching task, go/no-go"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "panas-negative",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "pmid": "29409505",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": "ACTRN12614001077651",
+ "n_randomized": 44,
+ "population": "adults with myalgic encephalomyelitis / chronic fatigue syndrome and high Streptococcus counts",
+ "arms": [
+  {
+   "entity_as_stated": "Pro4-50 D-lactate free multistrain probiotic plus erythromycin",
+   "strain_codes": [],
+   "brand": "Pro4-50 D-Lactate Free Multistrain",
+   "other_actives": [
+    "erythromycin"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "5 x 10^10 CFU twice daily, on alternate weeks",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "psqi",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "dass-depression",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "CANTAB and other single cognitive tests (attention, processing speed, cognitive flexibility, story memory, verbal fluency)"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "actigraphy-efficiency",
+     "comparison": "within_group",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "poms-total",
+     "comparison": "within_group",
+     "main_endpoint": "yes"
+    }
+   ]
+  }
+ ]
+}

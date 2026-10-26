@@ -1,0 +1,49 @@
+{
+ "pmid": "40298641",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04772664",
+ "n_randomized": 86,
+ "population": "patients with major depression and healthy controls",
+ "arms": [
+  {
+   "entity_as_stated": "OMNi-BiOTiC STRESS Repair (multi-species)",
+   "strain_codes": [],
+   "brand": "OMNi-BiOTiC STRESS Repair",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "one sachet twice daily",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

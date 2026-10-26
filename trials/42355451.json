@@ -1,0 +1,45 @@
+{
+ "pmid": "42355451",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT02660333",
+ "n_randomized": 38,
+ "population": "adults with morbid obesity",
+ "arms": [
+  {
+   "entity_as_stated": "Simbioflora synbiotic (four strains plus fructooligosaccharides)",
+   "strain_codes": [
+    "LPC-37",
+    "HN001",
+    "NCFM",
+    "HN019"
+   ],
+   "brand": "Simbioflora",
+   "other_actives": [
+    "fructooligosaccharides"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "12 g/day, 10^9 CFU of each strain",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "not_measured"
+    },
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "not_measured"
+    }
+   ]
+  }
+ ]
+}

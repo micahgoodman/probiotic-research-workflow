@@ -1,0 +1,42 @@
+{
+ "pmid": "34875345",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ChiCTR2100046321",
+ "n_randomized": 45,
+ "population": "patients with major depressive disorder",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium breve CCFM1025",
+   "strain_codes": [
+    "CCFM1025"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "10^10 CFU per day",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "madrs",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cortisol",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

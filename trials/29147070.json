@@ -1,0 +1,58 @@
+{
+ "pmid": "29147070",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": "NCT01890070",
+ "n_randomized": 45,
+ "population": "normal weight, preobese and obese adults at a clinical nutrition check-up",
+ "arms": [
+  {
+   "entity_as_stated": "Psychobiotic oral suspension (multi-strain)",
+   "strain_codes": [
+    "CNCM I-1630",
+    "CNCM I-1632",
+    "CNCM I-1519",
+    "CNCM I-1631"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "one 3 g bag per day (1.5 x 10^10 CFU per strain)",
+   "weeks": 3,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "ham-a",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    }
+   ]
+  },
+  {
+   "entity_as_stated": "Psychobiotic oral suspension (multi-strain) plus a hypocaloric diet",
+   "strain_codes": [
+    "CNCM I-1630",
+    "CNCM I-1632",
+    "CNCM I-1519",
+    "CNCM I-1631"
+   ],
+   "brand": null,
+   "other_actives": [
+    "hypocaloric diet"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "one 3 g bag per day (1.5 x 10^10 CFU per strain)",
+   "weeks": 3,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "ham-a",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

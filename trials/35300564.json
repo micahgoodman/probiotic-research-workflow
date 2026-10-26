@@ -1,0 +1,18 @@
+{"pmid": "35300564",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 101,
+ "population": "caesarean-born children aged 6 to 24 months",
+ "arms": [
+   {"entity_as_stated": "Lacticaseibacillus paracasei N1115",
+    "strain_codes": ["N1115"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "2x10^10 cfu/g, 2 g per day",
+    "weeks": 12,
+    "results": [
+      {"condition": "sleep", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "parent-recorded sleep as a lifestyle behaviour"}
+    ]}
+ ]}

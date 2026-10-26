@@ -1,0 +1,19 @@
+{"pmid": "40559576",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": null,
+ "n_randomized": 31,
+ "population": "people living with HIV with mild neurocognitive disorder on stable antiretroviral treatment",
+ "arms": [
+   {"entity_as_stated": "Vivomixx (eight strains)",
+    "strain_codes": ["DSM 24730", "DSM 24731", "DSM 24732", "DSM 24733", "DSM 24734", "DSM 24735", "DSM 24736", "DSM 24737"],
+    "brand": "Vivomixx",
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "450x10^9 bacteria per sachet",
+    "weeks": 26,
+    "results": [
+      {"condition": "cognition", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "global deficit score (GDS) from a neuropsychological test battery"}
+    ]}
+ ]}

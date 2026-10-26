@@ -1,0 +1,44 @@
+{
+ "pmid": "30569089",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": null,
+ "n_randomized": 27,
+ "population": "older adults with mild cognitive impairment",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium breve A1",
+   "strain_codes": [
+    "A1"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the report",
+   "weeks": 24,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "benefit",
+     "instrument": "mmse",
+     "comparison": "within_group",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "poms-depression",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "poms-total",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

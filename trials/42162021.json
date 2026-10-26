@@ -1,0 +1,28 @@
+{
+ "pmid": "42162021",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT20180818040827N5",
+ "n_randomized": 84,
+ "population": "adults with irritable bowel syndrome",
+ "arms": [
+  {
+   "entity_as_stated": "FamiLact (nine strains)",
+   "strain_codes": [],
+   "brand": "FamiLact",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "10^9 CFU per day",
+   "weeks": 13,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "harm",
+     "instrument": "dass-depression",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

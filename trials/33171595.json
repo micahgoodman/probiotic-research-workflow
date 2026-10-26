@@ -1,0 +1,45 @@
+{
+ "pmid": "33171595",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 82,
+ "population": "inpatients with major depressive disorder",
+ "arms": [
+  {
+   "entity_as_stated": "OMNi-BiOTiC Stress Repair (nine strains)",
+   "strain_codes": [
+    "W23",
+    "W51",
+    "W52",
+    "W22",
+    "W56",
+    "W20",
+    "W62",
+    "W24",
+    "W19"
+   ],
+   "brand": "OMNi-BiOTiC Stress Repair",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "at least 7.5 billion organisms per 3 g portion daily",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

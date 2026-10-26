@@ -1,0 +1,32 @@
+{
+ "pmid": "39189588",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 69,
+ "population": "young adults with chronic diarrhoea",
+ "arms": [
+  {
+   "entity_as_stated": "Probio-Eco postbiotic (heat-treated Lacticaseibacillus paracasei Zhang, Lactiplantibacillus plantarum P-8 and Bifidobacterium animalis subsp. lactis V9)",
+   "strain_codes": [
+    "Zhang",
+    "P-8",
+    "V9"
+   ],
+   "brand": "Probio-Eco",
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": "12 tablets of 0.6 g a day",
+   "weeks": 3,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "dass-anxiety",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

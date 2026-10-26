@@ -1,0 +1,32 @@
+{
+  "pmid": "31284424",
+  "status": "eligible",
+  "design": "randomized_placebo",
+  "registration": "NL3308",
+  "n_randomized": 200,
+  "population": "healthy term infants aged 28 days or less at entry",
+  "arms": [
+    {
+      "entity_as_stated": "Partly fermented infant formula (Bifidobacterium breve C50, Streptococcus thermophilus 065) with scGOS/lcFOS",
+      "strain_codes": [
+        "C50",
+        "065"
+      ],
+      "brand": null,
+      "other_actives": [
+        "scGOS/lcFOS (9:1)"
+      ],
+      "preparation": "heat_killed",
+      "dose_as_stated": "30% fermented formula and 0.8 g/100 mL scGOS/lcFOS",
+      "weeks": 17,
+      "results": [
+        {
+          "condition": "sleep",
+          "result": "not_counted",
+          "reason": "instrument_not_listed",
+          "instrument_as_stated": "parent-recorded sleeping behaviour (modified Baby Day Diary)"
+        }
+      ]
+    }
+  ]
+}

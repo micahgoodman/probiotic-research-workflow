@@ -1,0 +1,49 @@
+{
+ "pmid": "33923663",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 27,
+ "population": "professional male soccer players and sedentary male students",
+ "arms": [
+  {
+   "entity_as_stated": "Gasteel Plus (three strains)",
+   "strain_codes": [
+    "CBP-001010",
+    "CNCM I-4036",
+    "ES1"
+   ],
+   "brand": "Gasteel Plus",
+   "other_actives": [
+    "fructooligosaccharides"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "one stick per day, dose not stated",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "subgroup_only"
+    },
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "subgroup_only"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "subgroup_only"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

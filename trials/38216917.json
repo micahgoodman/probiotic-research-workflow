@@ -1,0 +1,28 @@
+{
+ "pmid": "38216917",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": "IRCT20160524028038N14",
+ "n_randomized": 112,
+ "population": "Iranian women with depressive disorder treated with SSRIs",
+ "arms": [
+  {
+   "entity_as_stated": "Lactofem (four strains)",
+   "strain_codes": [],
+   "brand": "Lactofem",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "8x10^9 CFU per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

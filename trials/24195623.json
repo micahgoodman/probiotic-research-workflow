@@ -1,0 +1,48 @@
+{
+ "pmid": "24195623",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 44,
+ "population": "university-student athletes performing strenuous exercise daily",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus gasseri OLL2809",
+   "strain_codes": [
+    "OLL2809"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "100 mg per day",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  },
+  {
+   "entity_as_stated": "Lactobacillus gasseri OLL2809 with alpha-lactalbumin",
+   "strain_codes": [
+    "OLL2809"
+   ],
+   "brand": null,
+   "other_actives": [
+    "alpha-lactalbumin"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "100 mg OLL2809 with 900 mg alpha-lactalbumin per day",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

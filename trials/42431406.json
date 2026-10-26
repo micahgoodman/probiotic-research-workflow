@@ -1,0 +1,28 @@
+{
+ "pmid": "42431406",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04511052",
+ "n_randomized": 37,
+ "population": "premenopausal women",
+ "arms": [
+  {
+   "entity_as_stated": "Bacillus subtilis Rosell-179",
+   "strain_codes": [
+    "Rosell-179"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": null,
+   "weeks": 10,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

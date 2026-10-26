@@ -1,0 +1,19 @@
+{"pmid": "41821785",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 140,
+ "population": "adults aged 18 to 65 with moderate to severe irritable bowel syndrome (Rome IV)",
+ "arms": [
+   {"entity_as_stated": "Limosilactobacillus reuteri DSM 17938 and ATCC PTA 6475",
+    "strain_codes": ["DSM 17938", "ATCC PTA 6475"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "2x10^8 CFU per day",
+    "weeks": 14,
+    "results": [
+      {"condition": "anxiety", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "Goldberg Scale"},
+      {"condition": "depression", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "Goldberg Scale"}
+    ]}
+ ]}

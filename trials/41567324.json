@@ -1,0 +1,30 @@
+{
+ "pmid": "41567324",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": "NCT06464484",
+ "n_randomized": 66,
+ "population": "healthy young adults with moderate to high perceived stress",
+ "arms": [
+  {
+   "entity_as_stated": "Lacticaseibacillus rhamnosus GG",
+   "strain_codes": [
+    "GG"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "6x10^9 CFU per day",
+   "weeks": 4.3,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "benefit",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

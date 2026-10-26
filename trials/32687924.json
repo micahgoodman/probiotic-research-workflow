@@ -1,0 +1,35 @@
+{
+ "pmid": "32687924",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 70,
+ "population": "adults with chronic stress exposed to the Trier Social Stress Test",
+ "arms": [
+  {
+   "entity_as_stated": "Lactiplantibacillus plantarum HEAL9",
+   "strain_codes": [
+    "HEAL9"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the abstract",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

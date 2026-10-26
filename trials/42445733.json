@@ -1,0 +1,35 @@
+{
+ "pmid": "42445733",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 104,
+ "population": "patients with advanced gastric or esophageal cancer on chemotherapy",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium animalis subsp. lactis V9",
+   "strain_codes": [
+    "V9"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "2 x 10^10 CFU per day",
+   "weeks": 18,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "EORTC QLQ-C30 cognitive functioning scale"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "EORTC QLQ-C30 insomnia item"
+    }
+   ]
+  }
+ ]
+}

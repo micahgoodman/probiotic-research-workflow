@@ -1,0 +1,19 @@
+{"pmid": "31078831",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 71,
+ "population": "adults with mild to severe depression",
+ "arms": [
+   {"entity_as_stated": "Ecologic Barrier (multi-strain)",
+    "strain_codes": [],
+    "brand": "Ecologic Barrier",
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "one daily dose",
+    "weeks": 8,
+    "results": [
+      {"condition": "depression", "result": "not_counted", "reason": "result_not_accessible"},
+      {"condition": "cognition", "result": "not_counted", "reason": "not_measured"}
+    ]}
+ ]}

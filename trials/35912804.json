@@ -1,0 +1,20 @@
+{"pmid": "35912804",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": null,
+ "n_randomized": 130,
+ "population": "university students with vitamin D3 deficiency",
+ "arms": [
+   {"entity_as_stated": "Acidolac synbiotic plus vitamin D3",
+    "strain_codes": [],
+    "brand": "Acidolac",
+    "other_actives": ["vitamin D3"],
+    "preparation": "live",
+    "dose_as_stated": "not stated in the abstract",
+    "weeks": 13,
+    "results": [
+      {"condition": "anxiety", "result": "not_counted", "reason": "result_not_accessible"},
+      {"condition": "depression", "result": "not_counted", "reason": "not_measured"},
+      {"condition": "sleep", "result": "not_counted", "reason": "not_measured"}
+    ]}
+ ]}

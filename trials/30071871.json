@@ -1,0 +1,30 @@
+{
+ "pmid": "30071871",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000020372",
+ "n_randomized": 51,
+ "population": "male university sports club athletes under high intensity training",
+ "arms": [
+  {
+   "entity_as_stated": "Lactococcus lactis JCM 5805 (LC-Plasma), heat-killed",
+   "strain_codes": [
+    "JCM 5805"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": "100 billion cells per day",
+   "weeks": 2,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

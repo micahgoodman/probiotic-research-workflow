@@ -1,0 +1,20 @@
+{"pmid": "30343291",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": null,
+ "n_randomized": 27,
+ "population": "adults with euthymic bipolar disorder",
+ "arms": [
+   {"entity_as_stated": "OMNi-BiOTiC Stress repair",
+    "strain_codes": [],
+    "brand": "OMNi-BiOTiC Stress repair",
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "daily dose, amount not stated in the abstract",
+    "weeks": 12,
+    "results": [
+      {"condition": "cognition", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "cognitive reactivity to sad mood"},
+      {"condition": "depression", "result": "not_counted", "reason": "result_not_accessible"}
+    ]}
+ ]}

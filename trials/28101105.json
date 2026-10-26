@@ -1,0 +1,35 @@
+{
+ "pmid": "28101105",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT02974894",
+ "n_randomized": 42,
+ "population": "university students facing an academic examination",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus plantarum 299v",
+   "strain_codes": [
+    "299v"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1 x 10^10 CFU per day",
+   "weeks": 2,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "psq",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

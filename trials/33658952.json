@@ -1,0 +1,45 @@
+{
+ "pmid": "33658952",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": null,
+ "n_randomized": 10,
+ "population": "treatment-naive adults with major depressive disorder",
+ "arms": [
+  {
+   "entity_as_stated": "CEREBIOME (Lactobacillus helveticus R0052 and Bifidobacterium longum R0175)",
+   "strain_codes": [
+    "R0052",
+    "R0175"
+   ],
+   "brand": "CEREBIOME",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "3x10^9 CFU per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "gad-7",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "madrs",
+     "comparison": "within_group",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "psqi",
+     "comparison": "within_group",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

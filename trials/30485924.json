@@ -1,0 +1,18 @@
+{"pmid": "30485924",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 283,
+ "population": "patients with a single rib fracture",
+ "arms": [
+   {"entity_as_stated": "Lactobacillus casei Shirota",
+    "strain_codes": ["Shirota"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "daily skimmed milk drink, amount not stated in the abstract",
+    "weeks": 4,
+    "results": [
+      {"condition": "sleep", "result": "not_counted", "reason": "result_not_accessible"}
+    ]}
+ ]}

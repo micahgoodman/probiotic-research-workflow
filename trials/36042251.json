@@ -1,0 +1,30 @@
+{
+ "pmid": "36042251",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ACTRN12620000480987",
+ "n_randomized": 600,
+ "population": "nurses working during the 2020 COVID-19 pandemic",
+ "arms": [
+  {
+   "entity_as_stated": "Lacticaseibacillus rhamnosus HN001",
+   "strain_codes": [
+    "HN001"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the abstract",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    }
+   ]
+  }
+ ]
+}

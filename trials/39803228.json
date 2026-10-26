@@ -1,0 +1,48 @@
+{
+ "pmid": "39803228",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": "IRCT20170609034406N9",
+ "n_randomized": 45,
+ "population": "patients with decompensated cirrhosis and previous overt hepatic encephalopathy",
+ "arms": [
+  {
+   "entity_as_stated": "Comflor (multi-strain probiotic)",
+   "strain_codes": [],
+   "brand": "Comflor",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "4.5x10^11 CFU twice a day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  },
+  {
+   "entity_as_stated": "Comflor (multi-strain probiotic) plus zinc",
+   "strain_codes": [],
+   "brand": "Comflor",
+   "other_actives": [
+    "zinc"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "4.5x10^11 CFU twice a day plus zinc 25 mg",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

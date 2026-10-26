@@ -1,0 +1,30 @@
+{
+ "pmid": "41686508",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": null,
+ "n_randomized": 87,
+ "population": "infants aged 3-12 months with moderate-to-severe atopic dermatitis",
+ "arms": [
+  {
+   "entity_as_stated": "Alflorex Baby Drops synbiotic",
+   "strain_codes": [],
+   "brand": "Alflorex Baby Drops",
+   "other_actives": [
+    "pseudoceramide cream",
+    "topical calcineurin inhibitor"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "0.3 mL per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "reported improvement in sleep, no named score"
+    }
+   ]
+  }
+ ]
+}

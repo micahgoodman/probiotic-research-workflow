@@ -1,0 +1,30 @@
+{
+ "pmid": "40877060",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": null,
+ "n_randomized": 80,
+ "population": "haemodialysis patients with poor sleep quality",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus casei rhamnosus Lcr35",
+   "strain_codes": [
+    "Lcr35"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "two packs daily",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

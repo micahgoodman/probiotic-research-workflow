@@ -1,0 +1,44 @@
+{
+ "pmid": "37233680",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 70,
+ "population": "adults with post-infectious fatigue",
+ "arms": [
+  {
+   "entity_as_stated": "OMNi-BiOTiC STRESS Repair 9 (nine strains)",
+   "strain_codes": [
+    "W56",
+    "W22",
+    "W20",
+    "W51",
+    "W24",
+    "W19",
+    "W52",
+    "W62",
+    "W23"
+   ],
+   "brand": "OMNi-BiOTiC STRESS Repair 9",
+   "other_actives": [
+    "inulin",
+    "fructooligosaccharides",
+    "vitamin B2",
+    "vitamin B6",
+    "vitamin B12"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "one 3 g sachet (7.5x10^9 bacteria) once or twice daily",
+   "weeks": 26,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

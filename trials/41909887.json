@@ -1,0 +1,52 @@
+{
+ "pmid": "41909887",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT06507111",
+ "n_randomized": 50,
+ "population": "healthy women aged 45 to 65 in the midlife transition",
+ "arms": [
+  {
+   "entity_as_stated": "Lab4P (CUL21, CUL60, CUL66, CUL20, CUL34) with vitamin C, vitamin D and zinc",
+   "strain_codes": [
+    "CUL21",
+    "CUL60",
+    "CUL66",
+    "CUL20",
+    "CUL34"
+   ],
+   "brand": "Lab4P",
+   "other_actives": [
+    "vitamin C",
+    "vitamin D",
+    "zinc"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "50 billion CFU per day",
+   "weeks": 17,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "hads-a",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "hads-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "ais",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

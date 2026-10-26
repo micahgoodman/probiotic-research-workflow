@@ -1,0 +1,42 @@
+{
+ "pmid": "30217229",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT20170513033941N22",
+ "n_randomized": 60,
+ "population": "women with polycystic ovary syndrome",
+ "arms": [
+  {
+   "entity_as_stated": "Familact (four species) plus selenium",
+   "strain_codes": [],
+   "brand": "Familact",
+   "other_actives": [
+    "selenium"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "8 x 10^9 CFU per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Depression Anxiety and Stress Scale, total score"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Depression Anxiety and Stress Scale, total score"
+    }
+   ]
+  }
+ ]
+}

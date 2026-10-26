@@ -1,0 +1,37 @@
+{
+ "pmid": "40005019",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": "KCT0009966",
+ "n_randomized": 20,
+ "population": "older adults suspected of mild cognitive impairment",
+ "arms": [
+  {
+   "entity_as_stated": "Lacticaseibacillus rhamnosus CBT-LR5 (MH-Pro)",
+   "strain_codes": [
+    "CBT-LR5"
+   ],
+   "brand": "MH-Pro",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1x10^10 CFU per day with 4055 mg skim milk",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "no_difference",
+     "instrument": "moca",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cognition",
+     "result": "no_difference",
+     "instrument": "adas-cog",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

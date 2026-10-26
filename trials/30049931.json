@@ -1,0 +1,30 @@
+{
+ "pmid": "30049931",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 25,
+ "population": "male collegiate baseball athletes",
+ "arms": [
+  {
+   "entity_as_stated": "Bacillus subtilis DE111",
+   "strain_codes": [
+    "DE111"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1 billion CFU per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

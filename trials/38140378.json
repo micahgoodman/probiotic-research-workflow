@@ -1,0 +1,21 @@
+{"pmid": "38140378",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000044852",
+ "n_randomized": 12,
+ "population": "healthy Japanese office workers with sleep complaints",
+ "arms": [
+   {"entity_as_stated": "Lacticaseibacillus paracasei strain Shirota fermented milk",
+    "strain_codes": ["Shirota"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "1x10^11 CFU per day",
+    "weeks": 4,
+    "results": [
+      {"condition": "sleep", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "Karolinska Sleepiness Scale and a visual analogue scale of daytime sleepiness"},
+      {"condition": "depression", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "visual analogue scale of daytime mood (motivation, attention, optimism)"}
+    ]}
+ ]}

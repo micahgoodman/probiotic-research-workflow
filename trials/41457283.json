@@ -1,0 +1,35 @@
+{
+ "pmid": "41457283",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT20170420033551N13",
+ "n_randomized": 80,
+ "population": "adult cigarette smokers",
+ "arms": [
+  {
+   "entity_as_stated": "four-strain Lactobacillus and Bifidobacterium capsule",
+   "strain_codes": [],
+   "brand": "LactoCare",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1.8x10^9 CFU per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "bai",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    }
+   ]
+  }
+ ]
+}

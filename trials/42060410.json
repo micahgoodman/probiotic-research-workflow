@@ -1,0 +1,49 @@
+{
+ "pmid": "42060410",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04925440",
+ "n_randomized": 168,
+ "population": "adults aged 18 to 70 with mild to moderate depression",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium longum 1714",
+   "strain_codes": [
+    "1714"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1x10^10 CFU per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "phq-9",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

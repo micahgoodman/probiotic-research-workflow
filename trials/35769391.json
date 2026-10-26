@@ -1,0 +1,27 @@
+{
+ "pmid": "35769391",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "DRKS00023744",
+ "n_randomized": 24,
+ "population": "healthy adult social drinkers",
+ "arms": [
+  {
+   "entity_as_stated": "AB001 (fermented rice bran with Bacillus subtilis and B. coagulans, plus L-cysteine)",
+   "strain_codes": [],
+   "brand": "AB001",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "2 capsules per day (800 mg)",
+   "weeks": 1,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "number connection test"
+    }
+   ]
+  }
+ ]
+}

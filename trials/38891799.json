@@ -1,0 +1,40 @@
+{
+ "pmid": "38891799",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT05567653",
+ "n_randomized": 15,
+ "population": "dancers in intensive training",
+ "arms": [
+  {
+   "entity_as_stated": "Sanprobi Stress (Lactobacillus helveticus Rosell-52 and Bifidobacterium longum Rosell-17)",
+   "strain_codes": [
+    "Rosell-52",
+    "Rosell-175"
+   ],
+   "brand": "Sanprobi Stress",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "daily capsule (amount not given)",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "sleep quality index from the study questionnaire"
+    },
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "not_measured"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "not_measured"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{"pmid": "38661344",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": null,
+ "n_randomized": 296,
+ "population": "children and adults diagnosed with autism spectrum disorder",
+ "arms": [
+   {"entity_as_stated": "Flore precision synbiotic (research edition)",
+    "strain_codes": [],
+    "brand": "Flore",
+    "other_actives": ["prebiotics"],
+    "preparation": "live",
+    "dose_as_stated": "daily personalised formulation",
+    "weeks": 12,
+    "results": [
+      {"condition": "cognition", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "Parent Global Impressions of Autism (PGIA) questionnaire"}
+    ]}
+ ]}

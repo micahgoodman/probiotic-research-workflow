@@ -1,0 +1,18 @@
+{"pmid": "36376341",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 153,
+ "population": "first grade schoolchildren aged 4 to 7 in urban Cote d'Ivoire",
+ "arms": [
+   {"entity_as_stated": "Lacticaseibacillus rhamnosus yoba 2012 fermented dairy food",
+    "strain_codes": ["yoba 2012"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "not stated in the abstract",
+    "weeks": 20,
+    "results": [
+      {"condition": "cognition", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "executive functioning task battery"}
+    ]}
+ ]}

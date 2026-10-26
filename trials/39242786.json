@@ -1,0 +1,38 @@
+{
+ "pmid": "39242786",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ACTRN12617000419369",
+ "n_randomized": 120,
+ "population": "adults diagnosed with major depressive disorder",
+ "arms": [
+  {
+   "entity_as_stated": "NRGbiotic (three strains) plus magnesium orotate and coenzyme Q10",
+   "strain_codes": [],
+   "brand": "NRGbiotic",
+   "other_actives": [
+    "magnesium orotate",
+    "coenzyme Q10"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "2x10^10 CFU per day, magnesium orotate 1600 mg, CoQ10 150 mg",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "gad-7",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

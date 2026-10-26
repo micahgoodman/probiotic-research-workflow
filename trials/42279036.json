@@ -1,0 +1,18 @@
+{"pmid": "42279036",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 171,
+ "population": "healthy adults during summer",
+ "arms": [
+   {"entity_as_stated": "Lacticaseibacillus paracasei subsp. paracasei NY1301 with DDMP",
+    "strain_codes": ["NY1301"],
+    "brand": null,
+    "other_actives": ["2,3-dihydro-3,5-dihydroxy-6-methyl-4H-pyran-4-one (DDMP)"],
+    "preparation": "live",
+    "dose_as_stated": "one beverage daily",
+    "weeks": 8,
+    "results": [
+      {"condition": "sleep", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "sleep onset latency from a web-based daily log"}
+    ]}
+ ]}

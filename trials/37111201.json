@@ -1,0 +1,33 @@
+{
+ "pmid": "37111201",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04884776",
+ "n_randomized": 453,
+ "population": "adults aged 65 or over, or with type 2 diabetes, during the COVID-19 pandemic",
+ "arms": [
+  {
+   "entity_as_stated": "SIM01 oral microbiome formula",
+   "strain_codes": [],
+   "brand": "SIM01",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "20 billion CFU per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "self-reported better mood"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "self-reported better sleep quality"
+    }
+   ]
+  }
+ ]
+}

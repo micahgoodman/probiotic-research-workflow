@@ -1,123 +1,96 @@
 # Probiotic Evidence Catalogue
 
-A strain-level catalogue of what the research actually shows about the health effects of
-consumer probiotic preparations. `SCHEMA.md` is the design: row grain, fields, evidence
-tiers, scope, source policy, and the 16 validation rules. This file is how to run it.
+This workflow explores which probiotics have been
+tested in people, what the studies found, and how strong the evidence is. The initial outcomes covered by the investigation are stress, cortisol, anxiety, sleep, depression, and cognition.
 
-## The workflow
+The result is a table of rows. One row is one probiotic (a strain, a blend, or a named
+product) for one condition, with a tier that counts the evidence and a verdict that says what
+the studies found. Nobody enters a tier or a verdict – people record facts about each paper,
+and a program computes everything else from fixed rules.
 
-Research proceeds one entity at a time, in three stages. Each stage has a slash command
-holding its procedure, and a tool holding the parts that must be mechanical.
+## Read the catalogue
 
-| Stage | Command | Writes |
-|---|---|---|
-| **Triage** — how much literature is there, and does this entity belong? | `/catalogue-triage <strain_id>` | `triage.json` |
-| **Research** — one pass, graded and written | `/catalogue-research <strain_id> [shard]` | `strains/<strain_id>/<shard>.json` |
-| **Build** — validate and compile | `/catalogue-build` | `build/` |
+- `build/catalogue.md` is the catalogue. It comes in two parts: probiotics a reader can buy
+  today, with one product page each, and then everything else.
+- `build/catalogue.csv` holds the same rows as a table, one row per probiotic and condition.
+- `build/screening.md` lists every paper the searches found and says why each one was kept
+  or set aside.
 
-Start anywhere with:
+## How to read a row
 
-```bash
-python3 tools/plan.py            # progress, and the next entity for each stage
-```
+The tier says how much evidence exists. It does not say how good the result was.
 
-Triage must precede research, because the depth budget decides how many passes an
-entity gets. Everything else can be done in any order.
+| Tier | Meaning |
+|---|---|
+| B | two or more randomized trials compared the probiotic with a placebo group |
+| C | exactly one such trial |
+| D | no such trial, only weaker studies (no placebo group, no random assignment, or a change inside one group) |
 
-## Current phase
+The verdict says what the counted studies found, by counting them: "benefit in all 2
+trials", "mixed: benefit in 4 of 7 trials", "no difference found in the one trial". Benefit
+means the probiotic group's score moved in the right direction compared with the placebo
+group at the trial's stated endpoint, on one fixed score per condition. "People" is the total
+number of people randomized across the counted trials, and it matters: one trial of 28 people
+and one of 500 both read "benefit in the one trial".
 
-Triage the whole roster before running more research passes. The pilot entity
-(`lacticaseibacillus-rhamnosus-gg`) has been researched end-to-end to prove the
-workflow; what research runs next should come from comparing depth budgets across the
-full roster, not from whichever entity happens to be triaged. Full triage also writes
-every entity's `triage_notes` trap list — the confusable-strain warnings research
-passes lean on — and surfaces drops before research hours are spent near them.
-`python3 tools/plan.py` names the next entity to triage.
+## How it was made
 
-## Tools
+1. One fixed PubMed search per condition (`conditions.json`) finds the papers. The saved
+   lists are in `search/`.
+2. Every paper found gets one record in `trials/<pmid>.json`. A record holds facts: the
+   design, how many people were randomized, what each group took, and the result on each
+   listed score. When a paper does not fit a rule, the record says why with one fixed code.
+3. `tools/build.py` reads the records and writes the catalogue. `RULES.md` is the only
+   rulebook. Every rule in it is mechanical, and the program applies it the same way to
+   every record.
 
-All stdlib Python 3, no dependencies. Run from anywhere; they locate the catalogue via
-`$CATALOGUE_ROOT` or their own checkout.
+Studies about the candidate strains were found and reviewed by AI agents as part of an
+automated workflow. The records were then checked by class rather than one by one: each rule
+was swept across every record by a script, a blind second reading of a sample measured the
+disagreement rate, and the maintainer ruled on every open question. The dated decision
+sections at the end of `RULES.md` are the audit trail. Mistakes in single records remain
+possible. Every record names its PubMed id, so any row can be checked against the paper.
 
-```bash
-python3 tools/plan.py                       # status + what to do next
-python3 tools/plan.py <strain_id>           # identity, triage verdict, pass plan,
-                                            #   and the impact_ids each pass may use
-python3 tools/validate.py [strain_id ...]   # the 16 rules; exit 1 on any violation
-python3 tools/triage.py record --json '...' # upsert a triage verdict
-python3 tools/triage.py drop <id> "reason"  # move a dropped entity off the roster
-python3 tools/build.py                      # validate, then regenerate build/
-python3 tools/check_citations.py [id ...]   # network check, opt-in: resolve every
-                                            #   cited PMID/DOI and print its title
-```
+## Known limits
 
-Two of these exist because the operation is unsafe by hand rather than merely tedious:
+- The searches were last run in September 2026. Papers published since then are missing.
+- "Available to buy today" means one consumer product page existed on the date shown. Pages
+  change, and nothing more is promised.
+- A trial that reports a win at an earlier time point but no figure at its stated endpoint
+  counts as "result not accessible", not as a benefit. The same holds for a figure printed
+  only inside an image.
+- The rest of the known limits, each with the rule it belongs to, are written in `RULES.md`.
+  Open items wait in `notes/open-questions.md`.
 
-- **`triage.py record`** — `triage.json` is one file every triage pass appends to.
-  Unlike a shard it has no exclusive owner, so two passes that each read-modify-write it
-  lose one set of entries with no error. `record` locks, merges by `strain_id`, and
-  replaces atomically.
-- **`triage.py drop`** — moving an entity to `excluded_entities` has to leave its
-  `strain_id` behind, or the next sweep re-proposes it with nothing to match against. It
-  also refuses unless triage recorded `depth: "drop"` first, because SCHEMA.md requires
-  a drop to be confirmed rather than inferred.
-
-Shards need no tool. One pass owns one file, which is the point of sharding.
-
-## Validation
-
-`tools/validate.py` reports two classes, and the difference is deliberate:
-
-- **Errors** are the 16 rules in SCHEMA.md, plus two structural classes that precede
-  them: `parse` (a file unreadable as its documented shape) and `shape` (a field or
-  entry without its documented type). They are defects in the data, and `build.py`
-  refuses to write anything while one stands.
-- **Warnings** are everything else worth saying: prose the rules cannot check, and
-  triage or vocabulary values that are readable but unhelpful. They never block a
-  build and are collected into `build/coverage.md`. The line between the two classes
-  is whether the defect is representable in a finished catalogue — a row whose tier
-  nobody justified is thin research, while a row whose `direction` is unreadable is
-  broken data.
-
-Where a rule references a value ("tier A requires…", "`study_type` agrees with
-`population`"), that value's domain is checked as part of the rule. An unrecognised
-`population` would otherwise match none of rule 4's branches and silently switch the
-rule off — a validator reporting success on a row it never checked.
-
-## Tests
+## Run it
 
 ```bash
-python3 -m unittest discover -s tools/tests -p 'test_*.py'
+python3 -m unittest discover -s tools/tests -p 'test_*.py'   # the tests
+python3 tools/validate.py                                    # check every record
+python3 tools/build.py                                       # check, then write build/
+SSL_CERT_FILE=<ca-bundle> python3 tools/search.py            # refresh the saved paper lists
+SSL_CERT_FILE=<ca-bundle> python3 tools/prescreen.py         # clear reviews and the like by PubMed labels
+python3 notes/scripts/shape-scan.py                          # look for two shapes of record error
 ```
 
-`test_validate.py` breaks one invariant per test and asserts the rule that exists to
-catch it fires — a validator nobody has tried to fool is a validator nobody knows works.
-`test_build.py` pins the two joins: it renames a label in `vocabulary/outcomes.json` and
-asserts the compiled views follow without a shard being touched, because that property
-is what the storage design was bought with.
+Python 3 with no third-party packages.
 
-## Layout
+## Add or fix a paper
 
-```
-SCHEMA.md                       design: grain, fields, tiers, scope, the 16 rules
-roster.json                     the entities, each with the sweep that found it
-                                  — and the only home for entity identity
-vocabulary/outcomes.json        controlled outcome vocabulary
-                                  — and the only home for labels and body systems
-triage.json                     depth budget per entity (generated)
-templates/shard.json            annotated skeleton for one research pass
-strains/<strain_id>/<shard>.json    source of truth for claims
-build/                          compiled, regenerated, never hand-edited
-tools/                          plan, validate, triage, build + tests
-```
+Write or edit `trials/<pmid>.json` following `RULES.md`, then run the checker and the build.
+The checker refuses a record that breaks a rule, and the build recomputes every row. The brief
+given to readers, `notes/briefs/brief.md`, walks through a record field by field.
 
-A claim row stores `impact_id` and nothing else about the outcome; a shard stores
-`strain_id` and nothing else about the entity. Both are joined at build time. That is
-why renaming an outcome is a one-line edit rather than a search across every shard that
-used it, and validation rules 2, 3 and 11 exist to keep it that way.
+## Files
 
-## Note on the slash commands
-
-They live in `.claude/commands/` here, so they are available when Claude Code is started
-from this directory. If you work from the parent directory and they do not appear, the
-files still hold the full procedure — read the relevant one and follow it.
+| Path | What it is |
+|---|---|
+| `RULES.md` | the rulebook, with the file layout and every dated decision |
+| `conditions.json` | the six conditions, their search words and their ranked scores |
+| `aliases.json` | names that mean one strain or product, each with a source in `notes/alias-sources/` |
+| `available.json` | one product page per probiotic, or the record that none was found |
+| `search/` | the saved list of papers for each condition |
+| `trials/` | one record per paper, 1,117 in all |
+| `tools/` | the program and its tests |
+| `build/` | the catalogue and the screening report, written by the program |
+| `notes/` | the decision record: open questions, score admissions, alias sources, status |

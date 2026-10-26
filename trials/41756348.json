@@ -1,0 +1,18 @@
+{"pmid": "41756348",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 44,
+ "population": "healthy adults",
+ "arms": [
+   {"entity_as_stated": "Lactobacillus gasseri CP2305",
+    "strain_codes": ["CP2305"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "1.0x10^11 cells per day (20 tablets)",
+    "weeks": 4,
+    "results": [
+      {"condition": "sleep", "result": "not_counted", "reason": "not_measured"}
+    ]}
+ ]}

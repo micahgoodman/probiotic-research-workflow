@@ -1,0 +1,49 @@
+{
+ "pmid": "35924970",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04452253",
+ "n_randomized": 70,
+ "population": "highly stressed clinical nurses",
+ "arms": [
+  {
+   "entity_as_stated": "heat-killed PS23 (HK-PS23)",
+   "strain_codes": [
+    "PS23"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": "not stated in the abstract",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cortisol",
+     "result": "benefit",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

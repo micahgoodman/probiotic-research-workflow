@@ -1,0 +1,44 @@
+{
+ "pmid": "29997457",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 40,
+ "population": "adults with major depressive disorder and irritable bowel syndrome",
+ "arms": [
+  {
+   "entity_as_stated": "Bacillus coagulans MTCC 5856",
+   "strain_codes": [
+    "MTCC 5856"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "2 x 10^9 CFU per day",
+   "weeks": 13,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "madrs",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "ces-d",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    }
+   ]
+  }
+ ]
+}

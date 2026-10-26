@@ -1,0 +1,36 @@
+{
+ "pmid": "35610236",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ChiCTR1800016977",
+ "n_randomized": 82,
+ "population": "patients with Parkinson's disease on benserazide and dopamine agonists",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium animalis subsp. lactis Probio-M8",
+   "strain_codes": [
+    "Probio-M8"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the abstract",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "ham-a",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Parkinson's Disease Sleep Scale (PDSS)"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "pmid": "37111189",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ChiCTR1900026978",
+ "n_randomized": 109,
+ "population": "healthy caesarean-delivered Chinese infants and toddlers aged 6-24 months",
+ "arms": [
+  {
+   "entity_as_stated": "Lacticaseibacillus paracasei N1115",
+   "strain_codes": [
+    "N1115"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the accessible text",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

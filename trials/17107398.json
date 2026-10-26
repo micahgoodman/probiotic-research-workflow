@@ -1,0 +1,29 @@
+{
+ "pmid": "17107398",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 54,
+ "population": "infants aged 1-55 months with moderate to severe atopic dermatitis",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus rhamnosus GG",
+   "strain_codes": [
+    "GG"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "10 x 10^9 colony-forming units per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "sleep loss (item of SCORAD)"
+    }
+   ]
+  }
+ ]
+}

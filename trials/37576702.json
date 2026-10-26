@@ -1,0 +1,30 @@
+{
+ "pmid": "37576702",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04950296",
+ "n_randomized": 314,
+ "population": "adults aged 18-70 with diarrhea-predominant irritable bowel syndrome",
+ "arms": [
+  {
+   "entity_as_stated": "Lactiplantibacillus plantarum Lpla33 (DSM34428)",
+   "strain_codes": [
+    "Lpla33"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1x10^10 CFU per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "benefit",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

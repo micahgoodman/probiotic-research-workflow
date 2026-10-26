@@ -1,0 +1,29 @@
+{
+ "pmid": "33212907",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ACTRN (PROFAST)",
+ "n_randomized": 33,
+ "population": "adults with prediabetes practising intermittent fasting",
+ "arms": [
+  {
+   "entity_as_stated": "Lacticaseibacillus rhamnosus HN001",
+   "strain_codes": [
+    "HN001"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "daily capsule, dose not stated",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "mood and eating questionnaire adapted from the PHQ-9, GAD and Eating Disorders Questionnaire"
+    }
+   ]
+  }
+ ]
+}

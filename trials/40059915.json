@@ -1,0 +1,55 @@
+{
+ "pmid": "40059915",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT20231210060323N1",
+ "n_randomized": 90,
+ "population": "women with polycystic ovary syndrome",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium animalis Bb-12 and Lactobacillus acidophilus La-5 in fortified yogurt, with vitamin D and vitamin E",
+   "strain_codes": [
+    "Bb-12",
+    "La-5"
+   ],
+   "brand": null,
+   "other_actives": [
+    "vitamin D",
+    "vitamin E"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "120 g yogurt per day, at least 10^6 CFU/g",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "dass-depression",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "dass-anxiety",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "dass-stress",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

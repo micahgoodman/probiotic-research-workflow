@@ -1,0 +1,23 @@
+{"pmid": "38068763",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 38,
+ "population": "patients with depressive symptoms at least six months after bariatric surgery",
+ "arms": [
+   {"entity_as_stated": "Sanprobi Barrier (nine strains)",
+    "strain_codes": ["W23", "W51", "W52", "W37", "W63", "W56", "W24", "W19", "W58"],
+    "brand": "Sanprobi Barrier",
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "4 capsules (2x10^9 CFU) per day",
+    "weeks": 5,
+    "results": [
+      {"condition": "depression", "result": "no_difference", "instrument": "ham-d",
+       "comparison": "between_groups", "main_endpoint": "not_stated"},
+      {"condition": "depression", "result": "no_difference", "instrument": "bdi",
+       "comparison": "between_groups", "main_endpoint": "not_stated"},
+      {"condition": "sleep", "result": "no_difference", "instrument": "ais",
+       "comparison": "between_groups", "main_endpoint": "not_stated"}
+    ]}
+ ]}

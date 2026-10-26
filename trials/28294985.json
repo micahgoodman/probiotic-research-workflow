@@ -1,0 +1,36 @@
+{
+ "pmid": "28294985",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT01106924",
+ "n_randomized": 105,
+ "population": "obese men and women in a weight-reducing programme",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus rhamnosus CGMCC1.3724",
+   "strain_codes": [
+    "CGMCC1.3724"
+   ],
+   "brand": null,
+   "other_actives": [
+    "oligofructose",
+    "inulin"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "1.6 x 10^8 CFU per capsule, two capsules per day",
+   "weeks": 24,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "subgroup_only"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "not_measured"
+    }
+   ]
+  }
+ ]
+}

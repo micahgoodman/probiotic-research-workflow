@@ -1,0 +1,29 @@
+{
+ "pmid": "41412728",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ACTRN12622000622707",
+ "n_randomized": 40,
+ "population": "healthy women aged 18-55",
+ "arms": [
+  {
+   "entity_as_stated": "fermented probiotic yoghurt with Bifidobacterium lactis BB-12",
+   "strain_codes": [
+    "BB-12"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "130 g per day, >3 billion CFU B. lactis BB-12",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Paired Associates Learning task (CANTAB)"
+    }
+   ]
+  }
+ ]
+}

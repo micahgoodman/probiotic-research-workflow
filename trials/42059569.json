@@ -1,0 +1,35 @@
+{
+ "pmid": "42059569",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": "IRCT20160524028038N14",
+ "n_randomized": 240,
+ "population": "Iranian men with mild to moderate depression treated with escitalopram",
+ "arms": [
+  {
+   "entity_as_stated": "Lactofem",
+   "strain_codes": [],
+   "brand": "Lactofem",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the abstract",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

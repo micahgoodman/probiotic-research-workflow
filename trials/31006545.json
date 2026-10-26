@@ -1,0 +1,28 @@
+{
+ "pmid": "31006545",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 19,
+ "population": "elite rugby union athletes",
+ "arms": [
+  {
+   "entity_as_stated": "Ultrabiotic 60 with SB Floractiv (Saccharomyces boulardii)",
+   "strain_codes": [],
+   "brand": "Ultrabiotic 60",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "twice daily, with SB Floractiv 250 mg twice daily added in stage three",
+   "weeks": 17,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "harm",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

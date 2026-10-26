@@ -1,0 +1,31 @@
+{
+ "pmid": "41707673",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "CTRI/2022/07/044154",
+ "n_randomized": 61,
+ "population": "adults aged 18-65 with diarrhoea-predominant irritable bowel syndrome",
+ "arms": [
+  {
+   "entity_as_stated": "Bacillus subtilis HU58 and Heyndrickxia faecalis SC208",
+   "strain_codes": [
+    "HU58",
+    "SC208"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "daily for 4 weeks",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

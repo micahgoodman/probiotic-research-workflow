@@ -1,0 +1,25 @@
+{"pmid": "38892634",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000050446",
+ "n_randomized": 140,
+ "population": "Japanese adults dissatisfied with their sleep, with relatively high stress levels",
+ "arms": [
+   {"entity_as_stated": "Bifidobacterium adolescentis SBT2786",
+    "strain_codes": ["SBT2786"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "four capsules daily",
+    "weeks": 4,
+    "results": [
+      {"condition": "sleep", "result": "no_difference", "instrument": "psqi",
+       "comparison": "between_groups", "main_endpoint": "no"},
+      {"condition": "sleep", "result": "no_difference", "instrument": "osa-ma",
+       "comparison": "between_groups", "main_endpoint": "yes"},
+      {"condition": "depression", "result": "benefit", "instrument": "poms-total",
+       "comparison": "between_groups", "main_endpoint": "no"},
+      {"condition": "felt-stress", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "salivary amylase"}
+    ]}
+ ]}

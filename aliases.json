@@ -1,0 +1,30 @@
+{
+  "_comment": "Spelling variants and second names, for RULES.md rule 4. Keys and values are normalized: lower case, no spaces, no hyphens; a blend key joins its parts with '+' in sorted order. A lookup table only, and never a chain: no value may also appear as a key. Every entry was checked against a source on 21 September 2026; see notes/alias-sources/ for the sources.",
+  "aliases": {
+    "ncimb30435+ncimb30436+ncimb30437+ncimb30438+ncimb30439+ncimb30440+ncimb30441+ncimb30442": "dsm24730+dsm24731+dsm24732+dsm24733+dsm24734+dsm24735+dsm24736+dsm24737",
+    "vivomixx": "dsm24730+dsm24731+dsm24732+dsm24733+dsm24734+dsm24735+dsm24736+dsm24737",
+    "visbiome": "dsm24730+dsm24731+dsm24732+dsm24733+dsm24734+dsm24735+dsm24736+dsm24737",
+
+    "rosell52": "r0052",
+    "rosell175": "r0175",
+    "cerebiome": "r0052+r0175",
+
+    "lgg": "gg",
+    "atcc53103": "gg",
+    "a1": "mcc1274",
+    "431": "lcasei431",
+
+    "ecologicbarrier": "w19+w23+w24+w37+w51+w52+w56+w58+w63",
+    "sanprobibarrier": "w19+w23+w24+w37+w51+w52+w56+w58+w63",
+    "omnibioticstressrepair": "w19+w20+w22+w23+w24+w51+w52+w56+w62",
+
+    "biokultadvanced": "pxn21+pxn23+pxn25+pxn27+pxn30+pxn35+pxn37+pxn39+pxn45+pxn47+pxn54+pxn57+pxn63+pxn66",
+
+    "dsm23233": "bl04",
+    "kabp023": "cect7485",
+    "kabp052": "cect7480",
+
+    "fructooligosaccharide": "fructooligosaccharides",
+    "galactooligosaccharide": "galactooligosaccharides"
+  }
+}

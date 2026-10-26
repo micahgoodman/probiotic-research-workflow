@@ -1,0 +1,27 @@
+{
+ "pmid": "41450035",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT20210531051454N2",
+ "n_randomized": 84,
+ "population": "children with ADHD",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus acidophilus, Bifidobacterium lactis and Bifidobacterium longum capsule",
+   "strain_codes": [],
+   "brand": "Bioflora",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "one capsule daily",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Behavior Rating Inventory of Executive Function (BRIEF), parent form"
+    }
+   ]
+  }
+ ]
+}

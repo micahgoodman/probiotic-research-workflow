@@ -1,0 +1,65 @@
+{
+ "pmid": "40175540",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04685252",
+ "n_randomized": 184,
+ "population": "pregnant women in Singapore, followed to 12 weeks postpartum",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium longum NCC3001",
+   "strain_codes": [
+    "NCC3001"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1x10^10 CFU per day",
+   "weeks": 22,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "epds",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "hads-d",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "hads-a",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

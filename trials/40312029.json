@@ -1,0 +1,45 @@
+{
+ "pmid": "40312029",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT06466603",
+ "n_randomized": 83,
+ "population": "adults with mild to moderate anxiety, direct-to-consumer",
+ "arms": [
+  {
+   "entity_as_stated": "Lactiplantibacillus plantarum Lp815",
+   "strain_codes": [
+    "Lp815"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "5 billion CFU per day",
+   "weeks": 6,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "gad-7",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "pmid": "38869657",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ChiCTR2300069453",
+ "n_randomized": 120,
+ "population": "healthy adults with high mental stress, overweight, insomnia and constipation",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium breve 207-1",
+   "strain_codes": [
+    "207-1"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "high dose (amount not given in the abstract)",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "psqi",
+     "comparison": "not_stated",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

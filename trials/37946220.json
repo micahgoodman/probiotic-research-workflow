@@ -1,0 +1,19 @@
+{"pmid": "37946220",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": "NCT04167995",
+ "n_randomized": 80,
+ "population": "children and adolescents aged 6-16 with ADHD taking atomoxetine",
+ "arms": [
+   {"entity_as_stated": "Lactobacillus acidophilus LB (Lacteol Fort)",
+    "strain_codes": ["LB"],
+    "brand": "Lacteol Fort",
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "not stated",
+    "weeks": 12,
+    "results": [
+      {"condition": "cognition", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "Conner's Continuous Performance Test and Wisconsin Card Sorting Test"}
+    ]}
+ ]}

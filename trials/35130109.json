@@ -1,0 +1,44 @@
+{
+ "pmid": "35130109",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT03408691",
+ "n_randomized": 93,
+ "population": "healthy university students before a thesis defence",
+ "arms": [
+  {
+   "entity_as_stated": "Lacticaseibacillus rhamnosus CNCM I-3690 fermented dairy product",
+   "strain_codes": [
+    "CNCM I-3690"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "10^11 CFU per 100 g, twice daily",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

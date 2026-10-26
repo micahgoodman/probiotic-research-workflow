@@ -1,0 +1,80 @@
+{
+ "pmid": "42041827",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT05562752",
+ "n_randomized": 100,
+ "population": "healthy adults aged 18 to 65 with mild to moderate self-reported anxiety",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium longum CECT 7347 and Lactobacillus rhamnosus CECT 8361",
+   "strain_codes": [
+    "CECT 7347",
+    "CECT 8361"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "once daily for 12 weeks",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "ham-a",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "cortisol",
+     "result": "harm",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-trait",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "phq-9",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

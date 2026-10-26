@@ -1,0 +1,65 @@
+{
+ "pmid": "40144570",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ChiCTR2300078447",
+ "n_randomized": 120,
+ "population": "healthy master's and doctoral students facing graduation",
+ "arms": [
+  {
+   "entity_as_stated": "Lacticaseibacillus paracasei K56",
+   "strain_codes": [
+    "K56"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "6x10^10 CFU per day in 100 mL dairy drink",
+   "weeks": 2,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "benefit",
+     "instrument": "dass-stress",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "dass-anxiety",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "dass-depression",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "isi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

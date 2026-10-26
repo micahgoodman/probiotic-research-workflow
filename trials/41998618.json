@@ -1,0 +1,18 @@
+{"pmid": "41998618",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "RBR-5pp4nks",
+ "n_randomized": 60,
+ "population": "infants with infantile colic",
+ "arms": [
+   {"entity_as_stated": "Lactobacillus acidophilus NCFM",
+    "strain_codes": ["NCFM"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "1x10^9 CFU per day (five drops)",
+    "weeks": 4,
+    "results": [
+      {"condition": "depression", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "infant mood"}
+    ]}
+ ]}

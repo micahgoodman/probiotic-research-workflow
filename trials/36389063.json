@@ -1,0 +1,30 @@
+{"pmid": "36389063",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT20210513051277N1",
+ "n_randomized": 90,
+ "population": "patients with mild to moderate Alzheimer's disease",
+ "arms": [
+   {"entity_as_stated": "Lacticaseibacillus rhamnosus HA-114",
+    "strain_codes": ["HA-114"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "10^15 CFU twice daily",
+    "weeks": 12,
+    "results": [
+      {"condition": "cognition", "result": "benefit", "instrument": "mmse", "comparison": "between_groups", "main_endpoint": "yes"},
+      {"condition": "anxiety", "result": "benefit", "instrument": "gad-7", "comparison": "between_groups", "main_endpoint": "no"}
+    ]},
+   {"entity_as_stated": "Bifidobacterium longum R0175",
+    "strain_codes": ["R0175"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "10^15 CFU twice daily",
+    "weeks": 12,
+    "results": [
+      {"condition": "cognition", "result": "benefit", "instrument": "mmse", "comparison": "between_groups", "main_endpoint": "yes"},
+      {"condition": "anxiety", "result": "benefit", "instrument": "gad-7", "comparison": "between_groups", "main_endpoint": "no"}
+    ]}
+ ]}

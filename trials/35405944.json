@@ -1,0 +1,45 @@
+{
+ "pmid": "35405944",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT03615651",
+ "n_randomized": 22,
+ "population": "healthy young adults",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium longum R0175, Lactobacillus helveticus R0052 and Lactiplantibacillus plantarum R1012",
+   "strain_codes": [
+    "R0175",
+    "R0052",
+    "R1012"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "3x10^9 CFU per day",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "vas-stress",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Stroop test"
+    }
+   ]
+  }
+ ]
+}

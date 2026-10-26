@@ -1,0 +1,19 @@
+{"pmid": "30717153",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "KCT0002346",
+ "n_randomized": 100,
+ "population": "adults with mild cognitive impairment",
+ "arms": [
+   {"entity_as_stated": "DW2009, Lactobacillus plantarum C29-fermented soybean",
+    "strain_codes": ["C29"],
+    "brand": "DW2009",
+    "other_actives": ["fermented soybean powder"],
+    "preparation": "live",
+    "dose_as_stated": "800 mg per day, at least 1.25 x 10^10 CFU/g",
+    "weeks": 12,
+    "results": [
+      {"condition": "cognition", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "composite z score of computerised neurocognitive tests (verbal memory, attention, working memory)"}
+    ]}
+ ]}

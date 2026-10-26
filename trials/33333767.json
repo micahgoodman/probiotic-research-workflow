@@ -1,0 +1,37 @@
+{
+ "pmid": "33333767",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT02094547",
+ "n_randomized": 170,
+ "population": "healthy full-term infants fed formula for their first 18 months",
+ "arms": [
+  {
+   "entity_as_stated": "Bioactive-enriched infant formula (COGNIS)",
+   "strain_codes": [
+    "CECT7210",
+    "LCS-742"
+   ],
+   "brand": null,
+   "other_actives": [
+    "milk fat globule membrane",
+    "fructo-oligosaccharides and inulin",
+    "long-chain polyunsaturated fatty acids",
+    "gangliosides",
+    "sialic acid",
+    "nucleotides"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "not stated",
+   "weeks": 78,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Child Behavior Checklist, anxiety problems scale"
+    }
+   ]
+  }
+ ]
+}

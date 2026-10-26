@@ -1,0 +1,27 @@
+{
+ "pmid": "40793826",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": "ChiCTR2200062996",
+ "n_randomized": 142,
+ "population": "patients with cirrhosis receiving a transjugular intrahepatic portosystemic shunt",
+ "arms": [
+  {
+   "entity_as_stated": "Live Combined Bifidobacterium and Lactobacillus Tablets",
+   "strain_codes": [],
+   "brand": "Live Combined Bifidobacterium and Lactobacillus Tablets",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "2 g three times daily",
+   "weeks": 24,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "number connection test-A (NCT-A) and digit symbol test (DST)"
+    }
+   ]
+  }
+ ]
+}

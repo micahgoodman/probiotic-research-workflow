@@ -1,0 +1,27 @@
+{
+ "pmid": "35968208",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 76,
+ "population": "infants with infantile colic, all also given simethicone",
+ "arms": [
+  {
+   "entity_as_stated": "Pedilact (three strains plus fructooligosaccharide)",
+   "strain_codes": [],
+   "brand": "Pedilact",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "5 drops daily, 10^9 CFU",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "parent-recorded daily sleep duration in minutes"
+    }
+   ]
+  }
+ ]
+}

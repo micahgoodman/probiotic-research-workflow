@@ -1,0 +1,35 @@
+{
+ "pmid": "30525951",
+ "status": "eligible",
+ "design": "not_randomized",
+ "registration": "NCT03318614",
+ "n_randomized": 53,
+ "population": "flood-affected adults with irritable bowel syndrome",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium infantis M-63",
+   "strain_codes": [
+    "M-63"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1 x 10^9 cfu per sachet per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "hads-a",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "pmid": "40004951",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT05326217",
+ "n_randomized": 58,
+ "population": "young women with primary dysmenorrhea",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium longum OLP-01, Lactiplantibacillus plantarum PL-02 and Lactococcus lactis LY-66",
+   "strain_codes": [
+    "OLP-01",
+    "PL-02",
+    "LY-66"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1.5x10^10 CFU per day",
+   "weeks": 10,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

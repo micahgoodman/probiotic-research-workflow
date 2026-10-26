@@ -1,0 +1,30 @@
+{
+ "pmid": "41318456",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT20170506033834N7",
+ "n_randomized": 74,
+ "population": "women after childbirth",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus casei 431",
+   "strain_codes": [
+    "431"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1.5x10^9 CFU/mL in a 500 mg capsule once daily",
+   "weeks": 3,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "epds",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

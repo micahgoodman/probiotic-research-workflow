@@ -1,0 +1,31 @@
+{
+ "pmid": "40468693",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT04147923",
+ "n_randomized": null,
+ "population": "adults 50-85 years with occasional constipation",
+ "arms": [
+  {
+   "entity_as_stated": "Lactiplantibacillus plantarum KABP031 and KABP032",
+   "strain_codes": [
+    "KABP031",
+    "KABP032"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the abstract",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "benefit",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "pmid": "37026368",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000043697",
+ "n_randomized": 58,
+ "population": "healthy young adults",
+ "arms": [
+  {
+   "entity_as_stated": "Heat-killed Lactobacillus helveticus MCC1848",
+   "strain_codes": [
+    "MCC1848"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": "not stated in the accessible text",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "visual analogue scale, 'relaxed'"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "poms-tension",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "poms-depression",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "ais",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

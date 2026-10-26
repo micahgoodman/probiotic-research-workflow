@@ -1,0 +1,19 @@
+{"pmid": "38445822",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": null,
+ "n_randomized": 246,
+ "population": "adults with diarrhoea-predominant or mixed irritable bowel syndrome",
+ "arms": [
+   {"entity_as_stated": "Lactobacillus plantarum CECT 7484 and CECT 7485 plus Pediococcus acidilactici CECT 7483, with vitamin D",
+    "strain_codes": ["CECT 7484", "CECT 7485", "CECT 7483"],
+    "brand": null,
+    "other_actives": ["vitamin D"],
+    "preparation": "live",
+    "dose_as_stated": "3x10^9 CFU per day plus 10 ug vitamin D",
+    "weeks": 6,
+    "results": [
+      {"condition": "anxiety", "result": "not_counted", "reason": "result_not_accessible"},
+      {"condition": "depression", "result": "not_counted", "reason": "result_not_accessible"}
+    ]}
+ ]}

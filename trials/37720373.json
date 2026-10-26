@@ -1,0 +1,54 @@
+{
+ "pmid": "37720373",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT05343533",
+ "n_randomized": 70,
+ "population": "healthy adult men and women",
+ "arms": [
+  {
+   "entity_as_stated": "Limosilactobacillus fermentum LF16, Lacticaseibacillus rhamnosus LR06, Lactiplantibacillus plantarum LP01 and Bifidobacterium longum 04",
+   "strain_codes": [
+    "LF16",
+    "LR06",
+    "LP01",
+    "DSM23233"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "4x10^9 CFU per day",
+   "weeks": 6,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "stai-trait",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

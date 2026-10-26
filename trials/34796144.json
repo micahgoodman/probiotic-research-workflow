@@ -1,0 +1,19 @@
+{"pmid": "34796144",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": null,
+ "n_randomized": 30,
+ "population": "postoperative cancer patients",
+ "arms": [
+   {"entity_as_stated": "Ildong nine-strain probiotic capsule with prebiotics, minerals, amino acids and vitamin B6",
+    "strain_codes": ["IDCC4401", "IDCC4201", "IDCC4101", "IDCC4301", "IDCC3201", "IDCC3302", "IDCC3701", "IDCC3451", "IDCC2301"],
+    "brand": null,
+    "other_actives": ["inulin", "polysaccharides", "zinc", "selenium", "glutamine", "arginine", "histidine", "vitamin B6", "shiitake mushroom mycelium"],
+    "preparation": "live",
+    "dose_as_stated": "about 5x10^9 CFU per capsule",
+    "weeks": 8,
+    "results": [
+      {"condition": "sleep", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "EORTC QLQ-C30 sleep disturbance item"}
+    ]}
+ ]}

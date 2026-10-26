@@ -1,0 +1,19 @@
+{"pmid": "36986132",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 60,
+ "population": "adults with depressive disorders, with and without metabolic syndrome",
+ "arms": [
+   {"entity_as_stated": "Lactobacillus helveticus Rosell-52 and Bifidobacterium longum Rosell-175",
+    "strain_codes": ["Rosell-52", "Rosell-175"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "not stated in the accessible text",
+    "weeks": 9,
+    "results": [
+      {"condition": "anxiety", "result": "not_counted", "reason": "subgroup_only"},
+      {"condition": "depression", "result": "not_counted", "reason": "subgroup_only"}
+    ]}
+ ]}

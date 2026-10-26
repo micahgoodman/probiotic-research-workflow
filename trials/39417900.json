@@ -1,0 +1,34 @@
+{
+ "pmid": "39417900",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": "NCT04639141",
+ "n_randomized": 40,
+ "population": "autistic children aged 5 to 10 years with gut-brain interaction disorders",
+ "arms": [
+  {
+   "entity_as_stated": "Synbiotic (four strains) with partially hydrolysed guar gum",
+   "strain_codes": [
+    "ATCC 53103",
+    "DSM 34532",
+    "DSM 32269",
+    "DSM 32946"
+   ],
+   "brand": "Humiome",
+   "other_actives": [
+    "partially hydrolysed guar gum"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "one sachet per day (5 g PHGG plus probiotic mixture)",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "Parent-Rated Anxiety Scale - ASD (PRAS-ASD)"
+    }
+   ]
+  }
+ ]
+}

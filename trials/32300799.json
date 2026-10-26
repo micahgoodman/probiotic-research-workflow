@@ -1,0 +1,19 @@
+{"pmid": "32300799",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "KCT0003929",
+ "n_randomized": 63,
+ "population": "healthy community-dwelling adults aged 65 or over in Korea",
+ "arms": [
+   {"entity_as_stated": "Bifidobacterium bifidum BGN4 and Bifidobacterium longum BORI",
+    "strain_codes": ["BGN4", "BORI"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "not stated in the accessible text",
+    "weeks": 12,
+    "results": [
+      {"condition": "cognition", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "CERAD-K battery, reported as individual subtests"},
+      {"condition": "depression", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "Korean version of the Geriatric Depression Scale (GDS-K)"}
+    ]}
+ ]}

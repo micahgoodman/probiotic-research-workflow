@@ -1,0 +1,52 @@
+{
+ "pmid": "42034654",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT03968133",
+ "n_randomized": 61,
+ "population": "people with Parkinson's disease and clinically significant anxiety",
+ "arms": [
+  {
+   "entity_as_stated": "nine-strain probiotic (W23, W51, W52, W37, W63, W56, W24, W19, W58)",
+   "strain_codes": [
+    "W23",
+    "W51",
+    "W52",
+    "W37",
+    "W63",
+    "W56",
+    "W24",
+    "W19",
+    "W58"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "pas",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "cognition",
+     "result": "benefit",
+     "instrument": "moca",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

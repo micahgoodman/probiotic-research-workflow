@@ -1,0 +1,52 @@
+{
+ "pmid": "20974015",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 55,
+ "population": "healthy adult volunteers",
+ "arms": [
+  {
+   "entity_as_stated": "Probio'Stick (Lactobacillus helveticus R0052 and Bifidobacterium longum R0175)",
+   "strain_codes": [
+    "R0052",
+    "R0175"
+   ],
+   "brand": "Probio'Stick",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "one 1.5 g stick per day, 3 x 10^9 colony-forming units",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-urine",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "hads-a",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "hads-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "pmid": "30388595",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 79,
+ "population": "adults with major depressive disorder treated with an SSRI",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus plantarum 299v",
+   "strain_codes": [
+    "299v"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "daily dose, amount not stated in the abstract",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "result_not_accessible"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "within_group",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "APT, Stroop, RFFT, TMT and CVLT individual tests"
+    }
+   ]
+  }
+ ]
+}

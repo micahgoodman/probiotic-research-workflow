@@ -1,0 +1,20 @@
+{"pmid": "38128887",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": null,
+ "population": "adults assessed for mood state",
+ "arms": [
+   {"entity_as_stated": "Bifidobacterium breve M-16V",
+    "strain_codes": ["M-16V"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "20 billion cells per day",
+    "weeks": 6,
+    "results": [
+      {"condition": "anxiety", "result": "not_counted", "reason": "result_not_accessible"},
+      {"condition": "depression", "result": "not_counted", "reason": "result_not_accessible"},
+      {"condition": "sleep", "result": "not_counted", "reason": "result_not_accessible"}
+    ]}
+ ]}

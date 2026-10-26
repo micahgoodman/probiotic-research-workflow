@@ -1,0 +1,35 @@
+{
+ "pmid": "40652782",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT06196892",
+ "n_randomized": 109,
+ "population": "healthy adults aged 19-45",
+ "arms": [
+  {
+   "entity_as_stated": "Bifidobacterium breve BBr60",
+   "strain_codes": [
+    "BBr60"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1x10^10 CFU per day",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "not_measured"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "panas-negative",
+     "comparison": "not_stated",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

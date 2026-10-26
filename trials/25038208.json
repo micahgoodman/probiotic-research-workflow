@@ -1,0 +1,27 @@
+{
+ "pmid": "25038208",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 124,
+ "population": "adults with cirrhosis and minimal hepatic encephalopathy",
+ "arms": [
+  {
+   "entity_as_stated": "Velgut (nine-strain probiotic)",
+   "strain_codes": [],
+   "brand": "Velgut",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "two capsules per day (5 billion CFU total)",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "neuropsychometric test battery and critical flicker frequency"
+    }
+   ]
+  }
+ ]
+}

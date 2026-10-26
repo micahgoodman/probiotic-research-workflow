@@ -1,0 +1,28 @@
+{
+ "pmid": "36745650",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT20210926052583N1",
+ "n_randomized": 56,
+ "population": "adults with hypothyroidism",
+ "arms": [
+  {
+   "entity_as_stated": "Familact (seven-strain synbiotic)",
+   "strain_codes": [],
+   "brand": "Familact",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "500 mg of 10^9 CFU/g per day",
+   "weeks": 10,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

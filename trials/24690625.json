@@ -1,0 +1,34 @@
+{
+ "pmid": "24690625",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ISRCTN95287767",
+ "n_randomized": 167,
+ "population": "breastfed and formula fed infants under 3 months of age with colic",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus reuteri DSM 17938",
+   "strain_codes": [
+    "DSM 17938"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1x10^8 CFU per day",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "not_measured"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "parent-recorded infant sleep duration"
+    }
+   ]
+  }
+ ]
+}

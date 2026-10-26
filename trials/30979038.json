@@ -1,0 +1,19 @@
+{"pmid": "30979038",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 80,
+ "population": "boys aged 7 to 15 with autism spectrum disorder",
+ "arms": [
+   {"entity_as_stated": "Lactobacillus plantarum PS128",
+    "strain_codes": ["PS128"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "3 x 10^10 CFU per day",
+    "weeks": 4,
+    "results": [
+      {"condition": "anxiety", "result": "not_counted", "reason": "instrument_not_listed",
+       "instrument_as_stated": "Child Behavior Checklist anxious/depressed scale"}
+    ]}
+ ]}

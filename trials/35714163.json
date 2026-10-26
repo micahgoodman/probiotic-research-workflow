@@ -1,0 +1,19 @@
+{"pmid": "35714163",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT02962583",
+ "n_randomized": 152,
+ "population": "adults with overweight during a dietary weight-loss programme",
+ "arms": [
+   {"entity_as_stated": "Lacticaseibacillus rhamnosus HA-114",
+    "strain_codes": ["HA-114"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "not stated in the abstract",
+    "weeks": 12,
+    "results": [
+      {"condition": "depression", "result": "not_counted", "reason": "result_not_accessible"},
+      {"condition": "cognition", "result": "not_counted", "reason": "not_measured"}
+    ]}
+ ]}

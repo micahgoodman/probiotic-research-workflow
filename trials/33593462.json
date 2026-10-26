@@ -1,0 +1,44 @@
+{
+ "pmid": "33593462",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 65,
+ "population": "young military personnel in field training",
+ "arms": [
+  {
+   "entity_as_stated": "Synbiotic ice cream with Lactobacillus acidophilus LA-5 and Bifidobacterium animalis BB-12",
+   "strain_codes": [
+    "LA-5",
+    "BB-12"
+   ],
+   "brand": null,
+   "other_actives": [
+    "inulin"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "2.1x10^8 CFU/g LA-5 and 2.7x10^9 CFU/g BB-12 in 60 g ice cream daily",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "tenseness well-being indicator"
+    },
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "sleepiness well-being indicator"
+    },
+    {
+     "condition": "depression",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "well-being indicators questionnaire"
+    }
+   ]
+  }
+ ]
+}

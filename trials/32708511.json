@@ -1,0 +1,42 @@
+{
+ "pmid": "32708511",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 88,
+ "population": "healthy adults aged 35 to under 50",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus paracasei KW3110",
+   "strain_codes": [
+    "KW3110"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "not stated in the abstract",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "not_measured"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "poms-depression",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "poms-tension",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

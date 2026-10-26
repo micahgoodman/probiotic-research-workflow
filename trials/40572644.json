@@ -1,0 +1,30 @@
+{
+ "pmid": "40572644",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 54,
+ "population": "adult volunteers",
+ "arms": [
+  {
+   "entity_as_stated": "Lactococcus cremoris FBMS_5810 on oat flakes",
+   "strain_codes": [
+    "FBMS_5810"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "5 g of oat flakes daily",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-blood",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

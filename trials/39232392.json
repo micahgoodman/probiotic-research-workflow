@@ -1,0 +1,30 @@
+{
+ "pmid": "39232392",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 32,
+ "population": "adults with major depressive disorder on stable antidepressant treatment",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus plantarum PS128",
+   "strain_codes": [
+    "PS128"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": null,
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

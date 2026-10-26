@@ -1,0 +1,47 @@
+{
+ "pmid": "27612653",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT01837940",
+ "n_randomized": 290,
+ "population": "free-living older adults over 65 years",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus reuteri DSM 17938",
+   "strain_codes": [
+    "DSM 17938"
+   ],
+   "brand": null,
+   "other_actives": [
+    "rhamnose",
+    "galacto-oligosaccharide"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "1x10^8 CFU per day",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "hads-a",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "hads-d",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "no_difference",
+     "instrument": "pss",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

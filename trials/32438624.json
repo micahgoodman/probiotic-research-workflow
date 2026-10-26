@@ -1,0 +1,48 @@
+{
+ "pmid": "32438624",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT03427515",
+ "n_randomized": 60,
+ "population": "healthy medical students sitting an academic examination",
+ "arms": [
+  {
+   "entity_as_stated": "Saccharomyces boulardii CNCM I-1079",
+   "strain_codes": [
+    "CNCM I-1079"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "daily supplement for 30 days",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "stai-state",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cortisol",
+     "result": "no_difference",
+     "instrument": "cortisol-saliva",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "final academic examination grade in pharmacology"
+    },
+    {
+     "condition": "felt-stress",
+     "result": "not_counted",
+     "reason": "not_measured"
+    }
+   ]
+  }
+ ]
+}

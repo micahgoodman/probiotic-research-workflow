@@ -1,0 +1,30 @@
+{
+ "pmid": "33223831",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 200,
+ "population": "community-dwelling adults aged 52-75",
+ "arms": [
+  {
+   "entity_as_stated": "Lacticaseibacillus rhamnosus GG",
+   "strain_codes": [
+    "GG"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "daily capsule, dose not stated",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "no_difference",
+     "instrument": "nih-toolbox",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    }
+   ]
+  }
+ ]
+}

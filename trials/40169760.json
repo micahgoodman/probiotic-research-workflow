@@ -1,0 +1,21 @@
+{"pmid": "40169760",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT06107049",
+ "n_randomized": 106,
+ "population": "healthy adults",
+ "arms": [
+   {"entity_as_stated": "Bifidobacterium animalis subsp. lactis BLa80",
+    "strain_codes": ["BLa80"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "10 billion CFU per day",
+    "weeks": 8,
+    "results": [
+      {"condition": "sleep", "result": "benefit", "instrument": "psqi",
+       "comparison": "between_groups", "main_endpoint": "not_stated"},
+      {"condition": "sleep", "result": "no_difference", "instrument": "isi",
+       "comparison": "between_groups", "main_endpoint": "no"}
+    ]}
+ ]}

@@ -1,0 +1,18 @@
+{"pmid": "41859075",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "ChiCTR2500108811",
+ "n_randomized": 149,
+ "population": "cancer patients with cancer-related pain on patient-controlled subcutaneous analgesia",
+ "arms": [
+   {"entity_as_stated": "JK5G postbiotics (inactivated Lactobacillus strains and metabolites)",
+    "strain_codes": [],
+    "brand": "JK5G",
+    "other_actives": [],
+    "preparation": "heat_killed",
+    "dose_as_stated": "not stated",
+    "weeks": null,
+    "results": [
+      {"condition": "cognition", "result": "not_counted", "reason": "instrument_not_listed", "instrument_as_stated": "cognitive functioning domain of a quality-of-life questionnaire"}
+    ]}
+ ]}

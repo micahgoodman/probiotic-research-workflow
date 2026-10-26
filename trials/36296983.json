@@ -1,0 +1,18 @@
+{"pmid": "36296983",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "UMIN000046179",
+ "n_randomized": 78,
+ "population": "adults over 65 with declining memory",
+ "arms": [
+   {"entity_as_stated": "heat-treated Lactiplantibacillus plantarum OLL2712",
+    "strain_codes": ["OLL2712"],
+    "brand": null,
+    "other_actives": [],
+    "preparation": "heat_killed",
+    "dose_as_stated": "not stated in the abstract",
+    "weeks": 12,
+    "results": [
+      {"condition": "cognition", "result": "not_counted", "reason": "subscale_only"}
+    ]}
+ ]}

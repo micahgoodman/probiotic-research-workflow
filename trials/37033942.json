@@ -1,0 +1,44 @@
+{
+ "pmid": "37033942",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 60,
+ "population": "test-anxious college students",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus plantarum JYLP-326",
+   "strain_codes": [
+    "JYLP-326"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "1.5x10^10 CFU per sachet, twice per day",
+   "weeks": 3,
+   "results": [
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "ham-a",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "ham-d",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "ais",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

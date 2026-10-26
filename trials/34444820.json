@@ -1,0 +1,52 @@
+{
+ "pmid": "34444820",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "KCT0004801",
+ "n_randomized": 156,
+ "population": "healthy adults with subclinical depression, anxiety and insomnia",
+ "arms": [
+  {
+   "entity_as_stated": "NVP-1704 (Lactobacillus reuteri NK33 plus Bifidobacterium adolescentis NK98)",
+   "strain_codes": [
+    "NK33",
+    "NK98"
+   ],
+   "brand": "NVP-1704",
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": "2.5x10^9 CFU per capsule",
+   "weeks": 8,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "no_difference",
+     "instrument": "bai",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "sleep",
+     "result": "no_difference",
+     "instrument": "psqi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "sleep",
+     "result": "benefit",
+     "instrument": "isi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    }
+   ]
+  }
+ ]
+}

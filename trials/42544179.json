@@ -1,0 +1,30 @@
+{
+ "pmid": "42544179",
+ "status": "eligible",
+ "design": "single_group",
+ "registration": "ChiCTR2500102509",
+ "n_randomized": 236,
+ "population": "children aged 0-14 years with recent respiratory tract infections",
+ "arms": [
+  {
+   "entity_as_stated": "Lactobacillus rhamnosus CRL1505 with Bifidobacterium breve M-16V",
+   "strain_codes": [
+    "CRL1505",
+    "M-16V"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": null,
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "sleep",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "caregiver-reported quality-of-life questionnaire, sleep quality item"
+    }
+   ]
+  }
+ ]
+}

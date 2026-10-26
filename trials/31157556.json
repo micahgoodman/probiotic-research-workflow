@@ -1,0 +1,30 @@
+{
+  "pmid": "31157556",
+  "status": "eligible",
+  "design": "randomized_placebo",
+  "registration": null,
+  "n_randomized": 64,
+  "population": "adults aged 18-34 after surgical removal of mandibular third molars",
+  "arms": [
+    {
+      "entity_as_stated": "Limosilactobacillus reuteri DSM 17938 + ATCC PTA 5289 lozenges",
+      "strain_codes": [
+        "DSM 17938",
+        "ATCC PTA 5289"
+      ],
+      "brand": null,
+      "other_actives": [],
+      "preparation": "live",
+      "dose_as_stated": "three lozenges per day",
+      "weeks": 2,
+      "results": [
+        {
+          "condition": "sleep",
+          "result": "not_counted",
+          "reason": "instrument_not_listed",
+          "instrument_as_stated": "self-reported nights with disturbed sleep, recorded daily in a logbook"
+        }
+      ]
+    }
+  ]
+}

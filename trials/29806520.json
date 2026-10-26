@@ -1,0 +1,30 @@
+{
+ "pmid": "29806520",
+ "status": "eligible",
+ "design": "randomized_other_control",
+ "registration": null,
+ "n_randomized": 67,
+ "population": "patients with HBV-induced liver cirrhosis and minimal hepatic encephalopathy",
+ "arms": [
+  {
+   "entity_as_stated": "Clostridium butyricum CGMCC0313-1 and Bifidobacterium infantis CGMCC0313-2",
+   "strain_codes": [
+    "CGMCC0313-1",
+    "CGMCC0313-2"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "live",
+   "dose_as_stated": ">1.0 x 10^7 CFU/g C. butyricum and >1 x 10^6 CFU/g B. infantis per capsule",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "instrument_not_listed",
+     "instrument_as_stated": "number connection test and digit symbol test"
+    }
+   ]
+  }
+ ]
+}

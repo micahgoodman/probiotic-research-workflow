@@ -1,0 +1,47 @@
+{
+ "pmid": "29432877",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "IRCT2017073033941N4",
+ "n_randomized": 60,
+ "population": "people aged 45-85 with type 2 diabetes and coronary heart disease",
+ "arms": [
+  {
+   "entity_as_stated": "Lactocare probiotic plus vitamin D",
+   "strain_codes": [],
+   "brand": "Lactocare",
+   "other_actives": [
+    "vitamin D"
+   ],
+   "preparation": "live",
+   "dose_as_stated": "8 x 10^9 CFU/g probiotic plus 50,000 IU vitamin D every 2 weeks",
+   "weeks": 12,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "benefit",
+     "instrument": "bdi",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "anxiety",
+     "result": "benefit",
+     "instrument": "bai",
+     "comparison": "between_groups",
+     "main_endpoint": "not_stated"
+    },
+    {
+     "condition": "cognition",
+     "result": "not_counted",
+     "reason": "not_measured"
+    },
+    {
+     "condition": "cortisol",
+     "result": "not_counted",
+     "reason": "not_measured"
+    }
+   ]
+  }
+ ]
+}

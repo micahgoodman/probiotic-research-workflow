@@ -1,0 +1,44 @@
+{
+ "pmid": "37371451",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": null,
+ "n_randomized": 46,
+ "population": "healthy Japanese nursing students",
+ "arms": [
+  {
+   "entity_as_stated": "Heat-killed Lactobacillus helveticus MCC1848",
+   "strain_codes": [
+    "MCC1848"
+   ],
+   "brand": null,
+   "other_actives": [],
+   "preparation": "heat_killed",
+   "dose_as_stated": "5 billion cells per day",
+   "weeks": 4,
+   "results": [
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "panas-negative",
+     "comparison": "between_groups",
+     "main_endpoint": "yes"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "poms-total",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    },
+    {
+     "condition": "depression",
+     "result": "no_difference",
+     "instrument": "poms-depression",
+     "comparison": "between_groups",
+     "main_endpoint": "no"
+    }
+   ]
+  }
+ ]
+}

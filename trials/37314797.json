@@ -1,0 +1,23 @@
+{"pmid": "37314797",
+ "status": "eligible",
+ "design": "randomized_placebo",
+ "registration": "NCT03893162",
+ "n_randomized": 50,
+ "population": "adults with major depressive disorder and an incomplete response to antidepressants",
+ "arms": [
+   {"entity_as_stated": "Bio-Kult Advanced (fourteen strains)",
+    "strain_codes": [],
+    "brand": "Bio-Kult Advanced",
+    "other_actives": [],
+    "preparation": "live",
+    "dose_as_stated": "8 billion CFU per day (4 capsules)",
+    "weeks": 8,
+    "results": [
+      {"condition": "anxiety", "result": "benefit", "instrument": "ham-a",
+       "comparison": "between_groups", "main_endpoint": "no"},
+      {"condition": "anxiety", "result": "no_difference", "instrument": "gad-7",
+       "comparison": "between_groups", "main_endpoint": "no"},
+      {"condition": "depression", "result": "no_difference", "instrument": "ham-d",
+       "comparison": "between_groups", "main_endpoint": "no"}
+    ]}
+ ]}
